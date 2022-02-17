@@ -1,0 +1,1190 @@
+{
+    "no_of_records": "Deve",
+    "data": [
+        {
+            "id": 11,
+            "name": "Bachelor of Science[I Year-I Sem]Division A",
+            "course_id": [
+                23,
+                "Bachelor of Science"
+            ],
+            "college_id": [
+                21,
+                "Dr. APJ Abdul Kalam Govt. College Silvassa"
+            ],
+            "sem_id": [
+                1,
+                "First Semester"
+            ]
+        },
+        {
+            "id": 12,
+            "name": false,
+            "course_id": [
+                22,
+                "Bachelor of Commerce"
+            ],
+            "college_id": [
+                21,
+                "Dr. APJ Abdul Kalam Govt. College Silvassa"
+            ],
+            "sem_id": [
+                1,
+                "First Semester"
+            ]
+        },
+        {
+            "id": 13,
+            "name": false,
+            "course_id": [
+                22,
+                "Bachelor of Commerce"
+            ],
+            "college_id": [
+                21,
+                "Dr. APJ Abdul Kalam Govt. College Silvassa"
+            ],
+            "sem_id": [
+                1,
+                "First Semester"
+            ]
+        },
+        {
+            "id": 14,
+            "name": false,
+            "course_id": [
+                22,
+                "Bachelor of Commerce"
+            ],
+            "college_id": [
+                21,
+                "Dr. APJ Abdul Kalam Govt. College Silvassa"
+            ],
+            "sem_id": [
+                2,
+                "Second Semester"
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Bachelor of Commerce[I Year-II Sem]Division B",
+            "course_id": [
+                22,
+                "Bachelor of Commerce"
+            ],
+            "college_id": [
+                21,
+                "Dr. APJ Abdul Kalam Govt. College Silvassa"
+            ],
+            "sem_id": [
+                2,
+                "Second Semester"
+            ]
+        },
+        {
+            "id": 16,
+            "name": "Bachelor of Commerce[II Year-III Sem]Division A",
+            "course_id": [
+                22,
+                "Bachelor of Commerce"
+            ],
+            "college_id": [
+                21,
+                "Dr. APJ Abdul Kalam Govt. College Silvassa"
+            ],
+            "sem_id": [
+                3,
+                "Third Semester"
+            ]
+        },
+        {
+            "id": 17,
+            "name": false,
+            "course_id": [
+                22,
+                "Bachelor of Commerce"
+            ],
+            "college_id": [
+                21,
+                "Dr. APJ Abdul Kalam Govt. College Silvassa"
+            ],
+            "sem_id": [
+                3,
+                "Third Semester"
+            ]
+        },
+        {
+            "id": 18,
+            "name": false,
+            "course_id": [
+                22,
+                "Bachelor of Commerce"
+            ],
+            "college_id": [
+                21,
+                "Dr. APJ Abdul Kalam Govt. College Silvassa"
+            ],
+            "sem_id": [
+                4,
+                "Fourth Semester"
+            ]
+        },
+        {
+            "id": 19,
+            "name": false,
+            "course_id": [
+                22,
+                "Bachelor of Commerce"
+            ],
+            "college_id": [
+                21,
+                "Dr. APJ Abdul Kalam Govt. College Silvassa"
+            ],
+            "sem_id": [
+                4,
+                "Fourth Semester"
+            ]
+        },
+        {
+            "id": 20,
+            "name": false,
+            "course_id": [
+                22,
+                "Bachelor of Commerce"
+            ],
+            "college_id": [
+                21,
+                "Dr. APJ Abdul Kalam Govt. College Silvassa"
+            ],
+            "sem_id": [
+                5,
+                "Fifth Semester"
+            ]
+        },
+        {
+            "id": 21,
+            "name": false,
+            "course_id": [
+                22,
+                "Bachelor of Commerce"
+            ],
+            "college_id": [
+                21,
+                "Dr. APJ Abdul Kalam Govt. College Silvassa"
+            ],
+            "sem_id": [
+                5,
+                "Fifth Semester"
+            ]
+        },
+        {
+            "id": 22,
+            "name": "Bachelor of Commerce[III Year-VI Sem]Division A",
+            "course_id": [
+                22,
+                "Bachelor of Commerce"
+            ],
+            "college_id": [
+                21,
+                "Dr. APJ Abdul Kalam Govt. College Silvassa"
+            ],
+            "sem_id": [
+                6,
+                "Sixth Semester"
+            ]
+        },
+        {
+            "id": 23,
+            "name": false,
+            "course_id": [
+                22,
+                "Bachelor of Commerce"
+            ],
+            "college_id": [
+                21,
+                "Dr. APJ Abdul Kalam Govt. College Silvassa"
+            ],
+            "sem_id": [
+                6,
+                "Sixth Semester"
+            ]
+        },
+        {
+            "id": 28,
+            "name": false,
+            "course_id": [
+                23,
+                "Bachelor of Science"
+            ],
+            "college_id": [
+                21,
+                "Dr. APJ Abdul Kalam Govt. College Silvassa"
+            ],
+            "sem_id": [
+                2,
+                "Second Semester"
+            ]
+        },
+        {
+            "id": 29,
+            "name": false,
+            "course_id": [
+                23,
+                "Bachelor of Science"
+            ],
+            "college_id": [
+                21,
+                "Dr. APJ Abdul Kalam Govt. College Silvassa"
+            ],
+            "sem_id": [
+                3,
+                "Third Semester"
+            ]
+        },
+        {
+            "id": 30,
+            "name": false,
+            "course_id": [
+                23,
+                "Bachelor of Science"
+            ],
+            "college_id": [
+                21,
+                "Dr. APJ Abdul Kalam Govt. College Silvassa"
+            ],
+            "sem_id": [
+                4,
+                "Fourth Semester"
+            ]
+        },
+        {
+            "id": 31,
+            "name": false,
+            "course_id": [
+                23,
+                "Bachelor of Science"
+            ],
+            "college_id": [
+                21,
+                "Dr. APJ Abdul Kalam Govt. College Silvassa"
+            ],
+            "sem_id": [
+                5,
+                "Fifth Semester"
+            ]
+        },
+        {
+            "id": 32,
+            "name": false,
+            "course_id": [
+                23,
+                "Bachelor of Science"
+            ],
+            "college_id": [
+                21,
+                "Dr. APJ Abdul Kalam Govt. College Silvassa"
+            ],
+            "sem_id": [
+                6,
+                "Sixth Semester"
+            ]
+        },
+        {
+            "id": 33,
+            "name": false,
+            "course_id": [
+                24,
+                "Bachelor of Arts"
+            ],
+            "college_id": [
+                21,
+                "Dr. APJ Abdul Kalam Govt. College Silvassa"
+            ],
+            "sem_id": [
+                1,
+                "First Semester"
+            ]
+        },
+        {
+            "id": 34,
+            "name": false,
+            "course_id": [
+                24,
+                "Bachelor of Arts"
+            ],
+            "college_id": [
+                21,
+                "Dr. APJ Abdul Kalam Govt. College Silvassa"
+            ],
+            "sem_id": [
+                2,
+                "Second Semester"
+            ]
+        },
+        {
+            "id": 41,
+            "name": "Bachelor of Science[II Year-III Sem]Division A",
+            "course_id": [
+                85,
+                "Bachelor of Science"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                3,
+                "Third Semester"
+            ]
+        },
+        {
+            "id": 42,
+            "name": "Bachelor of Science[II Year-IV Sem]Division A",
+            "course_id": [
+                85,
+                "Bachelor of Science"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                4,
+                "Fourth Semester"
+            ]
+        },
+        {
+            "id": 43,
+            "name": "Bachelor of Science in Chemistry[III Year-V Sem]Division A",
+            "course_id": [
+                77,
+                "Bachelor of Science in Chemistry"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                5,
+                "Fifth Semester"
+            ]
+        },
+        {
+            "id": 44,
+            "name": "Bachelor of Science in Chemistry[III Year-VI Sem]Division A",
+            "course_id": [
+                77,
+                "Bachelor of Science in Chemistry"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                6,
+                "Sixth Semester"
+            ]
+        },
+        {
+            "id": 45,
+            "name": "Master of Science in Organic Chemistry[I Year-I Sem]Division A",
+            "course_id": [
+                43,
+                "Master of Science in Organic Chemistry"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                1,
+                "First Semester"
+            ]
+        },
+        {
+            "id": 47,
+            "name": "Master of Science in Organic Chemistry[I Year-II Sem]Division A",
+            "course_id": [
+                43,
+                "Master of Science in Organic Chemistry"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                2,
+                "Second Semester"
+            ]
+        },
+        {
+            "id": 48,
+            "name": "Master of Science in Organic Chemistry[II Year-III Sem]Division A",
+            "course_id": [
+                43,
+                "Master of Science in Organic Chemistry"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                3,
+                "Third Semester"
+            ]
+        },
+        {
+            "id": 49,
+            "name": "Master of Science in Organic Chemistry[II Year-IV Sem]Division A",
+            "course_id": [
+                43,
+                "Master of Science in Organic Chemistry"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                4,
+                "Fourth Semester"
+            ]
+        },
+        {
+            "id": 51,
+            "name": "Master of Commerce[I Year-I Sem]Division A",
+            "course_id": [
+                45,
+                "Master of Commerce"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                1,
+                "First Semester"
+            ]
+        },
+        {
+            "id": 52,
+            "name": "Master of Commerce[I Year-II Sem]Division A",
+            "course_id": [
+                45,
+                "Master of Commerce"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                2,
+                "Second Semester"
+            ]
+        },
+        {
+            "id": 53,
+            "name": "Master of Commerce[II Year-III Sem]Division A",
+            "course_id": [
+                45,
+                "Master of Commerce"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                3,
+                "Third Semester"
+            ]
+        },
+        {
+            "id": 54,
+            "name": "Master of Commerce[II Year-IV Sem]Division A",
+            "course_id": [
+                45,
+                "Master of Commerce"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                4,
+                "Fourth Semester"
+            ]
+        },
+        {
+            "id": 55,
+            "name": "Bachelor of Commerce[I Year-I Sem]Division A",
+            "course_id": [
+                38,
+                "Bachelor of Commerce"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                1,
+                "First Semester"
+            ]
+        },
+        {
+            "id": 56,
+            "name": "Bachelor of Commerce[I Year-II Sem]Division A",
+            "course_id": [
+                38,
+                "Bachelor of Commerce"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                2,
+                "Second Semester"
+            ]
+        },
+        {
+            "id": 57,
+            "name": "Bachelor of Commerce[II Year-III Sem]Division A",
+            "course_id": [
+                38,
+                "Bachelor of Commerce"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                3,
+                "Third Semester"
+            ]
+        },
+        {
+            "id": 58,
+            "name": "Bachelor of Commerce[II Year-IV Sem]Division A",
+            "course_id": [
+                38,
+                "Bachelor of Commerce"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                4,
+                "Fourth Semester"
+            ]
+        },
+        {
+            "id": 59,
+            "name": "Bachelor of Commerce[III Year-V Sem]Division A",
+            "course_id": [
+                38,
+                "Bachelor of Commerce"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                5,
+                "Fifth Semester"
+            ]
+        },
+        {
+            "id": 60,
+            "name": "Bachelor of Commerce[III Year-VI Sem]Division A",
+            "course_id": [
+                38,
+                "Bachelor of Commerce"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                6,
+                "Sixth Semester"
+            ]
+        },
+        {
+            "id": 61,
+            "name": "Bachelor of Arts in  Economics[I Year-I Sem]Division A",
+            "course_id": [
+                37,
+                "Bachelor of Arts in  Economics"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                1,
+                "First Semester"
+            ]
+        },
+        {
+            "id": 62,
+            "name": "Bachelor of Arts in  Economics[I Year-II Sem]Division A",
+            "course_id": [
+                37,
+                "Bachelor of Arts in  Economics"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                2,
+                "Second Semester"
+            ]
+        },
+        {
+            "id": 63,
+            "name": "Bachelor of Arts in  Economics[II Year-III Sem]Division A",
+            "course_id": [
+                37,
+                "Bachelor of Arts in  Economics"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                3,
+                "Third Semester"
+            ]
+        },
+        {
+            "id": 64,
+            "name": "Bachelor of Arts in  Economics[II Year-IV Sem]Division A",
+            "course_id": [
+                37,
+                "Bachelor of Arts in  Economics"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                4,
+                "Fourth Semester"
+            ]
+        },
+        {
+            "id": 65,
+            "name": "Bachelor of Arts in  Economics[III Year-V Sem]Division A",
+            "course_id": [
+                37,
+                "Bachelor of Arts in  Economics"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                5,
+                "Fifth Semester"
+            ]
+        },
+        {
+            "id": 68,
+            "name": "Bachelor of Arts in  Economics[III Year-VI Sem]Division A",
+            "course_id": [
+                37,
+                "Bachelor of Arts in  Economics"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                6,
+                "Sixth Semester"
+            ]
+        },
+        {
+            "id": 69,
+            "name": "Master of Arts in English[I Year-I Sem]Division A",
+            "course_id": [
+                44,
+                "Master of Arts in English"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                1,
+                "First Semester"
+            ]
+        },
+        {
+            "id": 70,
+            "name": "Master of Arts in English[I Year-II Sem]Division A",
+            "course_id": [
+                44,
+                "Master of Arts in English"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                2,
+                "Second Semester"
+            ]
+        },
+        {
+            "id": 71,
+            "name": "Master of Arts in English[II Year-III Sem]Division A",
+            "course_id": [
+                44,
+                "Master of Arts in English"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                3,
+                "Third Semester"
+            ]
+        },
+        {
+            "id": 72,
+            "name": "Master of Arts in English[II Year-IV Sem]Division A",
+            "course_id": [
+                44,
+                "Master of Arts in English"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                4,
+                "Fourth Semester"
+            ]
+        },
+        {
+            "id": 73,
+            "name": false,
+            "course_id": [
+                36,
+                "Bachelor of Science in Mathematics"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                1,
+                "First Semester"
+            ]
+        },
+        {
+            "id": 74,
+            "name": false,
+            "course_id": [
+                56,
+                "Diploma in Information Technology"
+            ],
+            "college_id": [
+                9,
+                "Government Polytechnic Daman"
+            ],
+            "sem_id": [
+                1,
+                "First Semester"
+            ]
+        },
+        {
+            "id": 75,
+            "name": false,
+            "course_id": [
+                26,
+                "Bachelor of Civil Engineering"
+            ],
+            "college_id": [
+                8,
+                "Government Engineering College, Daman"
+            ],
+            "sem_id": [
+                1,
+                "First Semester"
+            ]
+        },
+        {
+            "id": 76,
+            "name": false,
+            "course_id": [
+                26,
+                "Bachelor of Civil Engineering"
+            ],
+            "college_id": [
+                8,
+                "Government Engineering College, Daman"
+            ],
+            "sem_id": [
+                2,
+                "Second Semester"
+            ]
+        },
+        {
+            "id": 77,
+            "name": false,
+            "course_id": [
+                26,
+                "Bachelor of Civil Engineering"
+            ],
+            "college_id": [
+                8,
+                "Government Engineering College, Daman"
+            ],
+            "sem_id": [
+                3,
+                "Third Semester"
+            ]
+        },
+        {
+            "id": 78,
+            "name": false,
+            "course_id": [
+                26,
+                "Bachelor of Civil Engineering"
+            ],
+            "college_id": [
+                8,
+                "Government Engineering College, Daman"
+            ],
+            "sem_id": [
+                4,
+                "Fourth Semester"
+            ]
+        },
+        {
+            "id": 79,
+            "name": false,
+            "course_id": [
+                26,
+                "Bachelor of Civil Engineering"
+            ],
+            "college_id": [
+                8,
+                "Government Engineering College, Daman"
+            ],
+            "sem_id": [
+                5,
+                "Fifth Semester"
+            ]
+        },
+        {
+            "id": 80,
+            "name": false,
+            "course_id": [
+                26,
+                "Bachelor of Civil Engineering"
+            ],
+            "college_id": [
+                8,
+                "Government Engineering College, Daman"
+            ],
+            "sem_id": [
+                6,
+                "Sixth Semester"
+            ]
+        },
+        {
+            "id": 81,
+            "name": false,
+            "course_id": [
+                26,
+                "Bachelor of Civil Engineering"
+            ],
+            "college_id": [
+                8,
+                "Government Engineering College, Daman"
+            ],
+            "sem_id": [
+                7,
+                "Seventh Semester"
+            ]
+        },
+        {
+            "id": 82,
+            "name": false,
+            "course_id": [
+                26,
+                "Bachelor of Civil Engineering"
+            ],
+            "college_id": [
+                8,
+                "Government Engineering College, Daman"
+            ],
+            "sem_id": [
+                8,
+                "Eighth Semester"
+            ]
+        },
+        {
+            "id": 83,
+            "name": false,
+            "course_id": [
+                69,
+                "Bachelor of Mechanical Engineering"
+            ],
+            "college_id": [
+                8,
+                "Government Engineering College, Daman"
+            ],
+            "sem_id": [
+                1,
+                "First Semester"
+            ]
+        },
+        {
+            "id": 84,
+            "name": false,
+            "course_id": [
+                69,
+                "Bachelor of Mechanical Engineering"
+            ],
+            "college_id": [
+                8,
+                "Government Engineering College, Daman"
+            ],
+            "sem_id": [
+                2,
+                "Second Semester"
+            ]
+        },
+        {
+            "id": 85,
+            "name": false,
+            "course_id": [
+                69,
+                "Bachelor of Mechanical Engineering"
+            ],
+            "college_id": [
+                8,
+                "Government Engineering College, Daman"
+            ],
+            "sem_id": [
+                3,
+                "Third Semester"
+            ]
+        },
+        {
+            "id": 86,
+            "name": false,
+            "course_id": [
+                69,
+                "Bachelor of Mechanical Engineering"
+            ],
+            "college_id": [
+                8,
+                "Government Engineering College, Daman"
+            ],
+            "sem_id": [
+                4,
+                "Fourth Semester"
+            ]
+        },
+        {
+            "id": 87,
+            "name": false,
+            "course_id": [
+                69,
+                "Bachelor of Mechanical Engineering"
+            ],
+            "college_id": [
+                8,
+                "Government Engineering College, Daman"
+            ],
+            "sem_id": [
+                5,
+                "Fifth Semester"
+            ]
+        },
+        {
+            "id": 88,
+            "name": false,
+            "course_id": [
+                69,
+                "Bachelor of Mechanical Engineering"
+            ],
+            "college_id": [
+                8,
+                "Government Engineering College, Daman"
+            ],
+            "sem_id": [
+                6,
+                "Sixth Semester"
+            ]
+        },
+        {
+            "id": 89,
+            "name": false,
+            "course_id": [
+                69,
+                "Bachelor of Mechanical Engineering"
+            ],
+            "college_id": [
+                8,
+                "Government Engineering College, Daman"
+            ],
+            "sem_id": [
+                7,
+                "Seventh Semester"
+            ]
+        },
+        {
+            "id": 90,
+            "name": false,
+            "course_id": [
+                69,
+                "Bachelor of Mechanical Engineering"
+            ],
+            "college_id": [
+                8,
+                "Government Engineering College, Daman"
+            ],
+            "sem_id": [
+                8,
+                "Eighth Semester"
+            ]
+        },
+        {
+            "id": 91,
+            "name": "[(91, 'Bachelor of Science[I Year-I Sem]')]",
+            "course_id": [
+                23,
+                "Bachelor of Science"
+            ],
+            "college_id": [
+                21,
+                "Dr. APJ Abdul Kalam Govt. College Silvassa"
+            ],
+            "sem_id": [
+                1,
+                "First Semester"
+            ]
+        },
+        {
+            "id": 92,
+            "name": "Bachelor of Commerce[I Year-I Sem]",
+            "course_id": [
+                22,
+                "Bachelor of Commerce"
+            ],
+            "college_id": [
+                21,
+                "Dr. APJ Abdul Kalam Govt. College Silvassa"
+            ],
+            "sem_id": [
+                1,
+                "First Semester"
+            ]
+        },
+        {
+            "id": 93,
+            "name": "Diploma in Information Technology[III Year-V Sem]Division A",
+            "course_id": [
+                47,
+                "Diploma in Information Technology"
+            ],
+            "college_id": [
+                18,
+                "DR BABASAHEB BHIMRAO AMBEDKAR GOVERNMENT POLYTECHNIC"
+            ],
+            "sem_id": [
+                5,
+                "Fifth Semester"
+            ]
+        },
+        {
+            "id": 95,
+            "name": "Bachelor of Arts[I Year-II Sem]Division B",
+            "course_id": [
+                37,
+                "Bachelor of Arts in  Economics"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                2,
+                "Second Semester"
+            ]
+        },
+        {
+            "id": 96,
+            "name": "Diploma in Computer Engineering[I Year-I Sem]Division A",
+            "course_id": [
+                48,
+                "Diploma in Computer Engineering"
+            ],
+            "college_id": [
+                18,
+                "DR BABASAHEB BHIMRAO AMBEDKAR GOVERNMENT POLYTECHNIC"
+            ],
+            "sem_id": [
+                1,
+                "First Semester"
+            ]
+        },
+        {
+            "id": 99,
+            "name": "Diploma in Computer Engineering[II Year-III Sem]Division A",
+            "course_id": [
+                48,
+                "Diploma in Computer Engineering"
+            ],
+            "college_id": [
+                18,
+                "DR BABASAHEB BHIMRAO AMBEDKAR GOVERNMENT POLYTECHNIC"
+            ],
+            "sem_id": [
+                3,
+                "Third Semester"
+            ]
+        },
+        {
+            "id": 100,
+            "name": "Diploma in Computer Engineering[III Year-III Sem]Division A",
+            "course_id": [
+                48,
+                "Diploma in Computer Engineering"
+            ],
+            "college_id": [
+                18,
+                "DR BABASAHEB BHIMRAO AMBEDKAR GOVERNMENT POLYTECHNIC"
+            ],
+            "sem_id": [
+                3,
+                "Third Semester"
+            ]
+        },
+        {
+            "id": 103,
+            "name": "Bachelor of Science in Chemistry[I Year-I Sem]Division A",
+            "course_id": [
+                77,
+                "Bachelor of Science in Chemistry"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "sem_id": [
+                1,
+                "First Semester"
+            ]
+        }
+    ],
+    "message": "Success"
+}

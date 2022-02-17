@@ -1,0 +1,1067 @@
+{
+    "uid": 19,
+    "no_of_records": {
+        "no_of_artsScience": 2,
+        "no_of_others": 55
+    },
+    "data": {
+        "coursesArts": [
+            {
+                "id": 85,
+                "name": "Bachelor of Science",
+                "code": "B.Sc.",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": false,
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": true
+            },
+            {
+                "id": 86,
+                "name": "Bachelor of Arts",
+                "code": "B.A.",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": false,
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": true
+            }
+        ],
+        "coursesAlt": [
+            {
+                "id": 60,
+                "name": "Diploma in Civil Engineering",
+                "code": "06",
+                "college_id": [
+                    9,
+                    "Government Polytechnic Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    37,
+                    "Diploma in Civil Engineering"
+                ],
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 37,
+                "name": "Bachelor of Arts in  Economics",
+                "code": "B.A. Economics",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    13,
+                    "Department of Economics"
+                ],
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 19,
+                "name": "Diploma in Civil  Engineering",
+                "code": "08",
+                "college_id": false,
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": false,
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 78,
+                "name": "Master of Arts in Economics",
+                "code": "M.A.  Economics",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "pg",
+                "duration": "2",
+                "department_id": [
+                    13,
+                    "Department of Economics"
+                ],
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 16,
+                "name": "Diploma in Mechanical Engineering",
+                "code": "19",
+                "college_id": false,
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": false,
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 18,
+                "name": "Diploma in Plastic  Engineering (Sandwich Pattern)",
+                "code": "17",
+                "college_id": false,
+                "graduate": "ug",
+                "duration": "4",
+                "department_id": false,
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 55,
+                "name": "Diploma in Plastic Engineering",
+                "code": "23",
+                "college_id": [
+                    9,
+                    "Government Polytechnic Daman"
+                ],
+                "graduate": "ug",
+                "duration": "4",
+                "department_id": [
+                    33,
+                    "Diploma in Plastic Engineering"
+                ],
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 56,
+                "name": "Diploma in Information Technology",
+                "code": "16",
+                "college_id": [
+                    9,
+                    "Government Polytechnic Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    5,
+                    "Diploma Information Technology"
+                ],
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 79,
+                "name": "Bachelor of Arts in English",
+                "code": "B.A. English",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    14,
+                    "Department of English"
+                ],
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 57,
+                "name": "Diploma in Computer Engineering",
+                "code": "07",
+                "college_id": [
+                    9,
+                    "Government Polytechnic Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    34,
+                    "Diploma in Computer Engineering"
+                ],
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 80,
+                "name": "Bachelor of Arts in Gujarati",
+                "code": "B.A. Gujarati",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    15,
+                    "Department of Gujarati"
+                ],
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 58,
+                "name": "Diploma in Mechanical Engineering",
+                "code": "19",
+                "college_id": [
+                    9,
+                    "Government Polytechnic Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    3,
+                    "Department of Mechanical Engineering"
+                ],
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 17,
+                "name": "Diploma in Chemical Engineering",
+                "code": "05",
+                "college_id": false,
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": false,
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 81,
+                "name": "Bachelor of Arts in Hindi",
+                "code": "B.A. Hindi",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    16,
+                    "Department of Hindi"
+                ],
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 83,
+                "name": "Bachelor of Science in Zoology",
+                "code": "B.Sc. Zoology",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    12,
+                    "Department of Zoology"
+                ],
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 84,
+                "name": "Bachelor of Science in Botany",
+                "code": "B.Sc. Botany",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    8,
+                    "Department of Botany"
+                ],
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 59,
+                "name": "Diploma in Chemical Engineering",
+                "code": "05",
+                "college_id": [
+                    9,
+                    "Government Polytechnic Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    35,
+                    "Diploma in Mechanical Engineering"
+                ],
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 38,
+                "name": "Bachelor of Commerce",
+                "code": "B.Com.",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    20,
+                    "Department of Commerce"
+                ],
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 53,
+                "name": "Diploma in Mechanical Engineering",
+                "code": "19",
+                "college_id": [
+                    20,
+                    "Government Polytechnic Diu"
+                ],
+                "graduate": "ug",
+                "duration": "03",
+                "department_id": [
+                    3,
+                    "Department of Mechanical Engineering"
+                ],
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 48,
+                "name": "Diploma in Computer Engineering",
+                "code": "07",
+                "college_id": [
+                    18,
+                    "DR BABASAHEB BHIMRAO AMBEDKAR GOVERNMENT POLYTECHNIC"
+                ],
+                "graduate": false,
+                "duration": "3",
+                "department_id": [
+                    28,
+                    "Department of Computer Engineering"
+                ],
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 49,
+                "name": "Diploma in Electronics & Communication",
+                "code": "11",
+                "college_id": [
+                    18,
+                    "DR BABASAHEB BHIMRAO AMBEDKAR GOVERNMENT POLYTECHNIC"
+                ],
+                "graduate": false,
+                "duration": "3",
+                "department_id": [
+                    30,
+                    "Department of Electronics and Communication Engineering"
+                ],
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 50,
+                "name": "Diploma in Textile Manufacturing & Technology",
+                "code": "29",
+                "college_id": [
+                    18,
+                    "DR BABASAHEB BHIMRAO AMBEDKAR GOVERNMENT POLYTECHNIC"
+                ],
+                "graduate": false,
+                "duration": "3.5",
+                "department_id": [
+                    31,
+                    "Department of Textile Manufacturing Technology"
+                ],
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 54,
+                "name": "Diploma in Electrical Engineering",
+                "code": "09",
+                "college_id": [
+                    9,
+                    "Government Polytechnic Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    2,
+                    "Diploma in Electrical Engineering"
+                ],
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 61,
+                "name": "B.A. Hindi",
+                "code": "DC-hindi",
+                "college_id": [
+                    22,
+                    "Diu College, Diu"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    16,
+                    "Department of Hindi"
+                ],
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 62,
+                "name": "B.A. Economics",
+                "code": "DC-Economics",
+                "college_id": [
+                    22,
+                    "Diu College, Diu"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    13,
+                    "Department of Economics"
+                ],
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 63,
+                "name": "Gujarati",
+                "code": "DC-Gujarati",
+                "college_id": [
+                    22,
+                    "Diu College, Diu"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    15,
+                    "Department of Gujarati"
+                ],
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 66,
+                "name": "B.A. Gujarati",
+                "code": "DC-Gujarati",
+                "college_id": [
+                    22,
+                    "Diu College, Diu"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    15,
+                    "Department of Gujarati"
+                ],
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 67,
+                "name": "B.A. Sanskrit",
+                "code": "DC-Sanskrit",
+                "college_id": [
+                    22,
+                    "Diu College, Diu"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    18,
+                    "Department of Sanskrit"
+                ],
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 26,
+                "name": "Bachelor of Civil Engineering",
+                "code": "06",
+                "college_id": [
+                    8,
+                    "Government Engineering College, Daman"
+                ],
+                "graduate": "ug",
+                "duration": "4",
+                "department_id": [
+                    1,
+                    "Department of Civil Engineering"
+                ],
+                "college_type": [
+                    2,
+                    "ENGINEERING"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 69,
+                "name": "Bachelor of Mechanical Engineering",
+                "code": "19",
+                "college_id": [
+                    8,
+                    "Government Engineering College, Daman"
+                ],
+                "graduate": "ug",
+                "duration": "4",
+                "department_id": [
+                    3,
+                    "Department of Mechanical Engineering"
+                ],
+                "college_type": [
+                    2,
+                    "ENGINEERING"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 71,
+                "name": "Bachelor of Electrical Engineering",
+                "code": "09",
+                "college_id": [
+                    8,
+                    "Government Engineering College, Daman"
+                ],
+                "graduate": "ug",
+                "duration": "4",
+                "department_id": [
+                    38,
+                    "Department of Electrical Engineering"
+                ],
+                "college_type": [
+                    2,
+                    "ENGINEERING"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 74,
+                "name": "Bachelor of Computer Engineering",
+                "code": "07",
+                "college_id": [
+                    8,
+                    "Government Engineering College, Daman"
+                ],
+                "graduate": "ug",
+                "duration": "4",
+                "department_id": [
+                    28,
+                    "Department of Computer Engineering"
+                ],
+                "college_type": [
+                    2,
+                    "ENGINEERING"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 23,
+                "name": "Bachelor of Science",
+                "code": "BSc",
+                "college_id": [
+                    21,
+                    "Dr. APJ Abdul Kalam Govt. College Silvassa"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    26,
+                    "Department of Commerce with Accountancy"
+                ],
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 43,
+                "name": "Master of Science in Organic Chemistry",
+                "code": "M.Sc. Chemistry",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "pg",
+                "duration": "2",
+                "department_id": [
+                    9,
+                    "Department of Chemistry"
+                ],
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 45,
+                "name": "Master of Commerce",
+                "code": "M.Com.",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "pg",
+                "duration": "2",
+                "department_id": false,
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 44,
+                "name": "Master of Arts in English",
+                "code": "M.A. English",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "pg",
+                "duration": "2",
+                "department_id": [
+                    14,
+                    "Department of English"
+                ],
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 77,
+                "name": "Bachelor of Science in Chemistry",
+                "code": "B.Sc. Chemistry",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    9,
+                    "Department of Chemistry"
+                ],
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 36,
+                "name": "Bachelor of Science in Mathematics",
+                "code": "B.Sc. Maths",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    10,
+                    "Department of Mathematics"
+                ],
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 8,
+                "name": "Bachelor of Arts",
+                "code": "01",
+                "college_id": false,
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": false,
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 9,
+                "name": "Bachelor of Commerce",
+                "code": "02",
+                "college_id": false,
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": false,
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 11,
+                "name": "Master of Arts",
+                "code": "222",
+                "college_id": false,
+                "graduate": "pg",
+                "duration": "2",
+                "department_id": false,
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 12,
+                "name": "Master of Commerce",
+                "code": "333",
+                "college_id": false,
+                "graduate": "pg",
+                "duration": "2",
+                "department_id": false,
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 13,
+                "name": "Master of Science",
+                "code": "444",
+                "college_id": false,
+                "graduate": "pg",
+                "duration": "2",
+                "department_id": false,
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 14,
+                "name": "Diploma in Information Technology",
+                "code": "16",
+                "college_id": false,
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": false,
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 15,
+                "name": "Diploma in Computer Engieneering",
+                "code": "06",
+                "college_id": false,
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": false,
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 46,
+                "name": "Diploma in Civil Engineering",
+                "code": "06",
+                "college_id": [
+                    18,
+                    "DR BABASAHEB BHIMRAO AMBEDKAR GOVERNMENT POLYTECHNIC"
+                ],
+                "graduate": false,
+                "duration": "3",
+                "department_id": [
+                    1,
+                    "Department of Civil Engineering"
+                ],
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 20,
+                "name": "Diploma in Electrical Engineering",
+                "code": "15",
+                "college_id": false,
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": false,
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 47,
+                "name": "Diploma in Information Technology",
+                "code": "16",
+                "college_id": [
+                    18,
+                    "DR BABASAHEB BHIMRAO AMBEDKAR GOVERNMENT POLYTECHNIC"
+                ],
+                "graduate": false,
+                "duration": "3",
+                "department_id": [
+                    5,
+                    "Diploma Information Technology"
+                ],
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 22,
+                "name": "Bachelor of Commerce",
+                "code": "BCom",
+                "college_id": [
+                    21,
+                    "Dr. APJ Abdul Kalam Govt. College Silvassa"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": false,
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 24,
+                "name": "Bachelor of Arts",
+                "code": "BA",
+                "college_id": [
+                    21,
+                    "Dr. APJ Abdul Kalam Govt. College Silvassa"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": false,
+                "college_type": [
+                    4,
+                    "ARTS, COMMERCE AND SCIENCE"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 25,
+                "name": "Diploma in Marine Engineering",
+                "code": "18",
+                "college_id": [
+                    20,
+                    "Government Polytechnic Diu"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    22,
+                    "Marine Engineering Department"
+                ],
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 32,
+                "name": "Diploma in MECHANICAL Engineering",
+                "code": "19",
+                "college_id": [
+                    18,
+                    "DR BABASAHEB BHIMRAO AMBEDKAR GOVERNMENT POLYTECHNIC"
+                ],
+                "graduate": false,
+                "duration": "03",
+                "department_id": [
+                    3,
+                    "Department of Mechanical Engineering"
+                ],
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 34,
+                "name": "Diploma in Electrical Engineering",
+                "code": "07",
+                "college_id": [
+                    18,
+                    "DR BABASAHEB BHIMRAO AMBEDKAR GOVERNMENT POLYTECHNIC"
+                ],
+                "graduate": false,
+                "duration": "03",
+                "department_id": [
+                    2,
+                    "Diploma in Electrical Engineering"
+                ],
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 51,
+                "name": "Diploma in Electrical Engineering",
+                "code": "09",
+                "college_id": [
+                    20,
+                    "Government Polytechnic Diu"
+                ],
+                "graduate": "ug",
+                "duration": "03",
+                "department_id": [
+                    2,
+                    "Diploma in Electrical Engineering"
+                ],
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 52,
+                "name": "Diploma in Civil Engineering",
+                "code": "06",
+                "college_id": [
+                    20,
+                    "Government Polytechnic Diu"
+                ],
+                "graduate": "ug",
+                "duration": "03",
+                "department_id": [
+                    1,
+                    "Department of Civil Engineering"
+                ],
+                "college_type": [
+                    3,
+                    "POLYTECHNIC"
+                ],
+                "no_dept": false
+            }
+        ]
+    },
+    "message": "Success"
+}
