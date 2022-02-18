@@ -114,7 +114,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         )
                     ),
                     array(
-                        'fields' => array('user_id', 'employee_id', 'dept_id', 'is_hod', 'college_id'),
+                        'fields' => array('user_id', 'employee_id','teacher_code', 'dept_id', 'is_hod', 'college_id'),
                     ),
                 );
     
