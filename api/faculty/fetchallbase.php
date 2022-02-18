@@ -65,6 +65,36 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
 
                 $deptId = $entityBody['deptId'];
                 $collegeId = $entityBody['collegeId'];
+
+                $college = $models->execute_kw(
+                    $dbname,
+                    $uid,
+                    $userPassword,
+                    'college.college',
+                    'search_read',
+                    array(
+                        array(
+                            array("com_name", '!=', False),
+                        )
+                    ),
+                    array(
+                        'fields' => array('com_name', "display_name", 'code', 'head_name'),
+                    ),
+                );
+
+                $session = $models->execute_kw(
+                    $dbname,
+                    $uid,
+                    $userPassword,
+                    'academic.year',
+                    'search_read',
+                    array(
+                        array(
+                            array('current', '=', True),
+                        )
+                    ),
+                    array('fields' => array('name', 'code', 'date_start', 'date_stop', 'oddsem_startdate', 'oddsem_enddate', 'evensem_startdate', 'evensem_enddate'))
+                );
                 
                 $yearsCount = $models->execute_kw(
                     $dbname,
@@ -162,7 +192,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         array(
                             array('no_dept', '=', False),
                             array('college_id', '=', (int)$collegeId),
-                            array('department_id', '=', (int)$deptId),
                         ),
                     ),
                     array('fields' => array('name', 'code', 'college_id', 'graduate', 'duration', 'department_id',  'no_dept'))
@@ -178,7 +207,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         array(
                             array('no_dept', '=', False),
                             array('college_id', '=', (int)$collegeId),
-                            array('department_id', '=', (int)$deptId),
                         ),
                     ),
 
@@ -187,11 +215,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 $response = array(
                     'no_of_records' => array(
                         'no_of_artsScience' => $coursesArts_no_records,
-                        'no_of_others' => $coursesAlt_no_records
+                        'no_of_others' => $coursesAlt_no_records,
+                        'yearCount'=> $yearsCount,
+                        'semCount'=> $semestersCount,
                     ),
                     'data' => array(
                         'coursesArts' => $coursesArts,
-                        'coursesAlt' => $coursesAlt
+                        'coursesAlt' => $coursesAlt,
+                        'years'=> $years,
+                        'semesters'=> $semesters,
+                        'session'=> $session,
+                        'college'=> $college
                     ),
                     'message' => 'Success'
 
