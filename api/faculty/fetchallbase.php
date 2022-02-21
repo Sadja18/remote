@@ -67,35 +67,52 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 $collegeId = $entityBody['collegeId'];
                 $teacherId = $entityBody['teacherId'];
 
-                $leaveAllocation = $models->execute_kw(
-                    $dbname,
-                    $uid,
-                    $userPassword,
-                    'leave.allocation.line',
-                    'search_read',
-                    array(
-                        array(
-                            array("college_id", "=", (int)$collegeId),
-                            array("dept_name", "=", (int)$deptId),
-                            array("faculty_name", "=", (int)$teacherId)
+                // $leaveAllocationCount = $models->execute_kw(
+                //     $dbname,
+                //     $uid,
+                //     $userPassword,
+                //     'leave.allocation.line',
+                //     'search_count',
+                //     array(
+                //         array(
+                //             array("college_id", "=", (int)$collegeId),
+                //             array("dept_name", "=", (int)$deptId),
+                //             array("faculty_name", "=", (int)$teacherId)
 
-                        )
-                    ),
-                    array(
-                        'fields'=> array(
-                            "faculty_name",
-                            "no_leaves",
-                            "pending_leaves",
-                            "approved_leaves",
-                            "available_leaves",
-                            "allocation_id",
-                            "college_id",
-                            "dept_name",
-                            "year",
-                            "leave_type"
-                        )
-                    ),
-                );
+                //         )
+                //     ),
+                    
+                // );
+
+                // $leaveAllocation = $models->execute_kw(
+                //     $dbname,
+                //     $uid,
+                //     $userPassword,
+                //     'leave.allocation.line',
+                //     'search_read',
+                //     array(
+                //         array(
+                //             array("college_id", "=", (int)$collegeId),
+                //             array("dept_name", "=", (int)$deptId),
+                //             array("faculty_name", "=", (int)$teacherId)
+
+                //         )
+                //     ),
+                //     array(
+                //         'fields'=> array(
+                //             "faculty_name",
+                //             "no_leaves",
+                //             "pending_leaves",
+                //             "approved_leaves",
+                //             "available_leaves",
+                //             "allocation_id",
+                //             "college_id",
+                //             "dept_name",
+                //             "year",
+                //             "leave_type"
+                //         )
+                //     ),
+                // );
 
                 $college = $models->execute_kw(
                     $dbname,
@@ -251,7 +268,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         'semCount'=> $semestersCount,
                     ),
                     'data' => array(
-                        'leaveAllocation'=> $leaveAllocation,
                         'coursesArts' => $coursesArts,
                         'coursesAlt' => $coursesAlt,
                         'years'=> $years,
