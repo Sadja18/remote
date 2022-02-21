@@ -78,11 +78,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         array(
                             array('college_id', '=',(int)$collegeId),
                             array('course_id', '=', (int)$courseId),
+                            array('colyear', '=', (int)$yearId)
                         )
                     ),
                     array(
-
+                        "fields"=> array("user_id", "student_name", "student_code", 'course_id', "year", "colyear", "semester")
                     )
+                    
                 );
 
                 $response = array(
