@@ -63,46 +63,32 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
 
                 $models = ripcord::client("$url/xmlrpc/2/object");
 
-                $deptId = $entityBody['deptId'];
+                $courseId = $entityBody['courseId'];
                 $collegeId =$entityBody['collegeId'];
+                $yearId = $entityBody['yearId'];
+                $semId = $entityBody['semId'];
 
-                $college = $models->execute_kw(
+                $records = $models->execute_kw(
                     $dbname,
                     $uid,
                     $userPassword,
-                    'college.college',
+                    'student.student',
                     'search_read',
                     array(
                         array(
-                            array("com_name", '!=', False),
+                            array('college_id', '=',(int)$collegeId),
+                            array('course_id', '=', (int)$courseId),
                         )
                     ),
                     array(
-                        'fields' => array('com_name', "display_name", 'code', 'head_name'),
-                    ),
-                );
 
-                $session = $models->execute_kw(
-                    $dbname,
-                    $uid,
-                    $userPassword,
-                    'academic.year',
-                    'search_read',
-                    array(
-                        array(
-                            array('current', '=', True),
-                        )
-                    ),
-                    array('fields' => array('name', 'code', 'date_start', 'date_stop', 'oddsem_startdate', 'oddsem_enddate', 'evensem_startdate', 'evensem_enddate'))
+                    )
                 );
 
                 $response = array(
                     "message" => "success",
                     'no_of_records' => count($records),
-                    "data" => array(
-                        'college' => $college,
-                        'session' => $session,
-                    )
+                    "data" => $records
                 );
 
                 echo json_encode($response);
