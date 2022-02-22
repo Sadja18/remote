@@ -68,32 +68,67 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 $yearId = $entityBody['yearId'];
                 $semId = $entityBody['semId'];
 
-                $records = $models->execute_kw(
-                    $dbname,
-                    $uid,
-                    $userPassword,
-                    'student.student',
-                    'search_read',
-                    array(
+            
+
+                if(isset($entityBody['classId'])){
+                    $classId = $entityBody['classId'];
+                    $records = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        'student.student',
+                        'search_read',
                         array(
-                            array('college_id', '=',(int)$collegeId),
-                            array('course_id', '=', (int)$courseId),
-                            array('colyear', '=', (int)$yearId)
+                            array(
+                                array('college_id', '=',(int)$collegeId),
+                                array('course_id', '=', (int)$courseId),
+                                array('colyear', '=', (int)$yearId)
+                            )
+                        ),
+                        array(
+                            "fields"=> array("user_id", "student_name", "student_code", 'course_id', "class_id", "year", "colyear", "semester")
                         )
-                    ),
-                    array(
-                        "fields"=> array("user_id", "student_name", "student_code", 'course_id', "year", "colyear", "semester")
-                    )
-                    
-                );
+                        
+                    );
+    
+                    $response = array(
+                        "message" => "success",
+                        'no_of_records' => count($records),
+                        "data" => $records
+                    );
+    
+                    echo json_encode($response);
 
-                $response = array(
-                    "message" => "success",
-                    'no_of_records' => count($records),
-                    "data" => $records
-                );
+                }else{
+                    $records = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        'student.student',
+                        'search_read',
+                        array(
+                            array(
+                                array('college_id', '=',(int)$collegeId),
+                                array('course_id', '=', (int)$courseId),
+                                array('colyear', '=', (int)$yearId)
+                            )
+                        ),
+                        array(
+                            "fields"=> array("user_id", "student_name", "student_code", 'course_id', "class_id", "year", "colyear", "semester")
+                        )
+                        
+                    );
+    
+                    $response = array(
+                        "message" => "success",
+                        'no_of_records' => count($records),
+                        "data" => $records
+                    );
+    
+                    echo json_encode($response);
+                }
 
-                echo json_encode($response);
+                
             } else {
                 // if the login credentials were incorrect,
                 // echo
