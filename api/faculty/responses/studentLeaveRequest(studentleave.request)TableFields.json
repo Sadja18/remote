@@ -1,0 +1,170 @@
+{
+    "f": "string",
+    "g": {
+        "table": "studentleave.request"
+    },
+    "res": {
+        "resource_id": {
+            "type": "many2one",
+            "string": "Resource"
+        },
+        "message_is_follower": {
+            "type": "boolean",
+            "string": "Is Follower"
+        },
+        "message_partner_ids": {
+            "type": "many2many",
+            "string": "Followers (Partners)"
+        },
+        "message_channel_ids": {
+            "type": "many2many",
+            "string": "Followers (Channels)"
+        },
+        "message_unread": {
+            "type": "boolean",
+            "help": "If checked, new messages require your attention.",
+            "string": "Unread Messages"
+        },
+        "message_unread_counter": {
+            "type": "integer",
+            "help": "Number of unread messages",
+            "string": "Unread Messages Counter"
+        },
+        "message_needaction": {
+            "type": "boolean",
+            "help": "If checked, new messages require your attention.",
+            "string": "Action Needed"
+        },
+        "message_needaction_counter": {
+            "type": "integer",
+            "help": "Number of messages which requires an action",
+            "string": "Number of Actions"
+        },
+        "message_has_error": {
+            "type": "boolean",
+            "help": "If checked, some messages have a delivery error.",
+            "string": "Message Delivery error"
+        },
+        "message_has_error_counter": {
+            "type": "integer",
+            "help": "Number of messages with delivery error",
+            "string": "Number of errors"
+        },
+        "message_attachment_count": {
+            "type": "integer",
+            "string": "Attachment Count"
+        },
+        "message_main_attachment_id": {
+            "type": "many2one",
+            "string": "Main Attachment"
+        },
+        "website_message_ids": {
+            "type": "one2many",
+            "help": "Website communication history",
+            "string": "Website Messages"
+        },
+        "message_has_sms_error": {
+            "type": "boolean",
+            "help": "If checked, some messages have a delivery error.",
+            "string": "SMS Delivery error"
+        },
+        "name": {
+            "type": "char",
+            "string": "Type of Leave"
+        },
+        "student_id": {
+            "type": "many2one",
+            "string": "Student"
+        },
+        "roll_no": {
+            "type": "char",
+            "string": "Roll Number"
+        },
+        "class_id": {
+            "type": "many2one",
+            "string": "Class"
+        },
+        "college_id": {
+            "type": "many2one",
+            "string": "College Name"
+        },
+        "attachments": {
+            "type": "binary",
+            "string": "Attachment"
+        },
+        "state": {
+            "type": "selection",
+            "string": "Status"
+        },
+        "start_date": {
+            "type": "date",
+            "string": "Start Date"
+        },
+        "end_date": {
+            "type": "date",
+            "string": "End Date"
+        },
+        "teacher_id": {
+            "type": "many2one",
+            "string": "Approving Authority"
+        },
+        "days": {
+            "type": "integer",
+            "string": "Days"
+        },
+        "reason": {
+            "type": "text",
+            "string": "Reason for Leave"
+        },
+        "message_ids": {
+            "type": "one2many",
+            "string": "Messages"
+        },
+        "message_follower_ids": {
+            "type": "one2many",
+            "string": "Followers"
+        },
+        "company_id": {
+            "type": "many2one",
+            "string": "Company"
+        },
+        "resource_calendar_id": {
+            "type": "many2one",
+            "help": "Define the schedule of resource",
+            "string": "Working Hours"
+        },
+        "tz": {
+            "type": "selection",
+            "help": "This field is used in order to define in which timezone the resources will work.",
+            "string": "Timezone"
+        },
+        "id": {
+            "type": "integer",
+            "string": "ID"
+        },
+        "display_name": {
+            "type": "char",
+            "string": "Display Name"
+        },
+        "create_uid": {
+            "type": "many2one",
+            "string": "Created by"
+        },
+        "create_date": {
+            "type": "datetime",
+            "string": "Created on"
+        },
+        "write_uid": {
+            "type": "many2one",
+            "string": "Last Updated by"
+        },
+        "write_date": {
+            "type": "datetime",
+            "string": "Last Updated on"
+        },
+        "__last_update": {
+            "type": "datetime",
+            "string": "Last Modified on"
+        }
+    }
+}
