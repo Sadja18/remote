@@ -21,19 +21,19 @@ $url = getenv('PRIVATE');
 // $url = getenv('PRIVATEALT');
 
 $failNotPost = array(
-    'message' => 'Invalid Request'
+    'message' => 'Invalid Request',
 );
 
 $failNoData = array(
-    'message' => 'Please pass required parameters'
+    'message' => 'Please pass required parameters',
 );
 
 $failInvalidCredentials = array(
-    "message" => "Invalid Credentials"
+    "message" => "Invalid Credentials",
 );
 
 $failedLogin = array(
-    "message" => "Login Failure. This user does not have the required access rights."
+    "message" => "Login Failure. This user does not have the required access rights.",
 );
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post') {
@@ -52,7 +52,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
             $dbname = 'college';
         }
 
-
         if (isset($userName) && isset($userPassword)) {
             $common = ripcord::client($url . '/xmlrpc/2/common');
 
@@ -66,6 +65,25 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 $deptId = $entityBody['deptId'];
                 $collegeId = $entityBody['collegeId'];
 
+                $session = $models->execute_kw(
+                    $dbname,
+                    $uid,
+                    $userPassword,
+                    'academic.year',
+                    'search_read',
+                    array(
+                        array(
+                            array('current', '=', true),
+                        ),
+                    ),
+                    array('fields' => array('date_start', 'date_stop'),
+                    )
+                );
+                sleep(2);
+                $zero = $session[0];
+                $dateStart = $zero['date_start'];
+                $dateEnd = $zero['date_stop'];
+
                 $leaveCount = $models->execute_kw(
                     $dbname,
                     $uid,
@@ -74,12 +92,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     'search_count',
                     array(
                         array(
-                            array("college_id", "=", (int)$collegeId),
-                            array("dept_id", "=", (int)$deptId),
-                            array('state', '=', 'draft'),
-                        )
+                            array("college_id", "=", (int) $collegeId),
+                            array("dept_id", "=", (int) $deptId),
+                            array('state', '=', 'toapprove'),
+                            array('start_date', '>=', $dateStart),
+                            array('end_date', '<=', $dateEnd),
+                        ),
                     ),
-                    
+
                 );
 
                 $leaveApps = $models->execute_kw(
@@ -90,24 +110,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     'search_read',
                     array(
                         array(
-                            array("college_id", "=", (int)$collegeId),
-                            array("dept_id", "=", (int)$deptId),
-                            array('state', '=', 'draft'),
-                        )
+                            array("college_id", "=", (int) $collegeId),
+                            array("dept_id", "=", (int) $deptId),
+                            array('state', '=', 'toapprove'),
+                        ),
                     ),
                     array(
-                        'fields'=> array(
+                        'fields' => array(
                             "name", "leave_session", "staff_id", "reason",
                             "state", "dept_id", "college_id",
                             "start_date", "end_date", "days",
-                            "app_date"
-                        )
+                            "app_date",
+                        ),
                     ),
                 );
                 $response = array(
                     'no_of_records' => $leaveCount,
                     'data' => $leaveApps,
-                    'message' => 'Success'
+                    'message' => 'Success',
 
                 );
 
