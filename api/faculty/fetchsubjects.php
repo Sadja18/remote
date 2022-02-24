@@ -54,10 +54,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
     if (isset($userName) && isset($userPassword)) {
         $common = ripcord::client($url . '/xmlrpc/2/common');
 
+        sleep(3);
+
         // check if the credentials are valid
         $uid = $common->authenticate($dbname, $userName, $userPassword, array());
 
-        if (isset($uid) && $uid != false && $uid != 'false') {
+        if (isset($uid) && $uid != false && $uid != 'false' && !isset($uid['faultCode'])) {
 
             $models = ripcord::client("$url/xmlrpc/2/object");
 
@@ -66,6 +68,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
             $courseId = $entityBody['courseId'];
             $semId = $entityBody['semId'];
             $yearId=$entityBody['yearId'];
+
+            // echo json_decode(array(''))
 
             $recordCount = $models->execute_kw(
                 $dbname,
@@ -83,38 +87,56 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 ),
             );
 
-            $records = $models->execute_kw(
-                $dbname,
-                $uid,
-                $userPassword,
-                'subject.subject',
-                'search_read',
-                array(
+            if(!isset($recordCount['faultString'])){
+                $records = $models->execute_kw(
+                    $dbname,
+                    $uid,
+                    $userPassword,
+                    'subject.subject',
+                    'search_read',
                     array(
-                        array('college_id', '=', (int) $collegeId),
-                        // array("course_id", "=", (int)$courseId),
-                        // array('year_id', "=", (int)$yearId),
-                        // array("sem_id", "=", (int)$semId),
+                        array(
+                            array('college_id', '=', (int) $collegeId),
+                            // array("course_id", "=", (int)$courseId),
+                            // array('year_id', "=", (int)$yearId),
+                            // array("sem_id", "=", (int)$semId),
+                        )
+                    ),
+                    array(
+                        'fields' => array(
+                            'name', 'display_name', "code", 
+                            'course_id', 'department_id', 'year_id', 
+                            'sem_id','college_id'
+                        ),
+                    ),
+                );
+    
+    
+                $response = array(
+                    "message" => "success",
+                    'no_of_records' => $recordCount,
+                    "data" => $records
+                );
+    
+                echo json_encode($response);
+            }else{
+                echo json_encode(
+                    array(
+                        "message"=> "failed",
+                        "faultCode"=> $recordCount['faultCode'],
+                        "data"=> $recordCount['faultString'],
+                        
                     )
-                ),
-                array(
-                    'fields' => array('name', 'display_name', "code", 'course_id', 'department_id', 'year_id', 'sem_id','college_id', ),
-                ),
-            );
+                );
+            }
 
-
-            $response = array(
-                "message" => "success",
-                'no_of_records' => $recordCount,
-                "data" => $records
-            );
-
-            echo json_encode($response);
+            
 
             
         } else {
             // if the login credentials were incorrect,
-            // echo for now
+            // echo for now\
+            // $failInvalidCredentials['uid'] = $uid['faultString'];
             echo json_encode($failInvalidCredentials);
         }
     } else {
