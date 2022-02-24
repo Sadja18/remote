@@ -76,7 +76,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         array(
                             array("college_id", "=", (int)$collegeId),
                             array("dept_id", "=", (int)$deptId),
-
+                            array('state', '=', 'draft'),
                         )
                     ),
                     
@@ -92,6 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         array(
                             array("college_id", "=", (int)$collegeId),
                             array("dept_id", "=", (int)$deptId),
+                            array('state', '=', 'draft'),
                         )
                     ),
                     array(

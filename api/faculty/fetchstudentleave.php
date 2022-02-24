@@ -76,6 +76,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         array(
                             array("college_id", "=", (int)$collegeId),
                             array("teacher_id", '=', (int)$teacherId),
+                            array('state', '=', 'toapprove'),
                         )
                     ),
                     
@@ -91,6 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         array(
                             array("college_id", "=", (int)$collegeId),
                             array("teacher_id", '=', (int)$teacherId),
+                            array('state', '=', 'toapprove'),
                         )
                     ),
                     array(
