@@ -62,73 +62,45 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
 
                 $models = ripcord::client("$url/xmlrpc/2/object");
 
-                $deptId = $entityBody['deptId'];
-                $collegeId = $entityBody['collegeId'];
+                $teacherId = $entityBody['teacherId'];
+                $leaveTypeId= $entityBody['leaveTypeId'];
+                $leaveSession = $entityBody['leaveSession'];
+                $days = $leaveSession;
+                $applied = $entityBody['appDate'];
+                $start = $entityBody['fromDate'];
+                $to = $entityBody['toDate'];
+                $state = $entityBody['status'];
+                $userId = $entityBody['userId'];
+                sleep(1);
 
-                $session = $models->execute_kw(
+                $create = $models->execute_kw(
                     $dbname,
                     $uid,
                     $userPassword,
-                    'academic.year',
-                    'search_read',
+                    "teacher.leave.request",
+                    "create",
                     array(
                         array(
-                            array('current', '=', true),
-                        ),
-                    ),
-                    array('fields' => array('date_start', 'date_stop'),
+                            array('staff_id', '=', (int)$teacherId),
+                            array('start_date', '=', $start),
+                            array('end_date', '=', $end),
+                            array('user_id', '=',(int) $userId),
+                            array('name', '=',(int) $leaveTypeId),
+                            array('leave_session', '=', $leaveSession),
+                            array('app_date', '=', $applied),
+                            array('days', '=', (float)$days),
+                            array('reason', '=', $reason),
+                            array('state', '=', $state),
+                            // array('start_date', '=', $start),
+                        )
                     )
-                );
-                sleep(2);
-                $zero = $session[0];
-                $dateStart = $zero['date_start'];
-                $dateEnd = $zero['date_stop'];
-
-                $leaveCount = $models->execute_kw(
-                    $dbname,
-                    $uid,
-                    $userPassword,
-                    'teacher.leave.request',
-                    'search_count',
-                    array(
-                        array(
-                            array("college_id", "=", (int) $collegeId),
-                            array("dept_id", "=", (int) $deptId),
-                            array('state', '!=', 'draft'),
-                            array('start_date', '>=', $dateStart),
-                            array('end_date', '<=', $dateEnd),
-                        ),
-                    ),
 
                 );
 
-                $leaveApps = $models->execute_kw(
-                    $dbname,
-                    $uid,
-                    $userPassword,
-                    'teacher.leave.request',
-                    'search_read',
-                    array(
-                        array(
-                            array("college_id", "=", (int) $collegeId),
-                            array("dept_id", "=", (int) $deptId),
-                            array('state', '!=', 'draft'),
-                            array('start_date', '>=', $dateStart),
-                            array('end_date', '<=', $dateEnd),
-                        ),
-                    ),
-                    array(
-                        'fields' => array(
-                            "name", "leave_session", "staff_id", "reason",
-                            "state", "dept_id", "college_id",
-                            "start_date", "end_date", "days",
-                            "app_date",
-                        ),
-                    ),
-                );
+                
                 $response = array(
-                    'no_of_records' => $leaveCount,
-                    'data' => $leaveApps,
+                    'no_of_records' => $create,
+                    'data' => ($entityBody),
                     'message' => 'Success',
 
                 );

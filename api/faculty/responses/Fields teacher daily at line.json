@@ -1,0 +1,72 @@
+{
+    "f": "string",
+    "g": {
+        "table": "teacher.daily.attendance.line"
+    },
+    "res": {
+        "teachers_ids": {
+            "type": "many2one",
+            "string": "Teacher"
+        },
+        "teacher_id": {
+            "type": "many2one",
+            "string": "Name"
+        },
+        "is_present": {
+            "type": "boolean",
+            "help": "Check if student is present",
+            "string": "Present"
+        },
+        "is_absent": {
+            "type": "boolean",
+            "help": "Check if student is absent",
+            "string": "Absent"
+        },
+        "present_absentcheck": {
+            "type": "boolean",
+            "string": "Present\/Absent Boolean"
+        },
+        "teacher_code": {
+            "type": "char",
+            "help": "code for the faculty",
+            "string": "Code"
+        },
+        "date": {
+            "type": "date",
+            "help": "Current Date",
+            "string": "Date"
+        },
+        "college_id": {
+            "type": "many2one",
+            "string": "College"
+        },
+        "id": {
+            "type": "integer",
+            "string": "ID"
+        },
+        "display_name": {
+            "type": "char",
+            "string": "Display Name"
+        },
+        "create_uid": {
+            "type": "many2one",
+            "string": "Created by"
+        },
+        "create_date": {
+            "type": "datetime",
+            "string": "Created on"
+        },
+        "write_uid": {
+            "type": "many2one",
+            "string": "Last Updated by"
+        },
+        "write_date": {
+            "type": "datetime",
+            "string": "Last Updated on"
+        },
+        "__last_update": {
+            "type": "datetime",
+            "string": "Last Modified on"
+        }
+    }
+}
