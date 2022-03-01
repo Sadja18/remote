@@ -21,15 +21,15 @@ $url = getenv('PRIVATE');
 // $url = getenv('PRIVATEALT');
 
 $failNotPost = array(
-    'message' => 'Invalid Request'
+    'message' => 'Invalid Request',
 );
 
 $failNoData = array(
-    'message' => 'Please pass required parameters'
+    'message' => 'Please pass required parameters',
 );
 
 $failInvalidCredentials = array(
-    "message" => "Invalid Credentials"
+    "message" => "Invalid Credentials",
 );
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post') {
@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
             // if the login credentials were correct,
             $models = ripcord::client("$url/xmlrpc/2/object");
 
-            $users = $models-> execute_kw(
+            $users = $models->execute_kw(
                 $dbname,
                 $uid,
                 $userPassword,
@@ -65,11 +65,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 'search_read',
                 array(
                     array(
-                        array('user_id', '=', $uid)
-                    )
+                        array('user_id', '=', $uid),
+                    ),
                 ),
                 array(
-                    'fields'=> array(
+                    'fields' => array(
+                        'student_code',
+                        'student_name',
+                        'middle',
+                        'last',
                         'pid',
                         'roll_no',
                         "enrol_no",
@@ -78,14 +82,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         'dept_id',
                         'colyear',
                         'semester',
-                        "college_id"
-                    )
+                        "college_id",
+                    ),
                 )
             );
+            sleep(2);
 
             $user = $users[0];
 
             $course_id = $user['course_id'][0];
+            $college_id = $user['college_id'][0];
 
             $isArtScience = $models->execute_kw(
                 $dbname,
@@ -95,28 +101,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 'search_read',
                 array(
                     array(
-                        array('id', '=', (int)$course_id),
-                    )
+                        array('id', '=', (int) $course_id),
+                        array('college_id', '=', $college_id),
+                    ),
                 ),
-                array("fields"=> array("name", "no_dept", "department_id"))
+                array("fields" => array("no_dept"))
             );
-            if($isArtScience[0]["no_dept"]){
-                // if art science is true
-                $data = array(
-                    "user"=> $user,
-                    "course"=> $isArtScience[0]
-                );
-            }
 
+            $user['no_dept'] = $isArtScience[0]['no_dept'];
             echo json_encode(
                 array(
-                    'message'=> 'success',
-                    'data'=> $data,
+                    "message" => "success",
+                    "data" => $user,
                 )
             );
-        }else{
-
         }
     }
-    
+
 }

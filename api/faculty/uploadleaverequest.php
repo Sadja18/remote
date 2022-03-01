@@ -91,7 +91,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                             array('days', '=', (float)$days),
                             array('reason', '=', $reason),
                             array('state', '=', $state),
-                            // array('start_date', '=', $start),
                         )
                     )
 

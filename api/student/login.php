@@ -21,15 +21,15 @@ $url = getenv('PRIVATE');
 // $url = getenv('PRIVATEALT');
 
 $failNotPost = array(
-    'message' => 'Invalid Request'
+    'message' => 'Invalid Request',
 );
 
 $failNoData = array(
-    'message' => 'Please pass required parameters'
+    'message' => 'Please pass required parameters',
 );
 
 $failInvalidCredentials = array(
-    "message" => "Invalid Credentials"
+    "message" => "Invalid Credentials",
 );
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post') {
@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
             // if the login credentials were correct,
             $models = ripcord::client("$url/xmlrpc/2/object");
 
-            $users = $models-> execute_kw(
+            $users = $models->execute_kw(
                 $dbname,
                 $uid,
                 $userPassword,
@@ -65,31 +65,34 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 'search_read',
                 array(
                     array(
-                        array('user_id', '=', $uid)
-                    )
+                        array('user_id', '=', $uid),
+                    ),
                 ),
                 array(
-                    'fields'=> array(
-                        'pid',
-                        'student_id',
+                    'fields' => array(
                         'student_code',
                         'student_name',
-                        'last',
-                        'user_id'
-                    )
+                        'middle',
+                        'last'
+                    ),
                 )
             );
-            array_push($users, array(
-                'loginStatus'=> '1',
-                'userName'=> $userName,
-                'userPassword'=> $userPassword,
-                'dbname'=> $dbname
-            ));
 
             echo json_encode(
                 array(
                     "message" => "success",
-                    "data" => $users
+                    "data" => array(
+                        'loginStatus' => '1',
+                        'userId' => $uid,
+                        'userName' => $userName,
+                        'userPassword' => $userPassword,
+                        'dbname' => $dbname,
+                        'studentId' => $users[0]['id'],
+                        'studentCode' => $users[0]['student_code'],
+                        'fName'=> $users[0]['student_name'],
+                        'mName'=> $users[0]['middle'],
+                        'lName'=> $users[0]['last'], 
+                    ),
                 )
             );
         } else {
@@ -105,4 +108,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
 
     echo json_encode($failNotPost);
 }
-?>
