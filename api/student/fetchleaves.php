@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 $dbname,
                 $uid,
                 $userPassword,
-                'daily.attendance.line',
+                'studentleave.request',
                 'search_read',
                 array(
                     array(
@@ -73,11 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     )
                 ),
                 array(
-                    'fields'=> array(
-                        'stud_id', 'roll_no' ,'class_id', 
-                        'is_present', 'is_absent', 'year', 
-                        'date', 'college_id'
-                        )
+                    'fields'=> array('stud_id' ,'class_id', 'is_present', 'is_absent', 'year', 'date', 'college_id')
                 )
             );
             echo json_encode(
