@@ -53,35 +53,78 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
         // check if the credentials are valid
         $uid = $common->authenticate($dbname, $userName, $userPassword, array());
 
-        if (isset($uid) && $uid != false && $uid != 'false') {
+        if (isset($uid) && $uid != false && $uid != 'false' && !isset($uid['faultString'])) {
             // if the login credentials were correct,
             $models = ripcord::client("$url/xmlrpc/2/object");
 
-            $studentId  = $entityBody['studentId'];
-            $yearId = $entityBody['academicYearId'];
-
-            $data = $models->execute_kw(
+            $sessionData = $models->execute_kw(
                 $dbname,
                 $uid,
                 $userPassword,
-                'studentleave.request',
+                'academic.year',
                 'search_read',
                 array(
                     array(
-                        array('stud_id', '=', (int)$studentId),
-                        array('year', '=', (int)$yearId),
-                    )
+                        array('current', '=', true),
+                    ),
                 ),
-                array(
-                    'fields'=> array('stud_id' ,'class_id', 'is_present', 'is_absent', 'year', 'date', 'college_id')
-                )
+                array('fields' => array('date_start', 'date_stop'))
             );
-            echo json_encode(
-                array(
-                    "message" => "success",
-                    "data" => $data,
-                )
-            );
+            sleep(1);
+            if (!isset($sessionData['faultString'])) {
+                $start = $sessionData[0]['date_start'];
+                $end = $sessionData[0]['date_stop'];
+
+                $count = $models->execute_kw(
+                    $dbname,
+                    $uid,
+                    $userPassword,
+                    'studentleave.request',
+                    'search_count',
+                    array(
+                        array(
+                            array('start_date', '>=', $start),
+                            array('start_date', '<=', $end),
+                            array('end_date', '>=', $start),
+                            array('end_date', '<=', $end),
+                        ),
+                    )
+                );
+                if (!isset($count['faultString'])) {
+                    $data = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        'studentleave.request',
+                        'search_read',
+                        array(
+                            array(
+                                array('start_date', '>=', $start),
+                                array('start_date', '<=', $end),
+                                array('end_date', '>=', $start),
+                                array('end_date', '<=', $end),
+                            ),
+                        ),
+                        array(
+                            'fields' => array('name', 'student_id', 'roll_no',
+                                'start_date', 'end_date', 'days', 'reason', 'state',
+                                'class_id', 'college_id'),
+                        )
+                    );
+                    echo json_encode(
+                        array(
+                            "message" => "success",
+                            "count" => $count,
+                            "data" => $data,
+                        )
+                    );
+                } else {
+                    echo json_encode($count);
+                }
+            } else {
+                echo json_encode($sessionData);
+
+            }
         }
     }
 

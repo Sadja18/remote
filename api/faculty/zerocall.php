@@ -62,16 +62,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
 
                 $models = ripcord::client("$url/xmlrpc/2/object");
 
-                $teacherId = $entityBody['teacherId'];
-                $leaveTypeId= $entityBody['leaveTypeId'];
-                $leaveSession = $entityBody['leaveSession'];
-                $days = $leaveSession;
-                $applied = $entityBody['appDate'];
-                $start = $entityBody['fromDate'];
-                $to = $entityBody['toDate'];
-                $state = $entityBody['status'];
-                $deptId = $entityBody['deptId'];
-
                 // user Id of HoD login
                 $userId = $entityBody['userId'];
                 $principalId = $entityBody['principalId'];
@@ -81,33 +71,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     $dbname,
                     $uid,
                     $userPassword,
-                    "teacher.leave.request",
-                    "create",
+                    "college.dept",
+                    "search_read",
                     array(
-                        array(
-                            array('staff_id', '=', (int)$teacherId),
-                            array('start_date', '=', $start),
-                            array('end_date', '=', $end),
-                            array('user_id', '=',(int) $userId),
-                            array('princ_id', '=', (int) $principalId),
-                            array('name', '=',(int) $leaveTypeId),
-                            array('leave_session', '=', $leaveSession),
-                            array('app_date', '=', $applied),
-                            array('days', '=', (float)$days),
-                            array('reason', '=', $reason),
-                            array('state', '=', $state),
-                            array('dept_id', '=',(int) $deptId),
-                        )
-                    )
-
+                        array(),
+                    ),
+                    array()
                 );
 
-                
                 $response = array(
                     'no_of_records' => $create,
                     'data' => ($entityBody),
                     'message' => 'Success',
-
                 );
 
                 echo json_encode($response);

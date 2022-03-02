@@ -97,9 +97,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     array(
                         array(
                             array('college_id', '=', (int) $collegeId),
-                            // array("course_id", "=", (int)$courseId),
-                            // array('year_id', "=", (int)$yearId),
-                            // array("sem_id", "=", (int)$semId),
+                            array("course_id", "=", (int)$courseId),
+                            array('year_id', "=", (int)$yearId),
+                            array("sem_id", "=", (int)$semId),
                         )
                     ),
                     array(
