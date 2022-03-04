@@ -21,19 +21,19 @@ $url = getenv('PRIVATE');
 // $url = getenv('PRIVATEALT');
 
 $failNotPost = array(
-    'message' => 'Invalid Request'
+    'message' => 'Invalid Request',
 );
 
 $failNoData = array(
-    'message' => 'Please pass required parameters'
+    'message' => 'Please pass required parameters',
 );
 
 $failInvalidCredentials = array(
-    "message" => "Invalid Credentials"
+    "message" => "Invalid Credentials",
 );
 
 $failedLogin = array(
-    "message" => "Login Failure. This user does not have the required access rights."
+    "message" => "Login Failure. This user does not have the required access rights.",
 );
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post') {
@@ -61,40 +61,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
 
             $models = ripcord::client("$url/xmlrpc/2/object");
 
-            $results = $models->execute_kw(
-                $dbname,
-                $uid,
-                $userPassword,
-                'college.teacher',
-                'search_read',
-                array(
-                    array(
-                        array('user_id', '!=', False),
-                    )
-                ),
-                array('fields' => array(
-                    'name', 'display_name', 'class_id', 'course_id',
-                    'college_id', 'is_parent', 'is_hod', 'is_mentor',
-                    'teacher_type', 'dept_id'
-                ))
-            );
-
-            $college = $results[0]['college_id'];
-
-            $collDeptLine = $models->execute_kw(
-                $dbname,
-                $uid,
-                $userPassword,
-                'college.department.line',
-                'search_read',
-                array(
-                    array(
-                        array('email_id', '=', $userName)
-                    )
-                ),
-                array('fields' => array('email_id', 'hod', 'department_id')),
-            );
-
             $collAdmin = $models->execute_kw(
                 $dbname,
                 $uid,
@@ -103,93 +69,28 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 'search_read',
                 array(
                     array(
-                        array('email', '=', $userName)
-                    )
+                        array('email', '=', $userName),
+                    ),
                 ),
-                array('fields' => array('email'))
+                array('fields' => array('email', 'head_name', 'display_name', 'com_name', 'code'))
             );
-            if (isset($results)) {
-                if (isset($results['faultString'])) {
-                    echo json_encode(array(
-                        'message' => 'failed',
-                        'data' => []
-                    ));
-                } else {
-                    if (isset($collDeptLine[0]) && !isset($collAdmin[0])) {
-                        // means that the teacher is only a dept HoD
 
-                        echo json_encode(array(
-                            'message' => 'Success',
-                            'data' => array(
-                                'userId' => $uid,
-                                'userName' => $userName,
-                                'userPassword' => $userPassword,
-                                'dbname' => $dbname,
-                                'isHoD' => 'yes',
-                                'isPrincipal' => 'no',
-                                'collegeId'=> $college[0],
-                                'collegeName'=> $college[1],
-                                'deptId' => $collDeptLine[0]['department_id'][0],
-                                'deptName' => $collDeptLine[0]['department_id'][1]
-                            )
-                        ));
-                    }
-                    if (isset($collAdmin[0]) && !isset($collDeptLine[0])) {
-                        // means that the teacher is only a college principal
-                        echo json_encode(array(
-                            'message' => 'Success',
-                            'data' => array(
-                                'userId' => $uid,
-                                'userName' => $userName,
-                                'userPassword' => $userPassword,
-                                'dbname' => $dbname,
-                                'isHoD' => 'no',
-                                'isPrincipal' => 'yes',
-                                'collegeId'=> $college[0],
-                                'collegeName'=> $college[1],
-                            )
-                        ));
-                    }
-                    if (isset($collAdmin[0]) && isset($collDeptLine[0])) {
-                        // means that the teacher is both a principal and a dept HoD
-                        echo json_encode(array(
-                            'message' => 'Success',
-                            'data' => array(
-                                'userId' => $uid,
-                                'userName' => $userName,
-                                'userPassword' => $userPassword,
-                                'dbname' => $dbname,
-                                'isHoD' => 'yes',
-                                'isPrincipal' => 'yes',
-                                'deptId' => $collDeptLine[0]['department_id'][0],
-                                'deptName' => $collDeptLine[0]['department_id'][1],
-                                'collegeId'=> $college[0],
-                                'collegeName'=> $college[1],
-                            )
-                        ));
-                    }
-                    if (!isset($collAdmin[0]) && !isset($collDeptLine[0])) {
-                        // means the faculty is neither a dept HoD nor a principal
-                        echo json_encode(array(
-                            'message' => 'Success',
-                            'data' => array(
-                                'userId' => $uid,
-                                'userName' => $userName,
-                                'userPassword' => $userPassword,
-                                'dbname' => $dbname,
-                                'isHoD' => 'no',
-                                'isPrincipal' => 'no',
-                                'deptId' => $results[0]['dept_id'][0],
-                                'deptName' => $results[0]['dept_id'][1],
-                                'collegeId'=> $college[0],
-                                'collegeName'=> $college[1],
-                            )
-                        ));
-                    }
-                }
+            if (!isset($collAdmin['faultString'])) {
+                $collAdmin[0]['userId'] = $uid;
+                $collAdmin[0]['userName'] = $userName;
+                $collAdmin[0]['userPassword'] = $userPassword;
+                $collAdmin[0]['dbname'] = $dbname;
+
+                echo json_encode(
+                    array(
+                        "messsage" => "success",
+                        "data" => $collAdmin,
+                    )
+                );
             } else {
-                echo json_encode($failedLogin);
+                echo json_encode($collAdmin);
             }
+
         } else {
             // if the login credentials were incorrect,
             // echo for now
