@@ -21,19 +21,19 @@ $url = getenv('PRIVATE');
 // $url = getenv('PRIVATEALT');
 
 $failNotPost = array(
-    'message' => 'Invalid Request'
+    'message' => 'Invalid Request',
 );
 
 $failNoData = array(
-    'message' => 'Please pass required parameters'
+    'message' => 'Please pass required parameters',
 );
 
 $failInvalidCredentials = array(
-    "message" => "Invalid Credentials"
+    "message" => "Invalid Credentials",
 );
 
 $failedLogin = array(
-    "message" => "Login Failure. This user does not have the required access rights."
+    "message" => "Login Failure. This user does not have the required access rights.",
 );
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post') {
@@ -51,7 +51,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
         } else {
             $dbname = 'college';
         }
-
 
         if (isset($userName) && isset($userPassword)) {
             $common = ripcord::client($url . '/xmlrpc/2/common');
@@ -74,8 +73,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     'search_read',
                     array(
                         array(
-                            array("com_name", '!=', False),
-                        )
+                            array("com_name", '!=', false),
+                        ),
                     ),
                     array(
                         'fields' => array('com_name', "display_name", 'code', 'head_name'),
@@ -90,12 +89,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     'search_read',
                     array(
                         array(
-                            array('current', '=', True),
-                        )
+                            array('current', '=', true),
+                        ),
                     ),
                     array('fields' => array('name', 'code', 'date_start', 'date_stop', 'oddsem_startdate', 'oddsem_enddate', 'evensem_startdate', 'evensem_enddate'))
                 );
-                
+
                 $yearsCount = $models->execute_kw(
                     $dbname,
                     $uid,
@@ -104,8 +103,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     'search_count',
                     array(
                         array(
-                            array("name", '!=', False),
-                        )
+                            array("name", '!=', false),
+                        ),
                     ),
                 );
 
@@ -117,8 +116,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     'search_read',
                     array(
                         array(
-                            array("name", '!=', False),
-                        )
+                            array("name", '!=', false),
+                        ),
                     ),
                     array(
                         'fields' => array('name', 'code'),
@@ -132,9 +131,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     'search_count',
                     array(
                         array(
-                            array('year_id', '!=', False),
-                            array('name', '!=', False)
-                        )
+                            array('year_id', '!=', false),
+                            array('name', '!=', false),
+                        ),
                     ),
                 );
 
@@ -146,11 +145,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     'search_read',
                     array(
                         array(
-                            array('year_id', '!=', False),
-                            array('name', '!=', False)
-                        )
+                            array('year_id', '!=', false),
+                            array('name', '!=', false),
+                        ),
                     ),
-                    array('fields' => array('name', 'code','year_id'))
+                    array('fields' => array('name', 'code', 'year_id'))
                 );
 
                 $coursesArts = $models->execute_kw(
@@ -161,8 +160,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     'search_read',
                     array(
                         array(
-                            array('no_dept', '=', True),
-                            array('college_id', '=', (int)$collegeId),
+                            array('no_dept', '=', true),
+                            array('college_id', '=', (int) $collegeId),
                         ),
                     ),
                     array('fields' => array('name', 'college_id', 'duration', 'no_dept'))
@@ -175,12 +174,44 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     'search_count',
                     array(
                         array(
-                            array('no_dept', '=', True),
-                            array('college_id', '=', (int)$collegeId),
+                            array('no_dept', '=', true),
+                            array('college_id', '=', (int) $collegeId),
                         ),
                     ),
 
                 );
+
+                // $deptCount = $models->execute_kw(
+                //     $dbname,
+                //     $uid,
+                //     $userPassword .
+                //     'college.department.line',
+                //     'search_count',
+                //     array(
+                //         array(
+                //             array('college_id', '=', $collegeId),
+                //         ),
+                //     ),
+                // );
+
+                // $deptData = $models->execute_kw(
+                //     $dbname,
+                //     $uid,
+                //     $userPassword .
+                //     'college.department.line',
+                //     'search_read',
+                //     array(
+                //         array(
+                //             array('college_id', '=', $collegeId),
+                //         ),
+                //     ),
+                //     array(
+                //         'fields'=> array(
+                //             'name', 'code', 'college_id',
+                //             'hod', 'display_name',
+                //         )
+                //     )
+                // );
 
                 $coursesAlt = $models->execute_kw(
                     $dbname,
@@ -190,11 +221,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     'search_read',
                     array(
                         array(
-                            array('no_dept', '=', False),
-                            array('college_id', '=', (int)$collegeId),
+                            array('no_dept', '=', false),
+                            array('college_id', '=', (int) $collegeId),
                         ),
                     ),
-                    array('fields' => array('name', 'code', 'college_id', 'graduate', 'duration', 'department_id',  'no_dept'))
+                    array('fields' => array('name', 'code', 'college_id', 'graduate', 'duration', 'department_id', 'no_dept'))
                 );
 
                 $coursesAlt_no_records = $models->execute_kw(
@@ -205,8 +236,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     'search_count',
                     array(
                         array(
-                            array('no_dept', '=', False),
-                            array('college_id', '=', (int)$collegeId),
+                            array('no_dept', '=', false),
+                            array('college_id', '=', (int) $collegeId),
                         ),
                     ),
 
@@ -216,18 +247,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     'no_of_records' => array(
                         'no_of_artsScience' => $coursesArts_no_records,
                         'no_of_others' => $coursesAlt_no_records,
-                        'yearCount'=> $yearsCount,
-                        'semCount'=> $semestersCount,
+                        'yearCount' => $yearsCount,
+                        'semCount' => $semestersCount,
+                        // 'deptCount'=> $deptCount,
                     ),
                     'data' => array(
                         'coursesArts' => $coursesArts,
                         'coursesAlt' => $coursesAlt,
-                        'years'=> $years,
-                        'semesters'=> $semesters,
-                        'session'=> $session,
-                        'college'=> $college
+                        'years' => $years,
+                        'semesters' => $semesters,
+                        'session' => $session,
+                        'college' => $college,
+                        // 'dept'=> $deptData
                     ),
-                    'message' => 'Success'
+                    'message' => 'Success',
 
                 );
 

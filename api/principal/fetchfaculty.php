@@ -21,19 +21,19 @@ $url = getenv('PRIVATE');
 // $url = getenv('PRIVATEALT');
 
 $failNotPost = array(
-    'message' => 'Invalid Request'
+    'message' => 'Invalid Request',
 );
 
 $failNoData = array(
-    'message' => 'Please pass required parameters'
+    'message' => 'Please pass required parameters',
 );
 
 $failInvalidCredentials = array(
-    "message" => "Invalid Credentials"
+    "message" => "Invalid Credentials",
 );
 
 $failedLogin = array(
-    "message" => "Login Failure. This user does not have the required access rights."
+    "message" => "Login Failure. This user does not have the required access rights.",
 );
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post') {
@@ -73,14 +73,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 array(
                     array(
                         // array('email_id', '=', $userName),
-                        array('department_id', '=', (int)$deptId),
-                        array('college_id', '=', (int)$collegeId)
-                    )
+                        array('department_id', '=', (int) $deptId),
+                        array('college_id', '=', (int) $collegeId),
+                    ),
                 ),
                 array('fields' => array('email_id', 'hod', 'department_id', 'college_id')),
             );
 
-            if(isset($collDeptLine) && !empty($collDeptLine)){
+            if (isset($collDeptLine) && !empty($collDeptLine)) {
                 $hodId = $collDeptLine[0]['hod'][0];
                 $hodName = $collDeptLine[0]['hod'][1];
                 $recordCount = $models->execute_kw(
@@ -91,14 +91,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     'search_count',
                     array(
                         array(
-                            array("user_id", '!=', False),
-                            array('active', '=', True),
-                            array('dept_id', '=', (int)$deptId),
-                            array('college_id', '=', (int)$collegeId)
-                        )
+                            array("user_id", '!=', false),
+                            array('active', '=', true),
+                            array('dept_id', '=', (int) $deptId),
+                            array('college_id', '=', (int) $collegeId),
+                        ),
                     ),
                 );
-    
+
                 $records = $models->execute_kw(
                     $dbname,
                     $uid,
@@ -107,24 +107,28 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     'search_read',
                     array(
                         array(
-                            array("user_id", '!=', False),
-                            array('active', '=', True),
-                            array('dept_id', '=', (int)$deptId),
-                            array('college_id', '=',(int) $collegeId)
-                        )
+                            array("user_id", '!=', false),
+                            array('active', '=', true),
+                            array('dept_id', '=', (int) $deptId),
+                            array('college_id', '=', (int) $collegeId),
+                        ),
                     ),
                     array(
-                        'fields' => array('user_id', 'employee_id','teacher_code', 'dept_id', 'is_hod', 'college_id'),
+                        'fields' => array(
+                            'user_id', 'employee_id', 'teacher_code',
+                            'phone_numbers', 'ice_phone',
+                            'dept_id', 'is_hod', 'college_id',
+                        ),
                     ),
-                );    
+                );
                 $response = array(
                     "message" => "success",
                     'no_of_records' => $recordCount,
                     "data" => $records,
                 );
-    
+
                 echo json_encode($response);
-            }else{
+            } else {
                 $recordCount = $models->execute_kw(
                     $dbname,
                     $uid,
@@ -133,13 +137,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     'search_count',
                     array(
                         array(
-                            array("user_id", '!=', False),
-                            array('active', '=', True),
-                            array('college_id', '=', (int)$collegeId)
-                        )
+                            array("user_id", '!=', false),
+                            array('active', '=', true),
+                            array('college_id', '=', (int) $collegeId),
+                        ),
                     ),
                 );
-    
+
                 $records = $models->execute_kw(
                     $dbname,
                     $uid,
@@ -148,22 +152,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     'search_read',
                     array(
                         array(
-                            array("user_id", '!=', False),
-                            array('active', '=', True),
-                            array('college_id', '=',(int) $collegeId)
-                        )
+                            array("user_id", '!=', false),
+                            array('active', '=', true),
+                            array('college_id', '=', (int) $collegeId),
+                        ),
                     ),
                     array(
-                        'fields' => array('user_id', 'employee_id', 'dept_id', 'is_hod', 'college_id'),
+                        'fields' => array(
+                            'user_id', 'employee_id', 'teacher_code',
+                            'phone_numbers', 'ice_phone',
+                            'dept_id', 'is_hod', 'college_id',
+                        ),
                     ),
-                );    
+                );
                 $response = array(
                     "message" => "success",
                     'no_of_records' => $recordCount,
-                    "data" => $records
+                    "data" => $records,
                 );
                 echo json_encode($response);
-            }            
+            }
         } else {
             // if the login credentials were incorrect,
             // echo for now
