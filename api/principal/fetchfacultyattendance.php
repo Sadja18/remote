@@ -87,12 +87,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     $dbname,
                     $uid,
                     $userPassword,
-                    'teacher.daily.attendance',
+                    'teacher.daily.attendance.line',
                     'search_count',
                     array(
                         array(
                             array("college_id", "=", (int) $collegeId),
-                            array('state', '=', 'validate'),
                             array('date', '>=', $dateStart),
                             array('date', '<=', $dateEnd),
                         ),
@@ -103,21 +102,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     $dbname,
                     $uid,
                     $userPassword,
-                    'teacher.daily.attendance',
+                    'teacher.daily.attendance.line',
                     'search_read',
                     array(
                         array(
                             array("college_id", "=", (int) $collegeId),
-                            array('state', '=', 'validate'),
                             array('date', '>=', $dateStart),
                             array('date', '<=', $dateEnd),
                         ),
                     ),
                     array(
                         'fields' => array(
-                            "display_name", "state", "date", "teacher_ids",
-                            "total_teacher", "total_presence", "total_absent",
-                            "dept_id", "college_id",
+                            "display_name", "date",
+                            "teacher_id", "teacher_code", "is_present", 
+                             "college_id",
                         ),
                     ),
                 );
