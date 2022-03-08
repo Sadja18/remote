@@ -65,22 +65,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 $deptId = $entityBody['deptId'];
                 $collegeId = $entityBody['collegeId'];
 
-                $college = $models->execute_kw(
-                    $dbname,
-                    $uid,
-                    $userPassword,
-                    'college.college',
-                    'search_read',
-                    array(
-                        array(
-                            array("com_name", '!=', false),
-                        ),
-                    ),
-                    array(
-                        'fields' => array('com_name', "display_name", 'code', 'head_name'),
-                    ),
-                );
-
                 $session = $models->execute_kw(
                     $dbname,
                     $uid,
@@ -257,7 +241,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         'years' => $years,
                         'semesters' => $semesters,
                         'session' => $session,
-                        'college' => $college,
                         // 'dept'=> $deptData
                     ),
                     'message' => 'Success',
