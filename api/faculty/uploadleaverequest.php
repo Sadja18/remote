@@ -63,18 +63,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 $models = ripcord::client("$url/xmlrpc/2/object");
 
                 $teacherId = $entityBody['teacherId'];
-                $leaveTypeId= $entityBody['leaveTypeId'];
+                $leaveTypeId = $entityBody['leaveTypeId'];
                 $leaveSession = $entityBody['leaveSession'];
-                $days = $leaveSession;
+                $days = $entityBody['days'];
                 $applied = $entityBody['appDate'];
                 $start = $entityBody['fromDate'];
-                $to = $entityBody['toDate'];
+                $end = $entityBody['toDate'];
                 $state = $entityBody['status'];
                 $deptId = $entityBody['deptId'];
+                $collegeId = $entityBody['collegeId'];
+                $reason = $entityBody['reason'];
+                $year = $entityBody['year'];
 
                 // user Id of HoD login
                 $userId = $entityBody['userId'];
                 $principalId = $entityBody['principalId'];
+               
                 sleep(1);
 
                 $create = $models->execute_kw(
@@ -85,27 +89,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     "create",
                     array(
                         array(
-                            array('staff_id', '=', (int)$teacherId),
-                            array('start_date', '=', $start),
-                            array('end_date', '=', $end),
-                            array('user_id', '=',(int) $userId),
-                            array('princ_id', '=', (int) $principalId),
-                            array('name', '=',(int) $leaveTypeId),
-                            array('leave_session', '=', $leaveSession),
-                            array('app_date', '=', $applied),
-                            array('days', '=', (float)$days),
-                            array('reason', '=', $reason),
-                            array('state', '=', $state),
-                            array('dept_id', '=',(int) $deptId),
-                        )
-                    )
-
+                            array(
+                                'staff_id' => (int) $teacherId,
+                                'start_date' => $start,
+                                'end_date' => $end,
+                                'user_id' => (int) $userId,
+                                'princ_id' => (int) $principalId,
+                                'name' => (int) $leaveTypeId,
+                                'leave_session' => $leaveSession,
+                                'app_date' => $applied,
+                                'days' => floatval($days),
+                                'reason' => $reason,
+                                'state' => $state,
+                                'dept_id' => (int) $deptId,
+                                'college_id' => (int) $collegeId,
+                            ),
+                        ),
+                    ),
                 );
 
-                
                 $response = array(
                     'no_of_records' => $create,
-                    'data' => ($entityBody),
                     'message' => 'Success',
 
                 );
