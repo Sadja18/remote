@@ -199,6 +199,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                                         ),
                                     )
                                 );
+
+                                echo json_encode(array($updated, $lalUpdate));
                             } else {
 
                                 if ($state == 'toapprovep') {
@@ -216,6 +218,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                                             ),
                                         ),
                                     );
+                                    echo json_encode(array($updated));
+
                                 }
                             }
                         }

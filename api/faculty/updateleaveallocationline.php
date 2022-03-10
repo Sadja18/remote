@@ -124,6 +124,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                             array(
                                 'pending_leaves' => 0.00,
                                 'available_leaves' => 8.00,
+                                'approved_leaves'=> 0.00,
                             ),
                         )
                     );
