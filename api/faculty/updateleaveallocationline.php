@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
 
                 sleep(1);
 
-                // get leave allocation of the teacher for these credentials;
+                // first find out the record of leave allocation line of this teacherID
 
                 $readLineLeaveAllocation = $models->execute_kw(
                     $dbname,
@@ -106,95 +106,66 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     ),
                 );
 
-                if (isset($readLineLeaveAllocation) &&
-                    $readLineLeaveAllocation != false &&
-                    !isset($readLineLeaveAllocation['faultString']) &&
-                    isset($readLineLeaveAllocation[0]['id']) &&
-                    isset($readLineLeaveAllocation[0]['pending_leaves']) &&
-                    isset($readLineLeaveAllocation[0]['available_leaves'])
-                ) {
-                    $lineId = $readLineLeaveAllocation[0]['id'];
+                $lineId = $readLineLeaveAllocation[0]['id'];
+                if (isset($lineId) && !isset($lineId['faultString'])) {
+                    // echo json_encode(array("lne" => $lineId));
 
-                    $pendingLeaves = (float) $readLineLeaveAllocation[0]['pending_leaves'];
-                    $availableLeaves = (float) $readLineLeaveAllocation[0]['available_leaves'];
-
-                    // echo json_encode(array(
-                    //     "p" => $pendingLeaves, 
-                    //     "a" => $availableLeaves, 
-                    //     "d" => $days,
-                    //     "f"=> $availableLeaves - (float) $days >= 0,
-                    //     'h'=> $availableLeaves - (float) $days
-                    // ));
-
-                    if ($availableLeaves - (float) $days >= 0) {
-                        // update leave record and then create a leave request;
-
-                        $newAvailable = $availableLeaves - (float) $days;
-                        $newPending = (float) $days;
-
-                        // echo json_encode(array("l"=> "b"));
-
-                       $p = $models->execute_kw(
-                            $dbname,
-                            $uid,
-                            $userPassword,
-                            'leave.allocation.line',
-                            'write',
+                    // $updateInitialisedMode =
+                    $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        'leave.allocation.line',
+                        'write',
+                        array(
                             array(
-                                array(
-                                    $lineId,
-                                ),
-                                array(
-                                    'pending_leaves' => $newPending,
-                                    'available_leaves' => $newAvailable,
-                                ),
-                            )
-                        );
-
-                        // echo json_encode(array(
-                        //     "h"=> $p
-                        // ));
-
-                        $create = $models->execute_kw(
-                            $dbname,
-                            $uid,
-                            $userPassword,
-                            "teacher.leave.request",
-                            "create",
+                                $lineId,
+                            ),
                             array(
-                                array(
-                                    array(
-                                        'staff_id' => (int) $teacherId,
-                                        'start_date' => $start,
-                                        'end_date' => $end,
-                                        'user_id' => (int) $userId,
-                                        'princ_id' => (int) $principalId,
-                                        'name' => (int) $leaveTypeId,
-                                        'leave_session' => $leaveSession,
-                                        'app_date' => $applied,
-                                        'days' => floatval($days),
-                                        'reason' => $reason,
-                                        'state' => $state,
-                                        'dept_id' => (int) $deptId,
-                                        'college_id' => (int) $collegeId,
-                                    ),
-                                ),
+                                'pending_leaves' => 0.00,
+                                'available_leaves' => 8.00,
                             ),
-                        );
-
-                        $response = array(
-                            'no_of_records' => [],
-                            'data' => array(
-                                'create' => $create,
-                                'newPending' => $newPending,
-                                'newAvailable' => $newAvailable,
+                        )
+                    );
+                    // echo json_encode(array("line" => $lineId));
+                    sleep(1);
+                    $readAgain = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        'leave.allocation.line',
+                        'search_read',
+                        array(
+                            array(
+                                array('faculty_name', '=', (int) $teacherId),
+                                array('college_id', '=', (int) $collegeId),
+                                array('year', '=', (int) $year),
+                                array('leave_type', '=', (int) $leaveTypeId),
                             ),
-                            'message' => 'Success',
-                        );
+                        ),
+                        array(
+                            'fields' => array(
+                                'faculty_name', 'no_leaves', 'pending_leaves',
+                                'available_leaves', 'dept_name', 'leave_type',
+                                'state', 'display_name',
+                            ),
+                        ),
+                    );
+                    $response = array(
+                        'no_of_records' => $readLineLeaveAllocation,
+                        'j' => $updateInitialisedMode,
+                        'c' => $readAgain,
+                        'message' => 'Success',
 
-                        echo json_encode($response);
+                    );
 
-                    }
+                    echo json_encode($response);
+
+                } else {
+                    echo json_encode(array(
+                        "red" => $readLineLeaveAllocation,
+                        'j' => $lineId,
+                    ));
                 }
 
             } else {
