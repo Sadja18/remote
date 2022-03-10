@@ -118,21 +118,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     $pendingLeaves = (float) $readLineLeaveAllocation[0]['pending_leaves'];
                     $availableLeaves = (float) $readLineLeaveAllocation[0]['available_leaves'];
 
-                    // echo json_encode(array(
-                    //     "p" => $pendingLeaves, 
-                    //     "a" => $availableLeaves, 
-                    //     "d" => $days,
-                    //     "f"=> $availableLeaves - (float) $days >= 0,
-                    //     'h'=> $availableLeaves - (float) $days
-                    // ));
-
                     if ($availableLeaves - (float) $days >= 0) {
                         // update leave record and then create a leave request;
 
                         $newAvailable = $availableLeaves - (float) $days;
                         $newPending = (float) $days;
 
-                        // echo json_encode(array("l"=> "b"));
 
                        $p = $models->execute_kw(
                             $dbname,
@@ -150,10 +141,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                                 ),
                             )
                         );
-
-                        // echo json_encode(array(
-                        //     "h"=> $p
-                        // ));
 
                         $create = $models->execute_kw(
                             $dbname,

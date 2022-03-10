@@ -109,14 +109,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                                     array('app_date', '=', $applied),
                                     array('days', '=', floatval($days)),
                                     array('reason', '=', $reason),
-                                    // array('state', '=', $state),
+                                    array('state', '=', 'toapprove'),
                                     array('dept_id', '=', (int) $deptId),
                                     array('college_id', '=', (int) $collegeId),
                                 ),
                             ),
                             array(
                                 'fields' => array(
-                                    'name',
+                                    'name', 'state',
                                 ),
                             )
                         );
@@ -124,6 +124,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         if (
                             isset($recordId) &&
                             !isset($recordId['faultString']) &&
+                            $recordId[0]['state'] == 'toapprove' &&
                             $recordId != false
 
                         ) {
@@ -159,6 +160,154 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                             // if state is reject
                             // update the record
                             // do change leave allocation line
+                            $recordId = $models->execute_kw(
+                                $dbname,
+                                $uid,
+                                $userPassword,
+                                'teacher.leave.request',
+                                'search_read',
+                                array(
+                                    array(
+                                        array('staff_id', '=', (int) $teacherId),
+                                        array('start_date', '=', $start),
+                                        array('end_date', '=', $end),
+                                        array('user_id', '=', (int) $userId),
+                                        array('princ_id', '=', (int) $principalId),
+                                        array('name', '=', (int) $leaveTypeId),
+                                        array('leave_session', '=', $leaveSession),
+                                        array('app_date', '=', $applied),
+                                        array('days', '=', floatval($days)),
+                                        array('reason', '=', $reason),
+                                        array('state', '=', 'toapprove'),
+                                        array('dept_id', '=', (int) $deptId),
+                                        array('college_id', '=', (int) $collegeId),
+                                    ),
+                                ),
+                                array(
+                                    'fields' => array(
+                                        'name', 'state',
+                                    ),
+                                )
+                            );
+
+                            if (
+                                isset($recordId) &&
+                                !isset($recordId['faultString']) &&
+                                $recordId[0]['state'] == 'toapprove' &&
+                                $recordId != false
+
+                            ) {
+
+                                $lineId = $recordId[0]['id'];
+
+                                if (isset($lineId) && $lineId != false) {
+
+                                    // update state
+
+                                    $models->execute_kw(
+                                        $dbname,
+                                        $uid,
+                                        $userPassword,
+                                        "teacher.leave.request",
+                                        'write',
+                                        array(
+                                            array($lineId),
+                                            array(
+                                                'state' => $state,
+                                            ),
+                                        )
+                                    );
+                                    sleep(1);
+
+                                    // update leave allocation line of this teacher
+
+                                    // get leave allocation of the teacher for these credentials;
+
+                                    $readLineLeaveAllocation = $models->execute_kw(
+                                        $dbname,
+                                        $uid,
+                                        $userPassword,
+                                        'leave.allocation.line',
+                                        'search_read',
+                                        array(
+                                            array(
+                                                array('faculty_name', '=', (int) $teacherId),
+                                                array('college_id', '=', (int) $collegeId),
+                                                array('year', '=', (int) $year),
+                                                array('leave_type', '=', (int) $leaveTypeId),
+                                            ),
+                                        ),
+                                        array(
+                                            'fields' => array(
+                                                'faculty_name', 'no_leaves', 'pending_leaves',
+                                                'available_leaves', 'dept_name', 'leave_type',
+                                                'state', 'display_name',
+                                            ),
+                                        ),
+                                    );
+                                    if (isset($readLineLeaveAllocation) &&
+                                        $readLineLeaveAllocation != false &&
+                                        !isset($readLineLeaveAllocation['faultString']) &&
+                                        isset($readLineLeaveAllocation[0]['id']) &&
+                                        isset($readLineLeaveAllocation[0]['pending_leaves']) &&
+                                        isset($readLineLeaveAllocation[0]['available_leaves']) &&
+                                        isset($readLineLeaveAllocation[0]['no_leaves'])
+                                    ) {
+                                        $lineid = $readLineLeaveAllocation[0]['id'];
+
+                                        if (isset($lineid) && $lineid != false) {
+                                            $pendingLeaves = (float) $readLineLeaveAllocation[0]['pending_leaves'];
+                                            $availableLeaves = (float) $readLineLeaveAllocation[0]['available_leaves'];
+                                            $allocatedLeaves = (float) $readLineLeaveAllocation[0]['no_leaves'];
+    
+                                            if (
+                                                $allocatedLeaves >= $availableLeaves + (float) $days &&
+                                                $pendingLeaves >= (float) $days
+                                            ) {
+                                                // update leave record and then create a leave request;
+    
+                                                $newAvailable = $availableLeaves + $days;
+                                                $newPending = $pendingLeaves - (float) $days;
+    
+                                                // echo json_encode(array("l"=> "b"));
+    
+                                                $p = $models->execute_kw(
+                                                    $dbname,
+                                                    $uid,
+                                                    $userPassword,
+                                                    'leave.allocation.line',
+                                                    'write',
+                                                    array(
+                                                        array(
+                                                            $lineid,
+                                                        ),
+                                                        array(
+                                                            'pending_leaves' => $newPending,
+                                                            'available_leaves' => $newAvailable,
+                                                        ),
+                                                    )
+                                                );
+    
+                                                $response = array(
+                                                    'no_of_records' => [],
+                                                    'data' => array(
+                                                        'create' => $create,
+                                                        'newPending' => $newPending,
+                                                        'newAvailable' => $newAvailable,
+                                                    ),
+                                                    'message' => 'Success',
+                                                );
+    
+                                                echo json_encode($response);
+    
+                                            }
+    
+                                        }
+                                    }
+
+                                }
+
+                            }
 
                         }
                     }
