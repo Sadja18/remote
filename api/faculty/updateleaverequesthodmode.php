@@ -78,43 +78,99 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 // user Id of HoD login
                 $userId = $entityBody['userId'];
                 $principalId = $entityBody['principalId'];
-               
+
                 sleep(1);
 
-                // $create = $models->execute_kw(
-                //     $dbname,
-                //     $uid,
-                //     $userPassword,
-                //     "teacher.leave.request",
-                //     "create",
-                //     array(
-                //         array(
-                //             array(
-                //                 'staff_id' => (int) $teacherId,
-                //                 'start_date' => $start,
-                //                 'end_date' => $end,
-                //                 'user_id' => (int) $userId,
-                //                 'princ_id' => (int) $principalId,
-                //                 'name' => (int) $leaveTypeId,
-                //                 'leave_session' => $leaveSession,
-                //                 'app_date' => $applied,
-                //                 'days' => floatval($days),
-                //                 'reason' => $reason,
-                //                 'state' => $state,
-                //                 'dept_id' => (int) $deptId,
-                //                 'college_id' => (int) $collegeId,
-                //             ),
-                //         ),
-                //     ),
+                // echo json_encode($entityBody);
+
+                if (isset($state)) {
+                    if ($state == 'toapprovep') {
+
+                        // if state is toapprovep
+                        // update the record
+                        // do not change leave allocation line
+
+                        // find the record with these details
+                        $recordId = $models->execute_kw(
+                            $dbname,
+                            $uid,
+                            $userPassword,
+                            'teacher.leave.request',
+                            'search_read',
+                            array(
+                                array(
+                                    array('staff_id', '=', (int) $teacherId),
+                                    array('start_date', '=', $start),
+                                    array('end_date', '=', $end),
+                                    array('user_id', '=', (int) $userId),
+                                    array('princ_id', '=', (int) $principalId),
+                                    array('name', '=', (int) $leaveTypeId),
+                                    array('leave_session', '=', $leaveSession),
+                                    array('app_date', '=', $applied),
+                                    array('days', '=', floatval($days)),
+                                    array('reason', '=', $reason),
+                                    // array('state', '=', $state),
+                                    array('dept_id', '=', (int) $deptId),
+                                    array('college_id', '=', (int) $collegeId),
+                                ),
+                            ),
+                            array(
+                                'fields' => array(
+                                    'name',
+                                ),
+                            )
+                        );
+
+                        if (
+                            isset($recordId) &&
+                            !isset($recordId['faultString']) &&
+                            $recordId != false
+
+                        ) {
+
+                            $lineId = $recordId[0]['id'];
+
+                            if (isset($lineId) && $lineId != false) {
+
+                                // update state
+
+                                $models->execute_kw(
+                                    $dbname,
+                                    $uid,
+                                    $userPassword,
+                                    "teacher.leave.request",
+                                    'write',
+                                    array(
+                                        array($lineId),
+                                        array(
+                                            'state' => $state,
+                                        ),
+                                    )
+                                );
+
+                                echo json_encode($recordId);
+
+                            }
+
+                        }
+
+                    } else {
+                        if ($state == "reject") {
+                            // if state is reject
+                            // update the record
+                            // do change leave allocation line
+
+                        }
+                    }
+                }
+
+                // $response = array(
+                //     'no_of_records' => $state,
+                //     'message' => 'Success',
+
                 // );
 
-                $response = array(
-                    'no_of_records' => $create,
-                    'message' => 'Success',
-
-                );
-
-                echo json_encode($response);
+                // echo json_encode($response);
             } else {
                 // if the login credentials were incorrect,
                 // echo
