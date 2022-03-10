@@ -79,11 +79,149 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 $userId = $entityBody['userId'];
                 $principalId = $entityBody['principalId'];
 
-                sleep(1);
-
                 // get leave allocation line for this teacher Id
 
-                // get leave request id for this teacher Id
+                $leaveLineId = $models->execute_kw(
+                    $dbname,
+                    $uid,
+                    $userPassword,
+                    'leave.allocation.line',
+                    'search_read',
+                    array(
+                        array(
+                            array('faculty_name', '=', (int) $teacherId),
+                            array('college_id', '=', (int) $collegeId),
+                            array('year', '=', (int) $year),
+                            array('leave_type', '=', (int) $leaveTypeId),
+                        ),
+                    ),
+                    array(
+                        'fields' => array(
+                            'faculty_name', 'no_leaves', 'pending_leaves',
+                            'available_leaves', 'approved_leaves', 'no_leaves',
+                        ),
+                    )
+                );
+                if (
+                    isset($leaveLineId) &&
+                    !isset($leaveLineId['faultString']) &&
+                    $leaveLineId != false
+                ) {
+
+                    // get line id of this leave allocation
+
+                    $pendinLeaves = $leaveLineId[0]['pending_leaves'];
+                    $approvedLeaves = $leaveLineId[0]['approved_leaves'];
+                    $availableLeaves = $leaveLineId[0]['available_leaves'];
+                    $allocatedLeaves = $leaveLineId[0]['no_leaves'];
+                    $tmp = $leaveLineId[0]['id'];
+
+                    // check allocatedLeaves == available + approved + pending + $days
+                    // and available >= $days
+                    if (
+                        $approvedLeaves + $availableLeaves + $pendinLeaves == $allocatedLeaves &&
+                        $availableLeaves >= (float) $days
+                    ) {
+
+                        sleep(2);
+
+                        // get leave request id for this teacher Id
+
+                        $leaveRequestRecord = $models->execute_kw(
+                            $dbname,
+                            $uid,
+                            $userPassword,
+                            'teacher.leave.request',
+                            'search_read',
+                            array(
+                                array(
+                                    array('staff_id', '=', (int) $teacherId),
+                                    array('college_id', '=', (int) $collegeId),
+                                    array('name', '=', (int) $leaveTypeId),
+                                    array('leave_session', '=', $leaveSession),
+                                    array('start_date', '=', $start),
+                                    array('end_date', '=', $end),
+                                    array('days', '=', $days),
+                                    array('state', '=', 'toapprove'),
+                                    array('app_date', '=', $applied),
+                                    array('reason', '=', $reason),
+                                ),
+                            ),
+                            array(
+                                'fields' => array(
+                                    'name',
+                                ),
+                            )
+                        );
+
+                        if (
+                            isset($state) &&
+                            isset($leaveRequestRecord) &&
+                            !isset($leaveRequestRecord['faultString']) &&
+                            isset($leaveRequestRecord[0]['id'])
+                        ) {
+
+                            // get line id of the leave request
+                            $leaveRequestLineId = $leaveRequestRecord[0]['id'];
+
+                            if ($state == 'reject') {
+                                // rejection of leave request
+                                $updated = $models->execute_kw(
+                                    $dbname,
+                                    $uid,
+                                    $userPassword,
+                                    'teacher.leave.request',
+                                    'write',
+                                    array(
+                                        array($leaveRequestLineId),
+                                        array(
+                                            'state' => 'reject',
+                                        ),
+                                    ),
+                                );
+
+                                // decrease pending leave by float $days
+                                $newPending = $pendinLeaves - (float) $days;
+                                $newAvailable = $availableLeaves + (float) $days;
+                                // update leave allocation line
+                                $lalUpdate = $models->execute_kw(
+                                    $dbname,
+                                    $uid,
+                                    $userPassword,
+                                    'leave.allocation.line',
+                                    'write',
+                                    array(
+                                        array($tmp),
+                                        array(
+                                            'available_leaves' => $newAvailable,
+                                            'pending_leaves' => $newPending,
+                                            'approved_leaves' => $approvedLeaves,
+                                        ),
+                                    )
+                                );
+                            } else {
+
+                                if ($state == 'toapprovep') {
+                                    // approve the leave request
+                                    $updated = $models->execute_kw(
+                                        $dbname,
+                                        $uid,
+                                        $userPassword,
+                                        'teacher.leave.request',
+                                        'write',
+                                        array(
+                                            array($leaveRequestLineId),
+                                            array(
+                                                'state' => 'toapprovep',
+                                            ),
+                                        ),
+                                    );
+                                }
+                            }
+                        }
+                    }
+                }
+
             } else {
                 // if the login credentials were incorrect,
                 // echo

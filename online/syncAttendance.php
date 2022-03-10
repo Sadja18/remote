@@ -1,27 +1,23 @@
 <?php
 
-
 $privateURL = "http://10.184.4.238:8069";
 $publicURL = "http://14.139.180.56:8069";
 
 // $url = $privateURL;
 $url = $publicURL;
 
-
 $password = null;
 $user = null;
-$dbname =  null;
+$dbname = null;
 
 require_once './ripcord/ripcord.php';
 header('Access-Control-Allow-Origin: *', false);
 header('Access-Control-Allow-Methods: GET, POST');
 header('Content-Type: application/json');
 
-
 header("Access-Control-Allow-Headers: X-Requested-With");
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     // echo "POST request recieved to give attendance data";
-
 
     $entityBodyJSON = file_get_contents("php://input");
 
@@ -37,7 +33,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     } else {
         $dbname = 'school';
     }
-
 
     if (isset($entityBody['sync'])) {
         $response = array();
@@ -82,16 +77,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     ),
                 )
             );
-            if(gettype($absentees)=='string'){
+            if (gettype($absentees) == 'string') {
                 $absentees = json_decode($absentees);
             }
             $total_absent = count($absentees);
-            $total_present = (int)$total_students - (int)$total_absent;
-            if ((int)$total_present + (int)$total_absent != (int)$total_students) {
+            $total_present = (int) $total_students - (int) $total_absent;
+            if ((int) $total_present + (int) $total_absent != (int) $total_students) {
                 echo json_encode(array('problem' => 'mismach counts'));
             } else {
                 $state = 'draft';
-                
 
                 $record_create_id = $models->execute_kw(
                     $dbname,
@@ -101,22 +95,22 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     'create',
                     array(array(
                         'date' => $date,
-                        'standard_id' => (int)$classId,
-                        'user_id' => (int)$teacherId,
+                        'standard_id' => (int) $classId,
+                        'user_id' => (int) $teacherId,
                         'state' => $state,
-                        'school_id' => (int)$schoolId,
-                        'sub_date' => $submissionDate
+                        'school_id' => (int) $schoolId,
+                        'sub_date' => $submissionDate,
                     ))
                 );
 
                 if (isset($record_create_id['faultString'])) {
                     echo json_encode(array(
-                        "faultString" => $record_create_id['faultString']
+                        "faultString" => $record_create_id['faultString'],
                     ));
                 } else {
-                   
+
                     foreach ($absentees as $entry) {
-                        $entryA = (int)$entry;
+                        $entryA = (int) $entry;
 
                         $lineid = $models->execute_kw(
                             $dbname,
@@ -127,7 +121,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                             array(
                                 array(
                                     array('standard_id', '=', $record_create_id),
-                                    array('stud_id', '=', $entryA)
+                                    array('stud_id', '=', $entryA),
                                 ),
                             )
                         );
@@ -138,12 +132,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                 $password,
                                 'daily.attendance.line',
                                 'write',
-                                array(array($lineid[0]), array(
-                                    'is_absent' => true,
-                                    'is_present' => false,
-                                    'att'=> 'absent'
-                                    
-                                ))
+                                array(
+                                    array($lineid[0]),
+                                    array(
+                                        'is_absent' => true,
+                                        'is_present' => false,
+                                        'att' => 'absent',
+
+                                    ),
+                                )
                             );
                             // echo json_encode(array(
                             //     'f'=> gettype($entry),
@@ -161,8 +158,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                     'total_student' => $total_students,
                                     'total_presence' => $total_present,
                                     'total_absent' => $total_absent,
-                                    'state'=>'validate'
-                                    
+                                    'state' => 'validate',
+
                                 ))
                             );
                             array_push($response, array($entry => 'write done'));
@@ -171,7 +168,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         }
                     }
                     $response = array(
-                        'record_create_id' => $record_create_id
+                        'record_create_id' => $record_create_id,
                     );
                     echo json_encode($response);
                 }
@@ -179,7 +176,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         } else {
             echo json_encode(
                 array(
-                    't' => $entityBody
+                    't' => $entityBody,
                 )
             );
         }

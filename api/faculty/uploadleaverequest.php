@@ -79,8 +79,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 $userId = $entityBody['userId'];
                 $principalId = $entityBody['principalId'];
 
-                sleep(1);
-
                 // get leave allocation line of this faculty
                 $leaveLineId = $models->execute_kw(
                     $dbname,
@@ -93,6 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                             array('faculty_name', '=', (int) $teacherId),
                             array('college_id', '=', (int) $collegeId),
                             array('year', '=', (int) $year),
+                            array('leave_type', '=', (int) $leaveTypeId),
                         ),
                     ),
                     array(
@@ -102,25 +101,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         ),
                     )
                 );
-
                 if (
                     isset($leaveLineId) &&
                     !isset($leaveLineId['faultString']) &&
                     $leaveLineId != false
                 ) {
                     // get line id of this leave allocation
-                    $leaveAllocationLineId = $leaveLineId[0]['id'];
 
                     $pendinLeaves = $leaveLineId[0]['pending_leaves'];
                     $approvedLeaves = $leaveLineId[0]['approved_leaves'];
                     $availableLeaves = $leaveLineId[0]['available_leaves'];
                     $allocatedLeaves = $leaveLineId[0]['no_leaves'];
-
+                    $tmp = $leaveLineId[0]['id'];
+                    
                     // check allocatedLeaves == available + approved + pending + $days
-                    // and available >= $days and available >= pending + $days
+                    // and available >= $days
                     if (
                         $approvedLeaves + $availableLeaves + $pendinLeaves == $allocatedLeaves &&
-                        $availableLeaves >= $pendinLeaves + $days
+                        $availableLeaves >= (float) $days
                     ) {
                         // increase pending by $days
                         $newPending = $pendinLeaves + (float) $days;
@@ -130,31 +128,101 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         if ($newAvailable + $newPending + $approvedLeaves == $allocatedLeaves) {
 
                             // create a new leave request record in teacher leave request
-                            $newLeaveRequest = $models-> $execute_kw(
-                                
-                            );
-
-                            // update leave allocation line
-
-
-                            echo json_encode(
+                            $newLeaveRequest = $models->execute_kw(
+                                $dbname,
+                                $uid,
+                                $userPassword,
+                                'teacher.leave.request',
+                                'create',
                                 array(
-                                    'message' => 'success',
-                                    'data' => array(
-                                        'p' => $pendinLeaves,
-                                        'np' => $newPending,
-                                        'a' => $availableLeaves,
-                                        'na' => $newAvailable,
-                                        'app' => $approvedLeaves,
-                                        'allocated' => $allocatedLeaves,
+                                    array(
+                                        'name' => (int) $leaveTypeId,
+                                        'college_id' => (int) $collegeId,
+                                        'dept_id' => (int) $deptId,
+                                        'staff_id' => (int) $teacherId,
+                                        'user_id' => (int) $userId,
+                                        'princ_id' => (int) $principalId,
+                                        'state' => 'toapprove',
+                                        'days' => (float) $days,
+                                        'leave_session' => $leaveSession,
+                                        'start_date' => $start,
+                                        'end_date' => $end,
+                                        'app_date' => $applied,
+                                        'reason' => $reason,
                                     ),
                                 )
                             );
+
+                            sleep(2);
+                            // $newLeaveRequest = "24";
+
+                            if (
+                                isset($newLeaveRequest) &&
+                                !isset($newLeaveRequest['faultString']) &&
+                                $newLeaveRequest != false
+                            ) {
+                                // update leave allocation line
+
+                                $readAgain = $models->execute_kw(
+                                    $dbname,
+                                    $uid,
+                                    $userPassword,
+                                    'leave.allocation.line',
+                                    'search_read',
+                                    array(
+                                        array(
+                                            array('faculty_name', '=', (int) $teacherId),
+                                            array('college_id', '=', (int) $collegeId),
+                                            array('year', '=', (int) $year),
+                                            array('leave_type', '=', (int) $leaveTypeId),
+                                        ),
+                                    ),
+                                    array(
+                                        'fields' => array(
+                                            'faculty_name', 'no_leaves', 'pending_leaves',
+                                            'available_leaves', 'approved_leaves', 'no_leaves',
+                                        ),
+                                    )
+                                );
+
+                                $bo = $models->execute_kw(
+                                    $dbname,
+                                    $uid,
+                                    $userPassword,
+                                    'leave.allocation.line',
+                                    'write',
+                                    array(
+                                        array($tmp),
+                                        array(
+                                            'available_leaves' => $newAvailable,
+                                            'pending_leaves' => $newPending,
+                                            'approved_leaves' => $approvedLeaves,
+                                        ),
+                                    )
+                                );
+
+                                echo json_encode(
+                                    array(
+                                        'message' => 'success',
+                                        'data' => array(
+                                            'ab' => $leaveLineId[0]['id'],
+                                            'g' => $newLeaveRequest,
+                                            'l' => $newLeaveRequest,
+                                            'p' => $pendinLeaves,
+                                            'np' => $newPending,
+                                            'a' => $availableLeaves,
+                                            'na' => $newAvailable,
+                                            'app' => $approvedLeaves,
+                                            'bo' => $bo,
+                                            'tmp' => $tmp,
+                                            'allocated' => $allocatedLeaves,
+                                        ),
+                                    )
+                                );
+                            }
                         }
                     }
-
                 }
-
             } else {
                 // if the login credentials were incorrect,
                 // echo
