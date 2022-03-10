@@ -122,9 +122,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         // update leave record and then create a leave request;
 
                         $newAvailable = $availableLeaves - (float) $days;
-                        $newPending = (float) $days;
-
-
+                        $newPending = $pendingLeaves + (float) $days;
+                        
                        $p = $models->execute_kw(
                             $dbname,
                             $uid,
@@ -180,7 +179,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         );
 
                         echo json_encode($response);
-
                     }
                 }
 
