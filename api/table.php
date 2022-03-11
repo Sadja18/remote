@@ -38,7 +38,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' || $_SERVER['REQUEST_METHOD'] == 'get') 
         $table,
         'fields_get',
         array(),
-        array('attributes' => array('string', 'help', 'type'))
+        array(
+            'attributes' =>         
+            array(
+                'string', 'help', 'type',
+                'relation', 'required', 'depends',
+            )
+        )
     );
 
     echo json_encode(
