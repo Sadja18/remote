@@ -73,7 +73,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         'student_code',
                         'student_name',
                         'middle',
-                        'last'
+                        'last',
+                        'college_id'
                     ),
                 )
             );
@@ -92,6 +93,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         'fName'=> $users[0]['student_name'],
                         'mName'=> $users[0]['middle'],
                         'lName'=> $users[0]['last'], 
+                        'collegeId'=> $users[0]['college_id'][0],
+                        'collegeName'=> $users[0]['college_id'][1]
                     ),
                 )
             );
