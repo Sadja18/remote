@@ -116,6 +116,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                             "message" => "success",
                             "count" => $count,
                             "data" => $data,
+                            // 'session'=> $sessionData
                         )
                     );
                 } else {

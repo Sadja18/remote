@@ -64,52 +64,146 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
 
                 $collegeId = $entityBody['collegeId'];
                 $studentId = $entityBody['studentId'];
-                $teacherId = $entityBody['teacherId'];
                 $classId = $entityBody['classId'];
                 $start = $entityBody['startDate'];
                 $end = $entityBody['endDate'];
                 $reason = $entityBody['reason'];
                 $state = 'toapprove';
 
-                $newLeaveRequest = $models->execute_kw(
+                // get dept id;
+                $student = $models->execute_kw(
                     $dbname,
                     $uid,
                     $userPassword,
-                    'studentleave.request',
-                    'create',
+                    'student.student',
+                    'search_read',
                     array(
                         array(
-                            'student_id' => (int) $studentId,
-                            'teacher_id' => (int) $teacherId,
-                            'college_id' => (int) $collegeId,
-                            'start_date' => $start,
-                            'end_date' => $end,
-                            'reason' => $reason,
-                            'state' => $state,
+                            array('user_id', '=', $uid),
+                        ),
+                    ),
+                    array(
+                        'fields' => array(
+                            'dept_id',
                         ),
                     )
                 );
-                if ($newLeaveRequest != false &&
-                    isset($newLeaveRequest) &&
-                    !isset($newLeaveRequest['faultString'])
-                ) {
 
-                    echo json_encode(
+                if (!isset($student['faultString']) && isset($student)) {
+
+                    $deptId = $student[0]['dept_id'][0];
+
+                    sleep(1);
+                    $hod = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        'college.department.line',
+                        'search_read',
                         array(
-                            'message' => 'success',
-                            'data' => $newLeaveRequest,
+                            array(
+                                array('college_id', '=', (int) $collegeId),
+                                array('department_id', '=', $deptId),
+
+                            ),
+                        ),
+                        array(
+                            'fields' => array(
+                                'email_id', 'hod',
+                            ),
                         )
                     );
 
+                    if (!isset($hod['faultString']) && isset($hod)) {
+                        $hodEmail = $hod[0]['email_id'];
+
+                        $resUsers = $models->execute_kw(
+                            $dbname,
+                            $uid,
+                            $userPassword,
+                            'res.users',
+                            'search_read',
+                            array(
+                                array(
+                                    array('login', '=', $hodEmail),
+
+                                ),
+                            ),
+                            array(
+                                'fields' => array(
+                                    'login', 'password',
+                                ),
+                            )
+                        );
+
+                        if (isset($resUsers) && !isset($resUsers['faultString'])) {
+                            $hodLoginUserId = $resUsers[0]['id'];
+
+                            $teacherId = (int) $hodLoginUserId;
+                            $newLeaveRequest = $models->execute_kw(
+                                $dbname,
+                                $uid,
+                                $userPassword,
+                                'studentleave.request',
+                                'create',
+                                array(
+                                    array(
+                                        'student_id' => (int) $studentId,
+                                        'teacher_id' => $teacherId,
+                                        'college_id' => (int) $collegeId,
+                                        'start_date' => $start,
+                                        'end_date' => $end,
+                                        'reason' => $reason,
+                                        'state' => $state,
+                                    ),
+                                )
+                            );
+                            if ($newLeaveRequest != false &&
+                                isset($newLeaveRequest) &&
+                                !isset($newLeaveRequest['faultString'])
+                            ) {
+
+                                echo json_encode(
+                                    array(
+                                        'message' => 'success',
+                                        'data' => $newLeaveRequest,
+                                    )
+                                );
+
+                            } else {
+                                echo json_encode(
+                                    array(
+                                        'message' => 'failed',
+                                        'error' => $newLeaveRequest,
+                                        'data' => $entityBody,
+                                    )
+                                );
+
+                            }
+
+                        } else {
+                            echo json_encode(
+                                array(
+                                    'message' => 'failed',
+                                    'error' => 'Cannot find user id of the HoD of this dept',
+                                )
+                            );
+                        }
+                    } else {
+                        echo json_encode(
+                            array(
+                                'message' => 'failed',
+                                'error' => 'Cannot find HoD of this department',
+                            )
+                        );
+                    }
                 } else {
                     echo json_encode(
                         array(
                             'message' => 'failed',
-                            'error'=> $newLeaveRequest,
-                            'data' => $entityBody,
+                            'error' => 'Cannot find a valid department for this student',
                         )
                     );
-
                 }
 
             } else {
