@@ -159,8 +159,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         ) {
                             $leaveRequestLineId = $leaveRequestRecord[0]['id'];
 
-                           
-
                             if ($state == 'reject') {
                                 // rejection of leave request
                                 $updated = $models->execute_kw(
@@ -199,11 +197,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
 
                                 echo json_encode(
                                     array(
-                                        $updated, $lalUpdate,
+                                        "message"=> "success",
+                                        "requestUpdated" => $updated,
+                                        "lineUpdated" => $lalUpdate,
                                     )
                                 );
-                            }else{
-                                if($state = 'approve'){
+                            } else {
+                                if ($state = 'approve') {
                                     $updated = $models->execute_kw(
                                         $dbname,
                                         $uid,
@@ -217,7 +217,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                                             ),
                                         ),
                                     );
-    
+
                                     // decrease pending leave by float $days
                                     $newPending = $pendinLeaves - (float) $days;
                                     $newApproved = $approvedLeaves + (float) $days;
@@ -237,10 +237,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                                             ),
                                         )
                                     );
-    
+
                                     echo json_encode(
                                         array(
-                                            $updated, $lalUpdate,
+                                            "message"=> "success",
+                                            "requestUpdated" => $updated,
+                                            "lineUpdated" => $lalUpdate,
                                         )
                                     );
                                 }
