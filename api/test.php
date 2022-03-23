@@ -20,8 +20,8 @@ $url = getenv('PRIVATE');
 // $url = getenv('PUBLICALT');
 // $url = getenv('PRIVATEALT');
 if ($_SERVER['REQUEST_METHOD'] == 'GET' || $_SERVER['REQUEST_METHOD'] == 'get') {
-    $user = 'vigneswaris@cdac.in';
-    $password = 'admin@1234';
+    // $user = 'vigneswaris@cdac.in';
+    // $password = 'admin@1234';
     $dbname = 'college';
 
     $userName='dramitgcd@gmail.com';
@@ -34,39 +34,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' || $_SERVER['REQUEST_METHOD'] == 'get') 
 
 
     $models = ripcord::client("$url/xmlrpc/2/object");
-    // for res.groups
-    // $res = $models->execute_kw(
-    //     $dbname,
-    //     $uid,
-    //     $password,
-    //     'res.groups',
-    //     'search_read',
-    //     array(
-    //         array(
-    //             array('id', '=', 17)
-    //         )
-    //     ),
-    //     array(
-    //         'fields' => array(
-    //             'name', 'users', 'rule_groups',
-    //             'menu_access', 'view_access', 'category_id',
-    //             'full_name', ''
-    //         )
-    //     )
-    // );
 
     $res= $models->execute_kw(
         $dbname,
         $uid,
         $userPass,
-        'college.teacher',
+        'college.college',
         'search_read',
         array(
             array(
-                array('active', '!=', False),
+                array('head_name', '!=', False),
             )
         ),
         array(
+            'fields'=> array('head_name', 'college_id'),
         )
     );
 

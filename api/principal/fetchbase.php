@@ -165,38 +165,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
 
                 );
 
-                // $deptCount = $models->execute_kw(
-                //     $dbname,
-                //     $uid,
-                //     $userPassword .
-                //     'college.department.line',
-                //     'search_count',
-                //     array(
-                //         array(
-                //             array('college_id', '=', $collegeId),
-                //         ),
-                //     ),
-                // );
-
-                // $deptData = $models->execute_kw(
-                //     $dbname,
-                //     $uid,
-                //     $userPassword .
-                //     'college.department.line',
-                //     'search_read',
-                //     array(
-                //         array(
-                //             array('college_id', '=', $collegeId),
-                //         ),
-                //     ),
-                //     array(
-                //         'fields'=> array(
-                //             'name', 'code', 'college_id',
-                //             'hod', 'display_name',
-                //         )
-                //     )
-                // );
-
                 $coursesAlt = $models->execute_kw(
                     $dbname,
                     $uid,

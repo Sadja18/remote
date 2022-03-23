@@ -113,7 +113,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     $availableLeaves = $leaveLineId[0]['available_leaves'];
                     $allocatedLeaves = $leaveLineId[0]['no_leaves'];
                     $tmp = $leaveLineId[0]['id'];
-                    
+
                     // check allocatedLeaves == available + approved + pending + $days
                     // and available >= $days
                     if (
@@ -140,8 +140,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                                         'college_id' => (int) $collegeId,
                                         'dept_id' => (int) $deptId,
                                         'staff_id' => (int) $teacherId,
-                                        'user_id' => (int) $userId,
-                                        'princ_id' => (int) $principalId,
+                                        // 'user_id' => (int) $userId,
+                                        // 'princ_id' => (int) $principalId,
                                         'state' => 'toapprove',
                                         'days' => (float) $days,
                                         'leave_session' => $leaveSession,
@@ -219,7 +219,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                                         ),
                                     )
                                 );
+                            } else {
+                                echo json_encode(array(
+                                    'message' => 'failed',
+                                    'data' => $newLeaveRequest,
+                                ));
                             }
+                        } else {
+                            echo json_encode(
+                                array(
+                                    'message' => 'failed',
+                                    'data' => array(
+                                        '1' => $approvedLeaves,
+                                        '2' => $availableLeaves,
+                                        '3' => $pendinLeaves,
+                                        '4' => $allocatedLeaves,
+                                        '5' => $availableLeaves,
+                                        '6' => $days,
+                                    ),
+                                )
+                            );
                         }
                     }
                 }
