@@ -35,12 +35,70 @@ $failedLogin = array(
     "message" => "Login Failure. This user does not have the required access rights.",
 );
 if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post') {
-    echo json_encode(
-        array(
-            'message' => 'login request received',
-            'data' => array(),
-        )
-    );
+
+    $entityBodyJSON = file_get_contents('php://input');
+
+    if (isset($entityBodyJSON)) {
+
+        $entityBody = json_decode($entityBodyJSON, true);
+
+        if (isset($entityBody) && $entityBody != false) {
+
+            $userName = $entityBody['userName'];
+            $userPassword = $entityBody['userPassword'];
+
+            $dbname = null;
+            if (isset($entityBody['dbname'])) {
+                $dbname = $entityBody['dbname'];
+            } else {
+                $dbname = 'school';
+            }
+
+            if (isset($userName) && isset($userPassword)) {
+                $common = ripcord::client($url . '/xmlrpc/2/common');
+
+                $uid = $common->authenticate($dbname, $userName, $userPassword, array());
+                if (isset($uid) && $uid != false && $uid != 'false') {
+                    echo json_encode(
+                        array(
+                            'message' => 'success',
+                            'data' => array(
+                                "userName" => $userName,
+                                "userPassword" => $userPassword,
+                                "dbname" => $dbname,
+                                "userId" => $uid,
+                            ),
+                        )
+                    );
+                }else{
+                    echo json_encode(
+                        array(
+                            "message"=> "failed",
+                            "error"=> "Invalid credentials"
+                        )
+                    );
+                }
+
+            } else {
+                json_encode(array(
+                    "message" => "failed",
+                    "error" => "Missing required parameters",
+                ));
+            }
+        } else {
+            json_encode(array(
+                "message" => "failed",
+                "error" => "Data is expected in request body",
+            ));
+        }
+
+    } else {
+        json_encode(array(
+            "message" => "failed",
+            "error" => "Data is expected in request body",
+        ));
+    }
+
 } else {
     echo json_encode($failNotPost);
 }
