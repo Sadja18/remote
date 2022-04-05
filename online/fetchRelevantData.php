@@ -3,9 +3,9 @@
 $privateURL = "http://10.184.4.238:8069";
 $publicURL = "http://14.139.180.56:8069";
 
-$url = $publicURL;
+// $url = $publicURL;
 
-// $url = $privateURL;
+$url = $privateURL;
 
 $user = null;
 $password = null;
