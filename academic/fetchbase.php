@@ -153,6 +153,32 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         )
                     );
 
+                    // $schoolCount = $models->execute_kw(
+                    //     $dbname,
+                    //     $uid,
+                    //     $userPassword,
+                    //     "school.school",
+                    //     "search_count",
+                    //     array(
+                    //         array(
+                    //             array("name", "!=", false),
+                    //         ),
+                    //     )
+                    // );
+                    // $schools = $models->execute_kw(
+                    //     $dbname,
+                    //     $uid,
+                    //     $userPassword,
+                    //     "school.school",
+                    //     "search_read",
+                    //     array(
+                    //         array(
+                    //             array("name", "!=", false),
+                    //         ),
+                    //     ),
+                    //     array()
+                    // );
+
                     if (
                         !isset($academicYear['faultString']) &&
                         isset($academicYear) &&
@@ -163,18 +189,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         !isset($cluster['faultString']) &&
                         isset($cluster) &&
                         $cluster != false
+                        // &&
+                        // !isset($schools['faultString']) &&
+                        // isset($schools) &&
+                        // $schools != false
                     ) {
                         echo json_encode(
                             array(
                                 "message" => "success",
                                 'count' => array(
                                     "blocks" => $blocksCount,
-                                    "cluster" => $clusterCount,
+                                    "clusters" => $clusterCount,
+                                    // "schools" => $schoolCount,
                                 ),
                                 "data" => array(
                                     "academicYear" => $academicYear[0],
                                     "blocks" => $blocks,
-                                    "cluster" => $cluster,
+                                    "clusters" => $cluster,
+                                    // "schools" => $schools,
                                 ),
                             )
                         );
@@ -186,11 +218,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                                     $academicYear['faultCode'],
                                     $blocks['faultCode'],
                                     $cluster['faultCode'],
+                                    // $schools['faultCode'],
+
                                 ),
                                 "data" => array(
                                     $academicYear['faultString'],
                                     $blocks['faultString'],
                                     $cluster['faultString'],
+                                    // $schools['faultString'],
+
                                 ),
                             )
                         );

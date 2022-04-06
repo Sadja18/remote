@@ -35,12 +35,47 @@ $failedLogin = array(
     "message" => "Login Failure. This user does not have the required access rights.",
 );
 if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post') {
-    echo json_encode(
-        array(
-            'message' => 'paceexamresult.line request received',
-            'data' => array(),
-        )
-    );
+    $entityBodyJSON = file_get_contents('php://input');
+
+    if (isset($entityBodyJSON)) {
+
+        $entityBody = json_decode($entityBodyJSON, true);
+
+        if (isset($entityBody) && $entityBody != false) {
+
+            $userName = $entityBody['userName'];
+            $userPassword = $entityBody['userPassword'];
+
+            $dbname = null;
+            if (isset($entityBody['dbname'])) {
+                $dbname = $entityBody['dbname'];
+            } else {
+                $dbname = 'school';
+            }
+
+            if (isset($userName) && isset($userPassword)) {
+                $common = ripcord::client($url . '/xmlrpc/2/common');
+
+                $uid = $common->authenticate($dbname, $userName, $userPassword, array());
+                if (isset($uid) && $uid != false && $uid != 'false') {
+                    $models = ripcord::client("$url/xmlrpc/2/object");
+
+                    
+                } else {
+                    echo json_encode($failedLogin);
+
+                }
+            } else {
+                echo json_encode($failInvalidCredentials);
+
+            }
+        } else {
+            echo json_encode($failNoData);
+
+        }
+    } else {
+        echo json_encode($failNoData);
+    }
 } else {
     echo json_encode($failNotPost);
 }
