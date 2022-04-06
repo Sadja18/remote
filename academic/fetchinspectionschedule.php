@@ -62,6 +62,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 if (isset($uid) && $uid != false && $uid != 'false') {
                     $models = ripcord::client("$url/xmlrpc/2/object");
 
+                    $queryState = 'confirm';
+
                     $inspectionScheduleCount = $models->execute_kw(
                         $dbname,
                         $uid,
@@ -70,8 +72,31 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         'search_count',
                         array(
                             array(
-                                array('year-id', '=', $academicYear),
+                                array('year_id', '=', $academicYear),
+                                array('state','=', $queryState)
                             ),
+                        )
+                    );
+                    $inspectionSchedules = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        'inspection.schedule',
+                        'search_read',
+                        array(
+                            array(
+                                array('year_id', '=', $academicYear),
+                                array('state','=', $queryState)
+                            ),
+                        ),
+                        array(
+                            "fields"=> array(
+                                "name",
+                                'date',
+                                'year_id',
+                                'round_no',
+                                'state'
+                            )
                         )
                     );
 
@@ -79,10 +104,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         array(
                             'message' => 'success',
                             "count" => $inspectionScheduleCount,
-                            'data' => array(
-                                "count" => $inspectionScheduleCount,
-                                "userId" => $uid,
-                            ),
+                            'data' => $inspectionSchedules
                         )
                     );
                 } else {
