@@ -46,6 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
 
             $userName = $entityBody['userName'];
             $userPassword = $entityBody['userPassword'];
+            $academicYear = $entityBody['academicYear'];
 
             $dbname = null;
             if (isset($entityBody['dbname'])) {
@@ -54,45 +55,36 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 $dbname = 'school';
             }
 
-            if (isset($userName) && isset($userPassword)) {
+            if (isset($userName) && isset($userPassword) && isset($academicYear)) {
                 $common = ripcord::client($url . '/xmlrpc/2/common');
 
                 $uid = $common->authenticate($dbname, $userName, $userPassword, array());
-                // echo json_encode($entityBody);
                 if (isset($uid) && $uid != false && $uid != 'false') {
                     $models = ripcord::client("$url/xmlrpc/2/object");
 
-                    $academicOrDIET = $models->execute_kw(
+                    $inspectionScheduleCount = $models->execute_kw(
                         $dbname,
                         $uid,
                         $userPassword,
                         'inspection.schedule',
-                        'check_access_rights',
-                        ['read'],
-                        array('raise_exception' => false)
+                        'search_count',
+                        array(
+                            array(
+                                array('year-id', '=', $academicYear),
+                            ),
+                        )
                     );
 
-                    if (!isset($academicOrDIET['faultString']) && isset($academicOrDIET)) {
-                        echo json_encode(
-                            array(
-                                'message' => 'success',
-                                'data' => array(
-                                    "userName" => $userName,
-                                    "userPassword" => $userPassword,
-                                    "dbname" => $dbname,
-                                    "userId" => $uid,
-                                    "academicUserGroup" => $academicOrDIET,
-                                ),
-                            )
-                        );
-                    } else {
-                        echo json_encode(array(
-                            "message" => $academicOrDIET['faultCode'],
-                            "error" => $academicOrDIET['faultString'],
-                        ));
-
-                    }
-
+                    echo json_encode(
+                        array(
+                            'message' => 'success',
+                            "count" => $inspectionScheduleCount,
+                            'data' => array(
+                                "count" => $inspectionScheduleCount,
+                                "userId" => $uid,
+                            ),
+                        )
+                    );
                 } else {
                     echo json_encode(
                         array(

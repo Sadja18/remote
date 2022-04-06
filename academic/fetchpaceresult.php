@@ -1,6 +1,6 @@
 <?php
-require_once '../ripcord/ripcord.php';
-require_once '../envRead.php';
+require_once './ripcord/ripcord.php';
+require_once './envRead.php';
 
 use sadja\DotEnv;
 

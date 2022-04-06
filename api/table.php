@@ -23,7 +23,7 @@ $url = getenv('PRIVATE');
 if ($_SERVER['REQUEST_METHOD'] == 'GET' || $_SERVER['REQUEST_METHOD'] == 'get') {
     $user = 'vigneswaris@cdac.in';
     $password = 'admin@1234';
-    $dbname = 'college';
+    $dbname = 'school';
 
     $common = ripcord::client($url . '/xmlrpc/2/common');
 
