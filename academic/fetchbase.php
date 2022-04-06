@@ -41,9 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
 
         $entityBody = json_decode($entityBodyJSON, true);
 
-
         if (isset($entityBody) && $entityBody != false) {
-            
 
             $userName = $entityBody['userName'];
             $userPassword = $entityBody['userPassword'];
@@ -85,19 +83,115 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         )
                     );
 
-                    if (!isset($academicYear['faultString']) && isset($academicYear) && $academicYear != false) {
+                    $blocksCount = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        "school.location",
+                        "search_count",
+                        array(
+                            array(
+                                array('is_block', '=', true),
+                            ),
+                        ),
+                    );
+
+                    $blocks = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        "school.location",
+                        "search_read",
+                        array(
+                            array(
+                                array('is_block', '=', true),
+                            ),
+                        ),
+                        array(
+                            "fields" => array(
+                                "name",
+                                "code",
+                                "parent",
+                                "is_block",
+                                "display_name",
+                            ),
+                        )
+                    );
+
+                    $clusterCount = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        "school.location",
+                        "search_count",
+                        array(
+                            array(
+                                array('is_cluster', '=', true),
+                            ),
+                        ),
+                    );
+
+                    $cluster = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        "school.location",
+                        "search_read",
+                        array(
+                            array(
+                                array('is_cluster', '=', true),
+                            ),
+                        ),
+                        array(
+                            "fields" => array(
+                                "name",
+                                "code",
+                                "parent",
+                                "is_cluster",
+                                "display_name",
+                            ),
+                        )
+                    );
+
+                    if (
+                        !isset($academicYear['faultString']) &&
+                        isset($academicYear) &&
+                        $academicYear != false &&
+                        !isset($blocks['faultString']) &&
+                        isset($blocks) &&
+                        $blocks != false &&
+                        !isset($cluster['faultString']) &&
+                        isset($cluster) &&
+                        $cluster != false
+                    ) {
                         echo json_encode(
                             array(
                                 "message" => "success",
-                                "data" => $academicYear[0],
+                                'count' => array(
+                                    "blocks" => $blocksCount,
+                                    "cluster" => $clusterCount,
+                                ),
+                                "data" => array(
+                                    "academicYear" => $academicYear[0],
+                                    "blocks" => $blocks,
+                                    "cluster" => $cluster,
+                                ),
                             )
                         );
 
                     } else {
                         echo json_encode(
                             array(
-                                "message" => "failed",
-                                "data" => "no academic year selected",
+                                "message" => array(
+                                    $academicYear['faultCode'],
+                                    $blocks['faultCode'],
+                                    $cluster['faultCode'],
+                                ),
+                                "data" => array(
+                                    $academicYear['faultString'],
+                                    $blocks['faultString'],
+                                    $cluster['faultString'],
+                                ),
                             )
                         );
 

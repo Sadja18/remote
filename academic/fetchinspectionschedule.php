@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         array(
                             array(
                                 array('year_id', '=', $academicYear),
-                                array('state','=', $queryState)
+                                array('state', '=', $queryState),
                             ),
                         )
                     );
@@ -86,27 +86,78 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         array(
                             array(
                                 array('year_id', '=', $academicYear),
-                                array('state','=', $queryState)
+                                array('state', '=', $queryState),
                             ),
                         ),
                         array(
-                            "fields"=> array(
+                            "fields" => array(
                                 "name",
                                 'date',
                                 'year_id',
                                 'round_no',
-                                'state'
-                            )
+                                'state',
+                            ),
                         )
                     );
 
-                    echo json_encode(
-                        array(
-                            'message' => 'success',
-                            "count" => $inspectionScheduleCount,
-                            'data' => $inspectionSchedules
-                        )
-                    );
+                    $inspectionScheduleDetails = array();
+                    $inspectionScheduleDetailsCount = 0;
+
+                    if (isset($inspectionSchedules) && !isset($inspectionSchedules['faultString'])) {
+
+                        foreach ($inspectionSchedules as $inspectionSchedule) {
+                            $recordId = $inspectionSchedule['id'];
+
+                            $inspectionScheduleLinesCount = $models->execute_kw(
+                                $dbname,
+                                $uid,
+                                $userPassword,
+                                'inspection.schedule.line',
+                                'search_count',
+                                array(
+                                    array(
+                                        array("rec_id", '=', $recordId),
+                                    ),
+                                )
+                            );
+
+                            if (isset($inspectionScheduleLinesCount) && !isset($inspectionScheduleLinesCount['faultString'])) {
+
+                                $inspectionScheduleDetailsCount = $inspectionScheduleDetailsCount + $inspectionScheduleLinesCount;
+
+                                $inspectionScheduleLines = $models->execute_kw(
+                                    $dbname,
+                                    $uid,
+                                    $userPassword,
+                                    'inspection.schedule.line',
+                                    'search_read',
+                                    array(
+                                        array(
+                                            array("rec_id", '=', $recordId),
+                                        ),
+                                    ),
+                                    array()
+                                );
+                                array_push($inspectionScheduleDetails, $inspectionScheduleLines);
+                            }
+                        }
+
+                        echo json_encode(
+                            array(
+                                "message" => "success",
+                                "count" => array(
+                                    "inspectionSchedule" => $inspectionScheduleCount,
+                                    "inspectionScheduleDetails" => $inspectionScheduleDetailsCount,
+                                ),
+                                "data" => array(
+                                    "inspectionSchedule" => $inspectionSchedule,
+                                    "inspectionScheduleDetails" => $inspectionScheduleDetails,
+                                ),
+                            )
+                        );
+
+                    }
+
                 } else {
                     echo json_encode(
                         array(
