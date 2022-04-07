@@ -3,9 +3,9 @@
 $privateURL = "http://10.184.4.238:8069";
 $publicURL = "http://14.139.180.56:8069";
 
-// $url = $publicURL;
+$url = $publicURL;
 
-$url = $privateURL;
+// $url = $privateURL;
 
 $user = null;
 $password = null;
@@ -95,41 +95,39 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
             array('fields' => array('name', 'standard_id', 'medium_id', 'division_id'))
         );
 
-        $student_data = array();
-
-        foreach ($classes as $class_record) {
-            $selected_class = $class_record['name'];
-
-            $selected_class_students = array();
-
-            $students = $models->execute_kw(
-                $dbname,
-                $uid,
-                $password,
-                'student.student',
-                'search',
+        $classes2 = $models->execute_kw(
+            $dbname,
+            $uid,
+            $password,
+            'school.standard',
+            'search',
+            array(
                 array(
-                    array(
-                        array('standard_id.name', '=', $selected_class),
-                        array('school_id.name', '=', $school_name),
-                        array('state', '=', 'done'),
-                    ),
+                    '|', '|',
+                    array('user_id.name', '=', $teacher_name),
+                    array('sec_user_id.name', '=', $teacher_name),
+                    array('ter_user_id.name', '=', $teacher_name),
+                ),
+            ),
+        );
+
+
+        $students = $models->execute_kw(
+            $dbname,
+            $uid,
+            $password,
+            'student.student',
+            'search_read',
+            array(
+                array(
+                    array('standard_id', 'in', $classes2),
+                    array('school_id.name', '=', $school_name),
+                    array('state', '=', 'done'),
                 )
-            );
-            foreach ($students as $student) {
-                $entry = $models->execute_kw(
-                    $dbname,
-                    $uid,
-                    $password,
-                    'student.student',
-                    'read',
-                    array($student),
-                    array('fields' => array('name', 'roll_no'))
-                );
-                array_push($selected_class_students, $entry[0]);
-            }
-            $student_data[$selected_class] = $selected_class_students;
-        }
+            ),
+            array("fields"=> array('name', 'roll_no')),
+        );
+
         $grading = $models->execute_kw(
             $dbname,
             $uid,
@@ -242,7 +240,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                 ),
                 "academic_year" => $academic_year,
                 "classes" => $classes,
-                "students" => $student_data,
+                "students" => $students,
                 'grading' => $grading,
                 'assessments' => $assessment_records,
                 'qpapers' => $question_papers,
