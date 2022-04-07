@@ -143,7 +143,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                                     $blocks['faultCode'],
 
                                 ),
-                                "data" => array(
+                                "error" => array(
                                     $blocks['faultString'],
 
                                 ),

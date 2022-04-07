@@ -122,7 +122,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                                     $cluster['faultCode'],
 
                                 ),
-                                "data" => array(
+                                "error" => array(
                                     $cluster['faultString'],
 
                                 ),

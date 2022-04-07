@@ -177,11 +177,56 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                             ),
                         ),
                         array(
-                            "fields"=> array(
+                            "fields" => array(
                                 "com_name",
                                 'cluster',
-                                'location'
-                            )
+                                "block",
+                                'location',
+                            ),
+                        )
+                    );
+
+                    $teachersCount = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        "school.teacher",
+                        "search_count",
+                        array(
+                            array(
+                                array("name", "!=", false),
+                                // array('cluster', '=', (int) $clusterId),
+                                // array('block', '=', (int) $districtId),
+                            ),
+                        ),
+                    );
+
+                    $teachersData = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        "school.teacher",
+                        "search_read",
+                        array(
+                            array(
+                                array("name", "!=", false),
+                                // array('cluster', '=', (int) $clusterId),
+                                // array('block', '=', (int) $districtId),
+                            ),
+                        ),
+                        array(
+                            "fields" => array(
+                                "employee_id",
+                                "standard_id",
+                                "teacher_code",
+                                "name",
+                                "school_id",
+                                "stand_id",
+                                "personal_fileno",
+                                "block",
+                                "cluster",
+
+                            ),
                         )
                     );
 
@@ -198,7 +243,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         &&
                         !isset($schools['faultString']) &&
                         isset($schools) &&
-                        $schools != false
+                        $schools != false &&
+                        !isset($teachersData['faultString']) &&
+                        isset($teachersData) &&
+                        $teachersData != false
                     ) {
                         echo json_encode(
                             array(
@@ -207,12 +255,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                                     "blocks" => $blocksCount,
                                     "clusters" => $clusterCount,
                                     "schools" => $schoolCount,
+                                    "teachers" => $teachersCount,
                                 ),
                                 "data" => array(
                                     "academicYear" => $academicYear[0],
                                     "blocks" => $blocks,
                                     "clusters" => $cluster,
                                     "schools" => $schools,
+                                    "teachers" => $teachersData,
                                 ),
                             )
                         );
@@ -225,13 +275,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                                     $blocks['faultCode'],
                                     $cluster['faultCode'],
                                     $schools['faultCode'],
+                                    $teachersData['faultCode'],
 
                                 ),
-                                "data" => array(
+                                "error" => array(
                                     $academicYear['faultString'],
                                     $blocks['faultString'],
                                     $cluster['faultString'],
                                     $schools['faultString'],
+                                    $teachersData['faultString'],
 
                                 ),
                             )

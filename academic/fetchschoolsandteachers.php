@@ -47,6 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
             $userPassword = $entityBody['userPassword'];
 
             $districtId = $entityBody['districtId'];
+            $clusterId = $entityBody['clusterId'];
 
             $dbname = null;
             if (isset($entityBody['dbname'])) {
@@ -55,23 +56,63 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 $dbname = 'school';
             }
 
-            if (isset($userName) && isset($userPassword) && isset($districtId)) {
+            if (isset($userName) && isset($userPassword) && isset($districtId) && isset($clusterId)) {
                 $common = ripcord::client($url . '/xmlrpc/2/common');
 
                 $uid = $common->authenticate($dbname, $userName, $userPassword, array());
                 if (isset($uid) && $uid != false && $uid != 'false') {
                     $models = ripcord::client("$url/xmlrpc/2/object");
 
+                    $schoolsCount = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        "school.school",
+                        "search_count",
+                        array(
+                            array(
+                                // array("name", "!=", false),
+                                array('cluster', '=', (int) $clusterId),
+                                array('block', '=', (int) $districtId),
+                            ),
+                        )
+                    );
+                    $schoolsData = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        "school.school",
+                        "search_read",
+                        array(
+                            array(
+                                // array("name", "!=", false),
+                                array('cluster', '=', (int) $clusterId),
+                                array('block', '=', (int) $districtId),
+                            ),
+                        ),
+                        array(
+                            "fields" => array(
+                                "com_name",
+                                "code",
+                                'cluster',
+                                "block",
+                                'location',
+                            ),
+                        )
+                    );
+
+                    sleep(2);
+
                     $teachersCount = $models->execute_kw(
                         $dbname,
                         $uid,
                         $userPassword,
-                        "school.location",
+                        "school.teacher",
                         "search_count",
                         array(
                             array(
-                                array('is_cluster', '=', true),
-                                array('parent', '=', (int) $districtId),
+                                array("name", "!=", false),
+
                             ),
                         ),
                     );
@@ -80,27 +121,30 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         $dbname,
                         $uid,
                         $userPassword,
-                        "school.location",
+                        "school.teacher",
                         "search_read",
                         array(
                             array(
-                                array('is_cluster', '=', true),
-                                array('parent', '=', (int) $districtId),
+                                array("name", "!=", false),
                             ),
                         ),
                         array(
                             "fields" => array(
+                                "employee_id",
+                                "standard_id",
+                                "teacher_code",
                                 "name",
-                                "code",
-                                "parent",
-                                "is_cluster",
-                                "display_name",
+                                "school_id",
+                                "stand_id",
+                                "personal_fileno",
+                                "block",
+                                "cluster",
+
                             ),
                         )
                     );
 
                     if (
-
                         !isset($schoolsData['faultString']) &&
                         isset($schoolsData) &&
                         $schoolsData != false &&
@@ -128,15 +172,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     } else {
                         echo json_encode(
                             array(
-                                "message" => array(
-                                    "schools" => $schoolsData['faultCode'],
+                                "error" => array(
+                                    "schools" => $schoolsData,
 
-                                    "teachers" => $teachersData['faultCode'],
-                                ),
-                                "data" => array(
-                                    "schools" => $schoolsData['faultString'],
-
-                                    "teachers" => $teachersData['faultString'],
+                                    "teachers" => $teachersData,
                                 ),
                             )
                         );
