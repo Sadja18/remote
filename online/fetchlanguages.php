@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         if ( !isset($languages['faultString'])
         ) {
             $response = array(
-                'langauges' => $languages
+                'languages' => $languages
             );
         } else {
             // 120AB
