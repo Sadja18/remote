@@ -12,16 +12,16 @@ $password = null;
 $dbname = null;
 $response = null;
 
-
 require_once './ripcord/ripcord.php';
 
 // check if server request method is get
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     // $response = 'Fetch Request received';
 
+    // echo json_decode("echo");
+
     header('Access-Control-Allow-Origin: *', false);
     header('Content-Type: application/json');
-
 
     if (isset($_GET['userName'])) {
         $user = $_GET['userName'];
@@ -83,15 +83,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
             array(
                 array(
                     array('standard_id', 'in', $classes2),
-                    array('school_id.name', '=', $school_name),
+                    array('school_id', '=', (int) $teachers[0]['school_id'][0]),
                     array('state', '=', 'done'),
-                )
+                ),
             ),
-            array("fields" => array('name', 'roll_no')),
+            array("fields" => array('student_name','name', 'middle', 'last','roll_no')),
+            // array()
         );
-
-
-
 
         if (!isset($students['faultString'])) {
             $response = array(
@@ -101,7 +99,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
             // 120AB
             $response = array(
                 'val' => 'error',
-                'error' => $languages
+                'error' => array(
+                    "students" => $students,
+                ),
             );
         }
         echo json_encode($response);

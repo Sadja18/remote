@@ -12,7 +12,6 @@ $password = null;
 $dbname = null;
 $response = null;
 
-
 require_once './ripcord/ripcord.php';
 
 // check if server request method is get
@@ -21,7 +20,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
     header('Access-Control-Allow-Origin: *', false);
     header('Content-Type: application/json');
-
 
     if (isset($_GET['userName'])) {
         $user = $_GET['userName'];
@@ -58,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
         $teacher_id = $teachers[0]['id'];
         $teacher_name = $teachers[0]['name'];
-        
+
         $classes = $models->execute_kw(
             $dbname,
             $uid,
@@ -80,15 +78,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
             !isset($classes['faultString'])
         ) {
             $response = array(
+                // "teacher" => $teachers,
                 "classes" => $classes,
             );
         } else {
             // 120AB
             $response = array(
                 'val' => 'error',
-                'error' => $languages
+                'error' => $classes,
+
             );
         }
         echo json_encode($response);
+    }else{
+        echo json_encode(array(
+            "message"=> "error",
+            "error"=> "persistent not set"
+        ));
     }
+}else{
+    echo json_encode(array(
+        "message"=> "error",
+        "error"=> "Not get request"
+    ));
 }
