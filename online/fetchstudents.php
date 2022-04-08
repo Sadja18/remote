@@ -5,7 +5,7 @@ $publicURL = "http://14.139.180.56:8069";
 
 $url = $publicURL;
 
-// $url = $privateURL;
+$url = $privateURL;
 
 $user = null;
 $password = null;
@@ -87,7 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                     array('state', '=', 'done'),
                 ),
             ),
-            array("fields" => array('student_name','name', 'middle', 'last','roll_no')),
+            array("fields" => array('student_name','name', 'middle', 'last','roll_no', 'standard_id')),
             // array()
         );
 
