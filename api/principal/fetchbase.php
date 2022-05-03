@@ -15,8 +15,8 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 
 (new DotEnv(__DIR__ . '/.env'))->load();
 
-// $url = getenv('PUBLIC');
-$url = getenv('PRIVATE');
+$url = getenv('PUBLIC');
+// $url = getenv('PRIVATE');
 // $url = getenv('PUBLICALT');
 // $url = getenv('PRIVATEALT');
 
@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
 
                 $models = ripcord::client("$url/xmlrpc/2/object");
 
-                $deptId = $entityBody['deptId'];
+                // $deptId = $entityBody['deptId'];
                 $collegeId = $entityBody['collegeId'];
 
                 $session = $models->execute_kw(

@@ -66,13 +66,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
                 "academic_year" => $academic_year,
             );
+        echo json_encode($response);
+
         } else {
             // 120AB
             $response = array(
                 'val' => 'error',
-                'error' => $languages
+                'error' => $yearr
             );
-        }
         echo json_encode($response);
+
+        }
     }
 }

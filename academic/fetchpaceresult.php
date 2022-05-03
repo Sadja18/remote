@@ -60,17 +60,83 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 if (isset($uid) && $uid != false && $uid != 'false') {
                     $models = ripcord::client("$url/xmlrpc/2/object");
 
-                    
+                    $resultLines = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        "pace.examresult.line",
+                        "search_read",
+                        array(
+                            array(
+                                array("name", "!=", FALSE)
+                            ),
+                        ),
+                        array(
+                            "fields" => array(
+                                "roll_no", "name", "marks",
+                                "result", "mark_id", "academic_class",
+                                "subject", "date", "exam_name",
+                                "year_id", "school_id", "display_name",
+                            ),
+                        )
+                    );
+
+                    if (isset($resultLines) && $resultLines != false) {
+                        if (!isset($resultLines['faultString'])) {
+
+                            echo json_encode(
+                                array(
+                                    "message" => "success",
+                                    "data"=> $resultLines,
+                                )
+                            );
+
+                        } else {
+                            echo json_encode(
+                                array(
+                                    $resultLines,
+                                )
+                            );
+
+                        }
+
+                    } else {
+                        echo json_encode(
+                            array(
+                                http_response_code(500),
+                                "message" => "error",
+                                "error" => $resultLines,
+                            )
+                        );
+                    }
+
                 } else {
-                    echo json_encode($failedLogin);
+
+                    echo json_encode(
+                        array(
+                            http_response_code(401),
+
+                            $failedLogin,
+                        )
+                    );
 
                 }
             } else {
-                echo json_encode($failInvalidCredentials);
 
+                echo json_encode(
+                    array(
+                        http_response_code(401),
+                        $failInvalidCredentials)
+                );
             }
         } else {
-            echo json_encode($failNoData);
+
+            echo json_encode(
+                array(
+                    http_response_code(400),
+                    $failNoData,
+                )
+            );
 
         }
     } else {

@@ -14,9 +14,9 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 
 (new DotEnv(__DIR__ . '/.env'))->load();
 
-// $url = getenv('PUBLIC');
+$url = getenv('PUBLIC');
 
-$url = getenv('PRIVATE');
+// $url = getenv('PRIVATE');
 // $url = getenv('PUBLICALT');
 // $url = getenv('PRIVATEALT');
 

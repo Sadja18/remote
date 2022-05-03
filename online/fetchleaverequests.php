@@ -12,16 +12,16 @@ $password = null;
 $dbname = null;
 $response = null;
 
+
 require_once './ripcord/ripcord.php';
 
 // check if server request method is get
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     // $response = 'Fetch Request received';
 
-    echo json_decode("echo");
-
     header('Access-Control-Allow-Origin: *', false);
     header('Content-Type: application/json');
+
 
     if (isset($_GET['userName'])) {
         $user = $_GET['userName'];
@@ -35,38 +35,49 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         $dbname = 'school';
     }
 
-    $tableName = null;
-
-    if (isset($_GET['tableName'])) {
-        $tableName = $_GET['tableName'];
-    }else{
-        $tableName = 'student.student';
-    }
-
     $common = ripcord::client($url . '/xmlrpc/2/common');
     $uid = $common->authenticate($dbname, $user, $password, array());
     $models = ripcord::client("$url/xmlrpc/2/object");
 
     if (isset($_GET['Persistent'])) {
-
-        $varl = $models->execute_kw(
-            $dbname, $uid, $password, $tableName, 'fields_get',
-            array(),
-            array('attributes' => array('string', 'help', 'type'))
+        // get teacherLeaveRequests data
+        $teacherLeaveRequests = $models->execute_kw(
+            $dbname,
+            $uid,
+            $password,
+            'teacher.leave.request',
+            'search_read',
+            array(
+                array(
+                    array(
+                        'name', '!=', false
+                    )
+                )
+            ),
+            array('fields' => array('name', 'school_id', 'staff_id','start_date','end_date','user_id','days','reason','state'))
         );
 
-        if (!isset($varl['faultString'])) {
-            $response = array(
-                "f" => $varl,
 
+        if (
+            !isset($teacherLeaveRequests['faultString']) && isset($teacherLeaveRequests) && $teacherLeaveRequests != false
+        ) {
+            $response = array(
+                "message" => "success",
+                'uid'=> $uid,
+                "teacherLeaveRequests" => $teacherLeaveRequests,
             );
+        echo json_encode($response);
+
         } else {
             // 120AB
             $response = array(
                 'val' => 'error',
-                'error' => $varl,
+                'error' => $teacherLeaveRequests,
+                'uid'=> $uid,
+                'p'=> array(!isset($teacherLeaveRequests['faultString']), isset($teacherLeaveRequests), $teacherLeaveRequests != false)
             );
-        }
         echo json_encode($response);
+
+        }
     }
 }

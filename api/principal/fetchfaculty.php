@@ -15,8 +15,8 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 
 (new DotEnv(__DIR__ . '/.env'))->load();
 
-// $url = getenv('PUBLIC');
-$url = getenv('PRIVATE');
+$url = getenv('PUBLIC');
+// $url = getenv('PRIVATE');
 // $url = getenv('PUBLICALT');
 // $url = getenv('PRIVATEALT');
 
@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
 
             $models = ripcord::client("$url/xmlrpc/2/object");
 
-            $deptId = $entityBody['deptId'];
+            // $deptId = $entityBody['deptId'];
             $collegeId = $entityBody['collegeId'];
 
             $collDeptLine = $models->execute_kw(
@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 array(
                     array(
                         // array('email_id', '=', $userName),
-                        array('department_id', '=', (int) $deptId),
+                        // array('department_id', '=', (int) $deptId),
                         array('college_id', '=', (int) $collegeId),
                     ),
                 ),
@@ -93,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         array(
                             array("user_id", '!=', false),
                             array('active', '=', true),
-                            array('dept_id', '=', (int) $deptId),
+                            // array('dept_id', '=', (int) $deptId),
                             array('college_id', '=', (int) $collegeId),
                         ),
                     ),
@@ -109,7 +109,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         array(
                             array("user_id", '!=', false),
                             array('active', '=', true),
-                            array('dept_id', '=', (int) $deptId),
+                            // array('dept_id', '=', (int) $deptId),
                             array('college_id', '=', (int) $collegeId),
                         ),
                     ),
