@@ -38,11 +38,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 
 $arr = array();
 
-if (isset($_SESSION['dbname'])) {
-    $dbname = $_SESSION['dbname'];
-} else {
-    $dbname = 'school';
-}
+
 
 
 
@@ -58,7 +54,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $userName = $entityBody['user'];
     $userPassword = $entityBody['password'];
 
-    // $url = $privateURL;
+    if (isset($entityBody['dbname'])) {
+        $dbname = $entityBody['dbname'];
+    } else {
+        $dbname = 'doednhdd';
+    }
 
     $common = ripcord::client($url . '/xmlrpc/2/common');
 
@@ -67,7 +67,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     if (empty($userID) or !isset($userID) or $userID == 0 or $userID == false) {
         $arr = array(
-            'login_status' => 0
+            'login_status' => 0,
+            'dbname'=> $dbname
         );
     } else {
         $arr = array(

@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
     if (isset($entityBody['dbname'])) {
         $dbname = $entityBody['dbname'];
     } else {
-        $dbname = 'school';
+        $dbname = 'doednhdd';
     }
 
     // if parameters are passed

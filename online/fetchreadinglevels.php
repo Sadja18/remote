@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     if (isset($_GET['dbname'])) {
         $dbname = $_GET['dbname'];
     } else {
-        $dbname = 'school';
+        $dbname = 'doednhdd';
     }
 
     $common = ripcord::client($url . '/xmlrpc/2/common');

@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     if (isset($entityBody['dbname'])) {
         $dbname = $entityBody['dbname'];
     } else {
-        $dbname = 'school';
+        $dbname = 'doednhdd';
     }
 
     if (isset($entityBody['sync'])) {
@@ -70,9 +70,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 'create',
                 array(
                     array(
-                        'name.id'=>(int) $leaveTypeName,
+                        'name'=>(int) $leaveTypeName,
                         'school_id'=>(int)$schoolId,
-                        'user_id'=> (int) 12,
+                        // 'user_id'=> (int) 12,
                         'staff_id'=>(int) $teacherId,
                         'start_date'=> $startDate,
                         'end_date'=> $endDate,
