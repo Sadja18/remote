@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
             // if there is current academic year
             if (isset($academic_year_id)) {
                 // if models is successfully generated
-                if (isset($models) && !(get_object_vars($models)["_throwexceptions"])) {
+                if (isset($models)) {
 
                     // if sync is numeric
                     if (isset($entityBody['numeric'])) {
@@ -397,8 +397,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                                             echo json_encode($failed);
                                         }
                                     }
-
-
                                     $response = array(
                                         'e' => $record_create_id,
 
