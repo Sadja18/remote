@@ -68,6 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                 "teacher" => array(
                     "teacher_id" => $teacher_id,
                     "teacher_name" => $teacher_name,
+                    'userID'=> $uid,
                 ),
             );
         } else {
