@@ -78,7 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         'end_date'=> $endDate,
                         'reason'=> $reason,
                         'days'=> (int) $days,
-                        'state'=> 'draft'
+                        'state'=> 'toapprove'
                     )
                 )
             );
