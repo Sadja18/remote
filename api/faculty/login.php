@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 array('fields' => array(
                     'name', 'display_name', 'class_id', 'course_id',
                     'college_id', 'is_parent', 'is_hod', 'is_mentor',
-                    'teacher_type', 'dept_id'
+                    'teacher_type', 'dept_id', 'employee_id','teacher_code'
                 ))
             );
 
@@ -115,78 +115,46 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         'data' => []
                     ));
                 } else {
-                    if (isset($collDeptLine[0]) && !isset($collAdmin[0])) {
+                    if (isset($collAdmin[0])) {
                         // means that the teacher is only a dept HoD
 
-                        echo json_encode(array(
-                            'message' => 'Success',
-                            'data' => array(
-                                'userId' => $uid,
-                                'userName' => $userName,
-                                'userPassword' => $userPassword,
-                                'dbname' => $dbname,
-                                'isHoD' => 'yes',
-                                'isPrincipal' => 'no',
-                                'collegeId'=> $college[0],
-                                'collegeName'=> $college[1],
-                                'deptId' => $collDeptLine[0]['department_id'][0],
-                                'deptName' => $collDeptLine[0]['department_id'][1]
-                            )
-                        ));
+                        echo json_encode($failedLogin);
+                    }else{
+                        if(isset($collDeptLine[0])){
+                            // this faculty is hod
+                            echo json_encode($failedLogin);
+                            // echo json_encode($results);
+
+                        }else{
+                            // faculty
+                            $teacherName = $results[0]['name'];
+                            $empId = $results[0]['employee_id'][0];
+                            $teacherCode = $results[0]['teacher_code'];
+                            $isHoD = 'no';
+
+                            if($results[0]['is_hod']){
+                                $isHoD = 'yes';
+                            }
+                            echo json_encode(array(
+                                'message' => 'Success',
+                                'data' => array(
+                                    'userId' => $uid,
+                                    'userName' => $userName,
+                                    'userPassword' => $userPassword,
+                                    'dbname' => $dbname,
+                                    'empId'=> $empId,
+                                    'teacherCode'=> $teacherCode,
+                                    'facultyName'=> $teacherName,
+                                    'deptId' => $results[0]['dept_id'][0],
+                                    'deptName' => $results[0]['dept_id'][1],
+                                    'collegeId'=> $college[0],
+                                    'collegeName'=> $college[1],
+                                    'isHoD'=> $isHoD,
+                                )
+                            ));
+                        }
                     }
-                    if (isset($collAdmin[0]) && !isset($collDeptLine[0])) {
-                        // means that the teacher is only a college principal
-                        echo json_encode(array(
-                            'message' => 'Success',
-                            'data' => array(
-                                'userId' => $uid,
-                                'userName' => $userName,
-                                'userPassword' => $userPassword,
-                                'dbname' => $dbname,
-                                'isHoD' => 'no',
-                                'isPrincipal' => 'yes',
-                                'collegeId'=> $college[0],
-                                'collegeName'=> $college[1],
-                            )
-                        ));
-                    }
-                    if (isset($collAdmin[0]) && isset($collDeptLine[0])) {
-                        // means that the teacher is both a principal and a dept HoD
-                        echo json_encode(array(
-                            'message' => 'Success',
-                            'data' => array(
-                                'userId' => $uid,
-                                'userName' => $userName,
-                                'userPassword' => $userPassword,
-                                'dbname' => $dbname,
-                                'isHoD' => 'yes',
-                                'isPrincipal' => 'yes',
-                                'deptId' => $collDeptLine[0]['department_id'][0],
-                                'deptName' => $collDeptLine[0]['department_id'][1],
-                                'collegeId'=> $college[0],
-                                'collegeName'=> $college[1],
-                            )
-                        ));
-                    }
-                    if (!isset($collAdmin[0]) && !isset($collDeptLine[0])) {
-                        // means the faculty is neither a dept HoD nor a principal
-                        echo json_encode(array(
-                            'message' => 'Success',
-                            'data' => array(
-                                'userId' => $uid,
-                                'userName' => $userName,
-                                'userPassword' => $userPassword,
-                                'dbname' => $dbname,
-                                'isHoD' => 'no',
-                                'isPrincipal' => 'no',
-                                'deptId' => $results[0]['dept_id'][0],
-                                'deptName' => $results[0]['dept_id'][1],
-                                'collegeId'=> $college[0],
-                                'collegeName'=> $college[1],
-                            )
-                        ));
-                    }
-                }
+                }// end else
             } else {
                 echo json_encode($failedLogin);
             }
