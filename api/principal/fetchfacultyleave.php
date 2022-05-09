@@ -79,9 +79,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     )
                 );
                 sleep(2);
-                $zero = $session[0];
-                $dateStart = $zero['date_start'];
-                $dateEnd = $zero['date_stop'];
+                // $zero = $session[0];
+                // $dateStart = $zero['date_start'];
+                // $dateEnd = $zero['date_stop'];
 
                 $leaveCount = $models->execute_kw(
                     $dbname,
@@ -93,8 +93,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         array(
                             array("college_id", "=", (int) $collegeId),
                             array('state', '=', 'toapprovep'),
-                            array('start_date', '>=', $dateStart),
-                            array('end_date', '<=', $dateEnd),
+                            // array('app_date', '>=', $dateStart),
+                            // array('app_date', '<=', $dateEnd),
                         ),
                     ),
 
@@ -110,8 +110,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         array(
                             array("college_id", "=", (int) $collegeId),
                             array('state', '=', 'toapprovep'),
-                            array('start_date', '>=', $dateStart),
-                            array('end_date', '<=', $dateEnd),
+                            // array('app_date', '>=', $dateStart),
+                            // array('app_date', '<=', $dateEnd),
                         ),
                     ),
                     array(
@@ -121,11 +121,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                             "start_date", "end_date", "days",
                             "app_date",
                         ),
+
                     ),
                 );
                 $response = array(
                     'no_of_records' => $leaveCount,
                     'data' => $leaveApps,
+                    // 'session academic'=> $session,
                     'message' => 'Success',
 
                 );

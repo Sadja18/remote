@@ -74,11 +74,37 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         'student_name',
                         'middle',
                         'last',
-                        'college_id'
+                        'pid',
+                        'roll_no',
+                        "enrol_no",
+                        'course_id',
+                        'class_id',
+                        'dept_id',
+                        'colyear',
+                        'semester',
+                        "college_id",
                     ),
                 )
             );
 
+            $course_id = $users[0]['course_id'][0];
+            $college_id = $users[0]['college_id'][0];
+
+            $isArtScience = $models->execute_kw(
+                $dbname,
+                $uid,
+                $userPassword,
+                'course.course',
+                'search_read',
+                array(
+                    array(
+                        array('id', '=', (int) $course_id),
+                        array('college_id', '=', $college_id),
+                    ),
+                ),
+                array("fields" => array("no_dept"))
+            );
+            $users[0]['no_dept'] = $isArtScience[0]['no_dept'];
             echo json_encode(
                 array(
                     "message" => "success",
@@ -93,6 +119,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         'fName'=> $users[0]['student_name'],
                         'mName'=> $users[0]['middle'],
                         'lName'=> $users[0]['last'], 
+                        'course'=> $users[0]['course_id'],
+                        'class'=> $users[0]['class_id'],
+                        'year'=> $users[0]['colyear'],
+                        'semester'=> $users[0]['semester'],
+                        'department'=> $users[0]['dept_id'],
+                        'noDept'=> $users[0]['no_dept'],
                         'collegeId'=> $users[0]['college_id'][0],
                         'collegeName'=> $users[0]['college_id'][1]
                     ),

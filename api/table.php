@@ -23,7 +23,7 @@ $url = getenv('PUBLIC');
 if ($_SERVER['REQUEST_METHOD'] == 'GET' || $_SERVER['REQUEST_METHOD'] == 'get') {
     $user = 'vigneswaris@cdac.in';
     $password = 'admin@1234';
-    $dbname = 'school';
+    $dbname = 'college';
 
     $common = ripcord::client($url . '/xmlrpc/2/common');
 
@@ -31,26 +31,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' || $_SERVER['REQUEST_METHOD'] == 'get') 
 
     $models = ripcord::client("$url/xmlrpc/2/object");
     $table = $_GET['table'];
-    $res = $models->execute_kw(
-        $dbname,
-        $uid,
-        $password,
-        $table,
-        'fields_get',
-        array(),
-        array(
-            'attributes' =>         
-            array(
-                'string', 'help', 'type',
-                'relation', 'required', 'depends',
-            )
-        )
-    );
+   $res =  $models->execute_kw(
+       $dbname, 
+       $uid, 
+       $password, 
+       $table, 
+       'fields_get', 
+       array(), 
+       array('attributes' => array(
+           'string', 'help', 'type', 'description',
+        ),
+    ),
+);
 
     echo json_encode(
         array(
-            'f'=> gettype($table),
-            'g'=> $_GET,
+            'g'=> $_GET['table'],
             'res'=> $res
         )
     );
