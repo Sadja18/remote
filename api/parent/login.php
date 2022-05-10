@@ -79,6 +79,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 ))
             );
 
+            $parents = $models->execute_kw(
+                $dbname,
+                $uid,
+                $userPassword,
+                'college.parent',
+                'search_read',
+                array(
+                    array(
+                        array('name',"!=", False),
+                    )
+                ),
+                array(
+                    'fields'=> array(
+                        'name', 'parent_id', 'student_id', 'child_ids'
+                    )
+                )    
+            ); 
+            $parent = $parents[0];
+            $parentId = $parent['id'];
+            $childIds = $parent['student_id'];
+
             $validity =  $res[0];
 
             $groups_id = $validity['groups_id'];
@@ -92,7 +113,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         "userPassword" => $userPassword,
                         "dbname" => $dbname,
                         "loginStatus" => '1',
-                        'displayName'=> $validity['display_name']
+                        'displayName'=> $validity['display_name'],
+                        'parentId'=> $parentId,
+                        "children"=> $childIds
                     )
                 ));
             } else {
@@ -107,7 +130,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
         echo json_encode($failNoData);
     }
 } else {
-    // if request is not POST
+    // if request is not POST`
 
     echo json_encode($failNotPost);
 }
