@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 array('fields' => array(
                     'name', 'display_name', 'class_id', 'course_id',
                     'college_id', 'is_parent', 'is_hod', 'is_mentor',
-                    'teacher_type', 'dept_id', 'employee_id','teacher_code'
+                    'teacher_type', 'dept_id', 'employee_id','teacher_code', 'image'
                 ))
             );
 
@@ -156,6 +156,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                                 'collegeId'=> $college[0],
                                 'collegeName'=> $college[1],
                                 'isHoD'=> $isHoD,
+                                'profilePic'=> $results[0]['image'],
                             )
                         ));
                     }

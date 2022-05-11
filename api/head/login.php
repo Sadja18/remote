@@ -21,19 +21,19 @@ $url = getenv('PUBLIC');
 // $url = getenv('PRIVATEALT');
 
 $failNotPost = array(
-    'message' => 'Invalid Request'
+    'message' => 'Invalid Request',
 );
 
 $failNoData = array(
-    'message' => 'Please pass required parameters'
+    'message' => 'Please pass required parameters',
 );
 
 $failInvalidCredentials = array(
-    "message" => "Invalid Credentials"
+    "message" => "Invalid Credentials",
 );
 
 $failedLogin = array(
-    "message" => "Login Failure. This user does not have the required access rights."
+    "message" => "Login Failure. This user does not have the required access rights.",
 );
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post') {
@@ -69,13 +69,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 'search_read',
                 array(
                     array(
-                        array('user_id', '!=', False),
-                    )
+                        array('user_id', '!=', false),
+                    ),
                 ),
                 array('fields' => array(
                     'name', 'display_name', 'class_id', 'course_id',
                     'college_id', 'is_parent', 'is_hod', 'is_mentor',
-                    'teacher_type', 'dept_id'
+                    'teacher_type', 'dept_id', 'image',
                 ))
             );
 
@@ -89,12 +89,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 'search_read',
                 array(
                     array(
-                        array('email_id', '=', $userName)
-                    )
+                        array('email_id', '=', $userName),
+                    ),
                 ),
                 array('fields' => array('email_id', 'hod', 'department_id')),
             );
-
 
             $collAdmin = $models->execute_kw(
                 $dbname,
@@ -104,8 +103,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 'search_read',
                 array(
                     array(
-                        array('email', '=', $userName)
-                    )
+                        array('email', '=', $userName),
+                    ),
                 ),
                 array('fields' => array('email'))
             );
@@ -132,16 +131,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                                 'dbname' => $dbname,
                                 'isHoD' => 'yes',
                                 'isPrincipal' => 'no',
-                                'facultyId'=> $teacherId,
-                                'facultyName'=> $teacherName,
-                                'collegeId'=> $college[0],
-                                'collegeName'=> $college[1],
+                                'facultyId' => $teacherId,
+                                'facultyName' => $teacherName,
+                                'collegeId' => $college[0],
+                                'collegeName' => $college[1],
                                 'deptId' => $collDeptLine[0]['department_id'][0],
                                 'deptName' => $collDeptLine[0]['department_id'][1],
-                                'g'=> $collDeptLine[0],
-                            )
+                                'profilePic' => $results[0]['image'],
+                            ),
                         ));
-                    }else{
+                    } else {
                         echo json_encode($failedLogin);
                     }
                 }

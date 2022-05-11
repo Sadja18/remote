@@ -1,0 +1,276 @@
+{
+    "no_of_records": 6,
+    "data": [
+        {
+            "id": 113,
+            "user_id": [
+                722,
+                "Chandru"
+            ],
+            "pid": "New",
+            "photo": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "student_name": "Chandru",
+            "stu_name": "Chandru",
+            "middle": false,
+            "last": "R",
+            "student_code": "127\/False\/7167",
+            "enrol_no": false,
+            "roll_no": "1",
+            "year": [
+                88,
+                " [-]2021-22"
+            ],
+            "colyear": [
+                1,
+                "First Year"
+            ],
+            "semester": [
+                1,
+                "First Semester"
+            ],
+            "course_id": [
+                37,
+                "Bachelor of Arts in  Economics"
+            ],
+            "no_dept": false,
+            "class_id": [
+                95,
+                "B.A. Economics[I Year-II Sem][B-ENG]"
+            ],
+            "dept_id": [
+                13,
+                "Department of Economics"
+            ],
+            "parent_name": "krishna",
+            "college_id": [
+                13,
+                "Government College Daman"
+            ]
+        },
+        {
+            "id": 1289,
+            "user_id": [
+                1899,
+                "Monik"
+            ],
+            "pid": "New",
+            "photo": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "student_name": "Monik",
+            "stu_name": "Monik",
+            "middle": "K",
+            "last": "Patel",
+            "student_code": "127\/False\/9235",
+            "enrol_no": "E19080127000110001",
+            "roll_no": "2",
+            "year": [
+                88,
+                " [-]2021-22"
+            ],
+            "colyear": [
+                1,
+                "First Year"
+            ],
+            "semester": [
+                1,
+                "First Semester"
+            ],
+            "course_id": [
+                37,
+                "Bachelor of Arts in  Economics"
+            ],
+            "no_dept": false,
+            "class_id": [
+                95,
+                "B.A. Economics[I Year-II Sem][B-ENG]"
+            ],
+            "dept_id": [
+                13,
+                "Department of Economics"
+            ],
+            "parent_name": "krishna",
+            "college_id": [
+                13,
+                "Government College Daman"
+            ]
+        },
+        {
+            "id": 1291,
+            "user_id": [
+                1906,
+                "Keval"
+            ],
+            "pid": "New",
+            "photo": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "student_name": "Keval",
+            "stu_name": "Keval",
+            "middle": "Mitesh",
+            "last": "Patel",
+            "student_code": "127\/-\/9237",
+            "enrol_no": false,
+            "roll_no": "S21001",
+            "year": [
+                88,
+                " [-]2021-22"
+            ],
+            "colyear": [
+                1,
+                "First Year"
+            ],
+            "semester": [
+                1,
+                "First Semester"
+            ],
+            "course_id": [
+                77,
+                "Bachelor of Science in Chemistry"
+            ],
+            "no_dept": false,
+            "class_id": [
+                103,
+                "B.Sc. Chemistry[I Year-I Sem][A-ENG]"
+            ],
+            "dept_id": [
+                9,
+                "Department of Chemistry"
+            ],
+            "parent_name": "Ashvin",
+            "college_id": [
+                13,
+                "Government College Daman"
+            ]
+        },
+        {
+            "id": 1297,
+            "user_id": [
+                1915,
+                "Pranav"
+            ],
+            "pid": "New",
+            "photo": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "student_name": "Pranav",
+            "stu_name": "Pranav",
+            "middle": false,
+            "last": "Mishra",
+            "student_code": "127\/-\/9243",
+            "enrol_no": false,
+            "roll_no": "S12002",
+            "year": [
+                88,
+                " [-]2021-22"
+            ],
+            "colyear": [
+                1,
+                "First Year"
+            ],
+            "semester": [
+                1,
+                "First Semester"
+            ],
+            "course_id": [
+                77,
+                "Bachelor of Science in Chemistry"
+            ],
+            "no_dept": false,
+            "class_id": [
+                103,
+                "B.Sc. Chemistry[I Year-I Sem][A-ENG]"
+            ],
+            "dept_id": [
+                9,
+                "Department of Chemistry"
+            ],
+            "parent_name": "Kumar Mishra",
+            "college_id": [
+                13,
+                "Government College Daman"
+            ]
+        },
+        {
+            "id": 1307,
+            "user_id": [
+                1938,
+                "Achal"
+            ],
+            "pid": "New",
+            "photo": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "student_name": "Achal",
+            "stu_name": "Achal",
+            "middle": false,
+            "last": "Mishra",
+            "student_code": "127\/-\/9271",
+            "enrol_no": false,
+            "roll_no": "C12D001",
+            "year": [
+                88,
+                " [-]2021-22"
+            ],
+            "colyear": [
+                1,
+                "First Year"
+            ],
+            "semester": [
+                1,
+                "First Semester"
+            ],
+            "course_id": [
+                85,
+                "Bachelor of Science"
+            ],
+            "no_dept": true,
+            "class_id": false,
+            "dept_id": false,
+            "parent_name": "Kumar Mishra",
+            "college_id": [
+                13,
+                "Government College Daman"
+            ]
+        },
+        {
+            "id": 1308,
+            "user_id": [
+                1939,
+                "Vijay"
+            ],
+            "pid": "New",
+            "photo": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "student_name": "Vijay",
+            "stu_name": "Vijay",
+            "middle": false,
+            "last": "Mishra",
+            "student_code": "127\/-\/9274",
+            "enrol_no": false,
+            "roll_no": false,
+            "year": [
+                88,
+                " [-]2021-22"
+            ],
+            "colyear": [
+                2,
+                "Second Year"
+            ],
+            "semester": [
+                3,
+                "Third Semester"
+            ],
+            "course_id": [
+                37,
+                "Bachelor of Arts in  Economics"
+            ],
+            "no_dept": false,
+            "class_id": [
+                63,
+                "B.A. Economics[II Year-III Sem][A-ENG]"
+            ],
+            "dept_id": [
+                13,
+                "Department of Economics"
+            ],
+            "parent_name": "Kumar Mishra",
+            "college_id": [
+                13,
+                "Government College Daman"
+            ]
+        }
+    ],
+    "message": "Success"
+}

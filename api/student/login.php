@@ -83,6 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         'colyear',
                         'semester',
                         "college_id",
+                        "photo"
                     ),
                 )
             );
@@ -126,7 +127,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         'department'=> $users[0]['dept_id'],
                         'noDept'=> $users[0]['no_dept'],
                         'collegeId'=> $users[0]['college_id'][0],
-                        'collegeName'=> $users[0]['college_id'][1]
+                        'collegeName'=> $users[0]['college_id'][1],
+                        'profilePic'=> $users[0]['photo'],
                     ),
                 )
             );

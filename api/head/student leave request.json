@@ -1,0 +1,118 @@
+{
+    "no_of_records": 4,
+    "data": [
+        {
+            "id": 20,
+            "name": false,
+            "student_id": [
+                1297,
+                "Pranav"
+            ],
+            "roll_no": "S12002",
+            "class_id": [
+                103,
+                "B.Sc. Chemistry[I Year-I Sem][A-ENG]"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "attachments": false,
+            "state": "toapprove",
+            "start_date": "2022-03-15",
+            "end_date": "2022-03-15",
+            "teacher_id": [
+                82,
+                "Department of Chemistry HoD"
+            ],
+            "days": 1,
+            "reason": "vfr",
+            "display_name": "vfr"
+        },
+        {
+            "id": 22,
+            "name": false,
+            "student_id": [
+                1297,
+                "Pranav"
+            ],
+            "roll_no": "S12002",
+            "class_id": [
+                103,
+                "B.Sc. Chemistry[I Year-I Sem][A-ENG]"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "attachments": false,
+            "state": "toapprove",
+            "start_date": "2022-03-16",
+            "end_date": "2022-03-16",
+            "teacher_id": [
+                82,
+                "Department of Chemistry HoD"
+            ],
+            "days": 1,
+            "reason": "fgh",
+            "display_name": "fgh"
+        },
+        {
+            "id": 24,
+            "name": false,
+            "student_id": [
+                1297,
+                "Pranav"
+            ],
+            "roll_no": "S12002",
+            "class_id": [
+                103,
+                "B.Sc. Chemistry[I Year-I Sem][A-ENG]"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "attachments": false,
+            "state": "toapprove",
+            "start_date": "2022-03-24",
+            "end_date": "2022-03-24",
+            "teacher_id": [
+                82,
+                "Department of Chemistry HoD"
+            ],
+            "days": 1,
+            "reason": "code tesrt 1 0",
+            "display_name": "code tesrt 1 0"
+        },
+        {
+            "id": 25,
+            "name": false,
+            "student_id": [
+                1297,
+                "Pranav"
+            ],
+            "roll_no": "S12002",
+            "class_id": [
+                103,
+                "B.Sc. Chemistry[I Year-I Sem][A-ENG]"
+            ],
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "attachments": false,
+            "state": "toapprove",
+            "start_date": "2022-03-21",
+            "end_date": "2022-03-22",
+            "teacher_id": [
+                82,
+                "Department of Chemistry HoD"
+            ],
+            "days": 2,
+            "reason": "byt",
+            "display_name": "byt"
+        }
+    ],
+    "message": "Success"
+}
