@@ -81,6 +81,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
 
             $college = $results[0]['college_id'];
 
+            $deptId = $results[0]['dept_id'][0];
+            $collegeId = $college[0];
+
             $collDeptLine = $models->execute_kw(
                 $dbname,
                 $uid,
@@ -89,10 +92,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 'search_read',
                 array(
                     array(
-                        array('email_id', '=', $userName)
+                        // array('email_id', '=', $userName),
+                        array('department_id', '=', (int)$deptId),
+                        array('college_id', '=', (int)$collegeId)
                     )
                 ),
-                array('fields' => array('email_id', 'hod', 'department_id')),
+                array('fields' => array('email_id', 'hod', 'department_id', 'college_id')),
             );
 
             $collAdmin = $models->execute_kw(
@@ -120,39 +125,39 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
 
                         echo json_encode($failedLogin);
                     }else{
-                        if(isset($collDeptLine[0])){
-                            // this faculty is hod
-                            echo json_encode($failedLogin);
-                            // echo json_encode($results);
+                        // faculty
+                        $teacherId = $results[0]['id'];
+                        $teacherName = $results[0]['name'];
+                        $empId = $results[0]['employee_id'][0];
+                        $teacherCode = $results[0]['teacher_code'];
+                        $isHoD = 'no';
+                        $hodId = $collDeptLine[0]['hod'][0];
+                        $hodName = $collDeptLine[0]['hod'][1];
 
-                        }else{
-                            // faculty
-                            $teacherName = $results[0]['name'];
-                            $empId = $results[0]['employee_id'][0];
-                            $teacherCode = $results[0]['teacher_code'];
-                            $isHoD = 'no';
-
-                            if($results[0]['is_hod']){
-                                $isHoD = 'yes';
-                            }
-                            echo json_encode(array(
-                                'message' => 'Success',
-                                'data' => array(
-                                    'userId' => $uid,
-                                    'userName' => $userName,
-                                    'userPassword' => $userPassword,
-                                    'dbname' => $dbname,
-                                    'empId'=> $empId,
-                                    'teacherCode'=> $teacherCode,
-                                    'facultyName'=> $teacherName,
-                                    'deptId' => $results[0]['dept_id'][0],
-                                    'deptName' => $results[0]['dept_id'][1],
-                                    'collegeId'=> $college[0],
-                                    'collegeName'=> $college[1],
-                                    'isHoD'=> $isHoD,
-                                )
-                            ));
+                        if($results[0]['is_hod']){
+                            $isHoD = 'yes';
                         }
+                        echo json_encode(array(
+                            'message' => 'Success',
+                            'data' => array(
+                                // 'h'=> $collDeptLine,
+                                'userId' => $uid,
+                                'userName' => $userName,
+                                'userPassword' => $userPassword,
+                                'dbname' => $dbname,
+                                'empId'=> $empId,
+                                'teacherId'=> $teacherId,
+                                'teacherCode'=> $teacherCode,
+                                'facultyName'=> $teacherName,
+                                'deptId' => $results[0]['dept_id'][0],
+                                'deptName' => $results[0]['dept_id'][1],
+                                'deptHeadFacultyUserId'=> $hodId,
+                                'deptHeadName'=> $hodName,
+                                'collegeId'=> $college[0],
+                                'collegeName'=> $college[1],
+                                'isHoD'=> $isHoD,
+                            )
+                        ));
                     }
                 }// end else
             } else {

@@ -119,7 +119,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                             "name", "leave_session", "staff_id", "reason",
                             "state", "dept_id", "college_id",
                             "start_date", "end_date", "days",
-                            "app_date",
+                            "app_date", 
                         ),
 
                     ),
