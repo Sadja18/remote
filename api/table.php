@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' || $_SERVER['REQUEST_METHOD'] == 'get') 
        'fields_get', 
        array(), 
        array('attributes' => array(
-           'string', 'help', 'type', 'description',
+           'string', 'help', 'type', 'description', 'relation',
         ),
     ),
 );
