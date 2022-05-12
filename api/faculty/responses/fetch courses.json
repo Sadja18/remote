@@ -1,9 +1,7 @@
 {
     "no_of_records": {
         "no_of_artsScience": 2,
-        "no_of_others": 14,
-        "yearCount": 4,
-        "semCount": 8
+        "no_of_others": 14
     },
     "data": {
         "coursesArts": [
@@ -249,124 +247,6 @@
                 "duration": "2",
                 "department_id": false,
                 "no_dept": false
-            }
-        ],
-        "years": [
-            {
-                "id": 1,
-                "name": "First Year",
-                "code": "I Year"
-            },
-            {
-                "id": 2,
-                "name": "Second Year",
-                "code": "II Year"
-            },
-            {
-                "id": 3,
-                "name": "Third Year",
-                "code": "III Year"
-            },
-            {
-                "id": 4,
-                "name": "Fourth Year",
-                "code": "IV Year"
-            }
-        ],
-        "semesters": [
-            {
-                "id": 1,
-                "name": "First Semester",
-                "code": "I Sem",
-                "year_id": [
-                    1,
-                    "First Year"
-                ]
-            },
-            {
-                "id": 2,
-                "name": "Second Semester",
-                "code": "II Sem",
-                "year_id": [
-                    1,
-                    "First Year"
-                ]
-            },
-            {
-                "id": 3,
-                "name": "Third Semester",
-                "code": "III Sem",
-                "year_id": [
-                    2,
-                    "Second Year"
-                ]
-            },
-            {
-                "id": 4,
-                "name": "Fourth Semester",
-                "code": "IV Sem",
-                "year_id": [
-                    2,
-                    "Second Year"
-                ]
-            },
-            {
-                "id": 5,
-                "name": "Fifth Semester",
-                "code": "V Sem",
-                "year_id": [
-                    3,
-                    "Third Year"
-                ]
-            },
-            {
-                "id": 6,
-                "name": "Sixth Semester",
-                "code": "VI Sem",
-                "year_id": [
-                    3,
-                    "Third Year"
-                ]
-            },
-            {
-                "id": 7,
-                "name": "Seventh Semester",
-                "code": "VII Sem",
-                "year_id": [
-                    4,
-                    "Fourth Year"
-                ]
-            },
-            {
-                "id": 8,
-                "name": "Eighth Semester",
-                "code": "VIII Sem",
-                "year_id": [
-                    4,
-                    "Fourth Year"
-                ]
-            }
-        ],
-        "session": [
-            {
-                "id": 88,
-                "name": "2021-22",
-                "code": "-",
-                "date_start": "2021-06-07",
-                "date_stop": "2022-04-25",
-                "oddsem_startdate": "2021-06-07",
-                "oddsem_enddate": "2021-12-30",
-                "evensem_startdate": "2022-01-01",
-                "evensem_enddate": "2022-04-25"
-            }
-        ],
-        "college": [
-            {
-                "id": 13,
-                "com_name": "Government College Daman",
-                "display_name": "Government College Daman",
-                "code": "127",
-                "head_name": "Dr. S. Kumar"
             }
         ]
     },

@@ -21,19 +21,19 @@ $url = getenv('PUBLIC');
 // $url = getenv('PRIVATEALT');
 
 $failNotPost = array(
-    'message' => 'Invalid Request',
+    'message' => 'Invalid Request'
 );
 
 $failNoData = array(
-    'message' => 'Please pass required parameters',
+    'message' => 'Please pass required parameters'
 );
 
 $failInvalidCredentials = array(
-    "message" => "Invalid Credentials",
+    "message" => "Invalid Credentials"
 );
 
 $failedLogin = array(
-    "message" => "Login Failure. This user does not have the required access rights.",
+    "message" => "Login Failure. This user does not have the required access rights."
 );
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post') {
@@ -52,83 +52,90 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
             $dbname = 'college';
         }
 
+
         if (isset($userName) && isset($userPassword)) {
             $common = ripcord::client($url . '/xmlrpc/2/common');
-            sleep(2);
 
             // check if the credentials are valid
             $uid = $common->authenticate($dbname, $userName, $userPassword, array());
 
-            if (isset($uid) && $uid != false && $uid != 'false' && !isset($uid['faultCode'])) {
+            if (isset($uid) && $uid != false && $uid != 'false') {
 
                 $models = ripcord::client("$url/xmlrpc/2/object");
 
-                $session = $models->execute_kw(
+                $deptId = $entityBody['deptId'];
+                $collegeId = $entityBody['collegeId'];
+                // $teacherId = $entityBody['teacherId'];
+
+                $coursesArts = $models->execute_kw(
                     $dbname,
                     $uid,
                     $userPassword,
-                    'academic.year',
+                    'course.course',
                     'search_read',
                     array(
                         array(
-                            array('current', '=', true),
+                            array('no_dept', '=', True),
+                            array('college_id', '=', (int)$collegeId),
                         ),
                     ),
-                    array('fields' => array('date_start', 'date_stop'),
-                    )
+                    array('fields' => array('name', 'college_id', 'duration', 'no_dept'))
                 );
-                sleep(2);
-                $zero = $session[0];
-                $dateStart = $zero['date_start'];
-                $dateEnd = $zero['date_stop'];
-
-                $deptId = $entityBody['deptId'];
-                $collegeId = $entityBody['collegeId'];
-
-                $attendanceCount = $models->execute_kw(
+                $coursesArts_no_records = $models->execute_kw(
                     $dbname,
                     $uid,
                     $userPassword,
-                    'teacher.daily.attendance.line',
+                    'course.course',
                     'search_count',
                     array(
                         array(
-                            // array("teacher_id", "=", (int) $teacherId),
-                            array("date", ">=", $dateStart),
-                            array("date","<=",$dateEnd),
+                            array('no_dept', '=', True),
+                            array('college_id', '=', (int)$collegeId),
                         ),
                     ),
 
                 );
 
-                $attendanceData = $models->execute_kw(
+                $coursesAlt = $models->execute_kw(
                     $dbname,
                     $uid,
                     $userPassword,
-                    'teacher.daily.attendance.line',
+                    'course.course',
                     'search_read',
                     array(
                         array(
-                            // array("teacher_id", "=", (int) $teacherId),
-                            array("date", ">=", $dateStart),
-                            array("date","<=",$dateEnd),
+                            array('no_dept', '=', False),
+                            array('college_id', '=', (int)$collegeId),
                         ),
                     ),
-                    array(
-                        'fields' => array(
-                            "teacher_id",
-                            "teacher_code",
-                            "date",
-                            "college_id",
-                            "is_present",
-                            "is_absent",
-                        ),
-                    ),
+                    array('fields' => array('name', 'code', 'college_id', 'graduate', 'duration', 'department_id',  'no_dept'))
                 );
+
+                $coursesAlt_no_records = $models->execute_kw(
+                    $dbname,
+                    $uid,
+                    $userPassword,
+                    'course.course',
+                    'search_count',
+                    array(
+                        array(
+                            array('no_dept', '=', False),
+                            array('college_id', '=', (int)$collegeId),
+                        ),
+                    ),
+
+                );
+
                 $response = array(
-                    'no_of_records' => $attendanceCount,
-                    'data' => $attendanceData,
-                    'message' => 'Success',
+                    'no_of_records' => array(
+                        'no_of_artsScience' => $coursesArts_no_records,
+                        'no_of_others' => $coursesAlt_no_records,
+                    ),
+                    'data' => array(
+                        'coursesArts' => $coursesArts,
+                        'coursesAlt' => $coursesAlt
+                    ),
+                    'message' => 'Success'
 
                 );
 
