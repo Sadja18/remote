@@ -96,7 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     )
                 ),
                 array(
-                    'fields' => array('name', 'course_id', 'department_id', 'year_id', 'sem_id','college_id', ),
+                    'fields' => array('name', 'course_id', 'department_id', 'year_id', 'sem_id','college_id', 'display_name'),
                 ),
             );
 
