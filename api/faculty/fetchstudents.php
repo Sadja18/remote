@@ -104,7 +104,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     ),
                     array(
                         'fields' => array(
-                            'user_id', 'student_name', 
+                            'user_id', 'student_name', 'course_id',
+                            'college_id', 'class_id', 'dept_id',
                             'student_code', 'middle', 'last',
                             'enrol_no', 'roll_no', 'photo',
                             'year', 'colyear', 'semester',
