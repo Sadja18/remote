@@ -18,7 +18,7 @@ require_once './ripcord/ripcord.php';
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     // $response = 'Fetch Request received';
 
-    echo json_decode("echo");
+    // echo json_decode("echo");
 
     header('Access-Control-Allow-Origin: *', false);
     header('Content-Type: application/json');
@@ -35,36 +35,44 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         $dbname = 'doednhdd';
     }
 
-    $tableName = null;
-
-    if (isset($_GET['tableName'])) {
-        $tableName = $_GET['tableName'];
-    }else{
-        $tableName = 'student.student';
-    }
-
     $common = ripcord::client($url . '/xmlrpc/2/common');
     $uid = $common->authenticate($dbname, $user, $password, array());
     $models = ripcord::client("$url/xmlrpc/2/object");
 
     if (isset($_GET['Persistent'])) {
-
-        $varl = $models->execute_kw(
-            $dbname, $uid, $password, $tableName, 'fields_get',
-            array(),
-            array('attributes' => array('string', 'help', 'type','relation'))
+        $teachers = $models->execute_kw(
+            $dbname,
+            $uid,
+            $password,
+            'school.teacher',
+            'search_read',
+            array(
+                array(
+                    array('active', '=', TRUE),
+                ),
+            ),
+            array(
+                'fields' => array(
+                    'name', 'school_id', 'employee_id',
+                    'teacher_code', 'user_id', "photo"
+                ),
+            )
         );
 
-        if (!isset($varl['faultString'])) {
-            $response = array(
-                "f" => $varl,
+        
 
+        if (!isset($students['faultString'])) {
+            $response = array(
+                'message'=> 'success',
+                "teachers" => $teachers,
             );
         } else {
             // 120AB
             $response = array(
                 'val' => 'error',
-                'error' => $varl,
+                'error' => array(
+                    "students" => $students,
+                ),
             );
         }
         echo json_encode($response);

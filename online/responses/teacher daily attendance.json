@@ -1,0 +1,82 @@
+{
+    "f": {
+        "name": {
+            "type": "char",
+            "string": "Name"
+        },
+        "date": {
+            "type": "date",
+            "help": "Current Date",
+            "string": "Date"
+        },
+        "teacher_ids": {
+            "type": "one2many",
+            "relation": "teacher.daily.attendance.line",
+            "string": "Teachers"
+        },
+        "proxy_ids": {
+            "type": "one2many",
+            "relation": "teacher.daily.attendance.proxy",
+            "string": "TimeTable Management"
+        },
+        "state": {
+            "type": "selection",
+            "string": "State"
+        },
+        "total_teacher": {
+            "type": "integer",
+            "help": "Total Teachers in class",
+            "string": "Total Teachers"
+        },
+        "total_presence": {
+            "type": "integer",
+            "help": "Present Teachers",
+            "string": "Present Teachers"
+        },
+        "total_absent": {
+            "type": "integer",
+            "help": "Absent Teachers",
+            "string": "Absent Teachers"
+        },
+        "school_id": {
+            "type": "many2one",
+            "relation": "school.school",
+            "string": "School Name"
+        },
+        "year": {
+            "type": "many2one",
+            "relation": "academic.year",
+            "string": "Academic Year"
+        },
+        "id": {
+            "type": "integer",
+            "string": "ID"
+        },
+        "display_name": {
+            "type": "char",
+            "string": "Display Name"
+        },
+        "create_uid": {
+            "type": "many2one",
+            "relation": "res.users",
+            "string": "Created by"
+        },
+        "create_date": {
+            "type": "datetime",
+            "string": "Created on"
+        },
+        "write_uid": {
+            "type": "many2one",
+            "relation": "res.users",
+            "string": "Last Updated by"
+        },
+        "write_date": {
+            "type": "datetime",
+            "string": "Last Updated on"
+        },
+        "__last_update": {
+            "type": "datetime",
+            "string": "Last Modified on"
+        }
+    }
+}
