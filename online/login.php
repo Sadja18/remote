@@ -71,14 +71,47 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             'dbname'=> $dbname
         );
     } else {
-        $arr = array(
-            'user' => $entityBody['user'],
-            'password' => $entityBody['password'],
-            'dbname' => $dbname,
-            'login_status' => 1,
-            'userID' => $userID,
-            'isOnline' => 1
+        $models = ripcord::client("$url/xmlrpc/2/object");
+        sleep(1);
+        $record = $models->execute_kw(
+            $dbname,
+            $userID,
+            $userPassword,
+            'school.school',
+            'search_read',
+            array(
+                array(
+                    array(
+                        'email', '=', $userName,
+                    )
+                ),
+            ),
+            array(
+                'fields'=>array('email', 'com_name'),
+            ),
         );
+        if(isset($record) && !isset($record['faultString']) && isset($record[0]['id'])){
+            $arr = array(
+                'user' => $entityBody['user'],
+                'password' => $entityBody['password'],
+                'dbname' => $dbname,
+                'login_status' => 1,
+                'userID' => $userID,
+                'headMaster'=> 'yes',
+                'isOnline' => 1
+            );
+
+        }else{
+            $arr = array(
+                'user' => $entityBody['user'],
+                'password' => $entityBody['password'],
+                'dbname' => $dbname,
+                'login_status' => 1,
+                'userID' => $userID,
+                'headMaster'=> 'no',
+                'isOnline' => 1
+            );
+        }
     }
 
     // header('Access-Control-Allow-Origin: http://10.184.6.81', false);
