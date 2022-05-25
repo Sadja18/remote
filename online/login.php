@@ -98,16 +98,39 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 'login_status' => 1,
                 'userID' => $userID,
                 'headMaster'=> 'yes',
+                'schoolId'=> $record[0]['id'],
                 'isOnline' => 1
             );
 
         }else{
+            sleep(1);
+            $school = $models->execute_kw(
+                $dbname,
+                $userID,
+                $userPassword,
+                'school.school',
+                'search_read',
+                array(
+                    array(
+                        array(
+                            'name', '!=', FALSE
+                        )
+                    )
+                ),
+                array(
+                    'fields'=> array(
+                        'com_name'
+                    ),
+                ),
+            );
+            $schoolId = $school[0]['id'];
             $arr = array(
                 'user' => $entityBody['user'],
                 'password' => $entityBody['password'],
                 'dbname' => $dbname,
                 'login_status' => 1,
                 'userID' => $userID,
+                'schoolId'=> $school[0]['id'],
                 'headMaster'=> 'no',
                 'isOnline' => 1
             );

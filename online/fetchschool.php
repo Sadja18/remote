@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     $uid = $common->authenticate($dbname, $user, $password, array());
     $models = ripcord::client("$url/xmlrpc/2/object");
 
-    if (isset($_GET['Persistent'])) {
+    if (isset($_GET['Persistent']) && ($_GET['Persistent']=='1' || $_GET['Persistent']==1)) {
 
         $teachers = $models->execute_kw(
             $dbname,
@@ -79,5 +79,54 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
             );
         }
         echo json_encode($response);
+    }else if(isset($_GET['Persistent']) && ($_GET['Persistent']=='2' || $_GET['Persistent']==2)){
+        $school = $models->execute_kw(
+            $dbname,
+            $uid,
+            $password,
+            'school.school',
+            'search_read',
+            array(
+                array(
+                    array('email','=', $user)
+                )
+            ),
+            array(
+                'fields'=> array(
+                    'com_name'
+                )
+            )
+        );
+
+        if(isset($school) && !isset($school['faultString'])){
+            $response = array(
+                "message"=> "success",
+                "school" => array(
+                    "school_name" => $school[0]['com_name'],
+                    "school_id" => $school[0]['id'],
+                ),
+            );
+            echo json_encode($response);
+        }else{
+            echo json_encode(
+                array(
+                    'val' => 'error',
+                    'error' => $languages
+                )
+            );
+        }
+
+    }else{
+        echo json_encode(
+            array(
+            "message"=> 'failed',
+            'error'=> 'invalid request parameters'   
+            )
+        );
     }
+}else{
+    echo json_encode(array(
+        'h'=>12321423,
+        'g'=> "jasgdfj"
+    ));
 }
