@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
         
 
-        if (!isset($students['faultString'])) {
+        if (!isset($teachers['faultString'])) {
             $response = array(
                 'message'=> 'success',
                 "teachers" => $teachers,
