@@ -41,7 +41,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $date = $entityBody['date'];
         $submissionDate = $entityBody['submissionDate'];
         $userId = $entityBody['headMasterUserId'];
+
         if(isset($date)){
+            $weekDayCapital = date('l', strtotime($date));
+            $weekDay = strtolower($weekDayCapital);
+
             $common = ripcord::client($url . '/xmlrpc/2/common');
 
             $uid = $common->authenticate($dbname, $user, $password, array());
@@ -92,7 +96,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
             $schoolId = $school[0]['id'];
             $yearId = $year[0]['id'];
-            sleep(0.5);    
+            sleep(0.5); 
+            
+            // foreach ($attendanceSheet[0]->proxy as $key=>$value) {
+            //     echo json_encode(array($key => $attendanceSheet[0]->proxy->$key));
+            // }
 
             $pushEntry = $models-> execute_kw(
                 $dbname,
@@ -109,7 +117,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                             'state'=> 'draft'
                     )
                 ),
-            );
+            );           
 
             if(isset($pushEntry['faultString'])){
                 echo json_encode(
@@ -147,7 +155,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                             )
                     );
 
-                    echo json_encode(array('l'=>$lineId));
+                    // echo json_encode(array('l'=>$lineId));
 
                     if(isset($lineId['faultString'])){
                         $iser = 1;
@@ -173,6 +181,48 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                 ),
                             )
                         );
+                        // foreach($attendance->proxy as $periodName=> $teacherId){
+                        //     $assignedTeacherId = $attendance->proxy->$periodName;
+                        //     $proxyLine = $models->execute_kw(
+                        //         $dbname,
+                        //         $uid,
+                        //         $password,
+                        //         'teacher.daily.attendance.proxy',
+                        //         'search_read',
+                        //         array(
+                        //             array(
+                        //                 array('teachers_ids', '=', $pushEntry),
+                        //                 // array('teacher_id', '=', $teacherId),
+                        //                 // array('period', '=', $periodName),
+                        //                 // array('')
+                        //             )
+                        //         ),
+                        //         array(
+                        //             'fields'=> array('teachers_ids', 'period', 'teacher_id', 'assigned_teacher_id')
+                        //         )
+                        //     );
+                        //     echo json_encode(
+                        //         array(
+                        //             'h'=> $pushEntry,
+                        //         $proxyLine
+                        //         )
+                        //     );
+                            
+                        //     // $models->execute_kw(
+                        //     //     $dbname,
+                        //     //     $uid,
+                        //     //     $password,
+                        //     //     'teacher.daily.attendance.proxy',
+                        //     //     'write',
+                        //     //     array(
+                        //     //         array($proxyLine[0]),
+                        //     //         array(
+                        //     //             'assigned_teacher_id'=> $assignedTeacherId,
+                        //     //         ),
+                        //     //     )
+                        //     // );
+
+                        // }
                     }
                 }
                 if($iser!=0){
