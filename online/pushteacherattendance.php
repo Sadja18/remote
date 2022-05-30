@@ -181,7 +181,33 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                 ),
                             )
                         );
-                        // foreach($attendance->proxy as $periodName=> $teacherId){
+                        
+                    }
+                }
+                if($iser!=0){
+                    echo json_encode(
+                        array(
+                            "message"=> "failed",
+                            'f'=> $message
+                        )
+                    );
+                }else{
+                    $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $password,
+                        'teacher.daily.attendance',
+                        'write',
+                        array(array($pushEntry), array(
+                            'total_teacher' => $totalTeachers,
+                            'total_presence' => $presentCount,
+                            'total_absent' => $absentCount,
+                            'state' => 'draft',
+
+                            ),
+                        )
+                    );
+                    // foreach($attendance->proxy as $periodName=> $teacherId){
                         //     $assignedTeacherId = $attendance->proxy->$periodName;
                         //     $proxyLine = $models->execute_kw(
                         //         $dbname,
@@ -208,45 +234,21 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         //         )
                         //     );
                             
-                        //     // $models->execute_kw(
-                        //     //     $dbname,
-                        //     //     $uid,
-                        //     //     $password,
-                        //     //     'teacher.daily.attendance.proxy',
-                        //     //     'write',
-                        //     //     array(
-                        //     //         array($proxyLine[0]),
-                        //     //         array(
-                        //     //             'assigned_teacher_id'=> $assignedTeacherId,
-                        //     //         ),
-                        //     //     )
-                        //     // );
+                            // $models->execute_kw(
+                            //     $dbname,
+                            //     $uid,
+                            //     $password,
+                            //     'teacher.daily.attendance.proxy',
+                            //     'write',
+                            //     array(
+                            //         array($proxyLine[0]),
+                            //         array(
+                            //             'assigned_teacher_id'=> $assignedTeacherId,
+                            //         ),
+                            //     )
+                            // );
 
                         // }
-                    }
-                }
-                if($iser!=0){
-                    echo json_encode(
-                        array(
-                            "message"=> "failed",
-                            'f'=> $message
-                        )
-                    );
-                }else{
-                    $models->execute_kw(
-                        $dbname,
-                        $uid,
-                        $password,
-                        'teacher.daily.attendance',
-                        'write',
-                        array(array($pushEntry), array(
-                            'total_teacher' => $totalTeachers,
-                            'total_presence' => $presentCount,
-                            'total_absent' => $absentCount,
-                            'state' => 'validate',
-
-                        ))
-                    );
                     echo json_encode(
                         array(
                             'message'=> 'success',
