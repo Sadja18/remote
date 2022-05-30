@@ -47,46 +47,49 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
         $dbname = 'college';
     }
 
-    if (isset($userName) && isset($userPassword)) {
-        $common = ripcord::client($url . '/xmlrpc/2/common');
-
-        // check if the credentials are valid
-        $uid = $common->authenticate($dbname, $userName, $userPassword, array());
-
-        if (isset($uid) && $uid != false && $uid != 'false') {
-            // if the login credentials were correct,
-            $models = ripcord::client("$url/xmlrpc/2/object");
-
-            $studentId  = $entityBody['studentId'];
-            $yearId = $entityBody['academicYearId'];
-
-            $data = $models->execute_kw(
-                $dbname,
-                $uid,
-                $userPassword,
-                'daily.attendance.line',
-                'search_read',
-                array(
+    if(isSiteAvailible($url)){
+        if (isset($userName) && isset($userPassword)) {
+            $common = ripcord::client($url . '/xmlrpc/2/common');
+    
+            // check if the credentials are valid
+            $uid = $common->authenticate($dbname, $userName, $userPassword, array());
+    
+            if (isset($uid) && $uid != false && $uid != 'false') {
+                // if the login credentials were correct,
+                $models = ripcord::client("$url/xmlrpc/2/object");
+    
+                $studentId  = $entityBody['studentId'];
+                $yearId = $entityBody['academicYearId'];
+    
+                $data = $models->execute_kw(
+                    $dbname,
+                    $uid,
+                    $userPassword,
+                    'daily.attendance.line',
+                    'search_read',
                     array(
-                        array('stud_id', '=', (int)$studentId),
-                        array('year', '=', (int)$yearId),
-                    )
-                ),
-                array(
-                    'fields'=> array(
-                        'stud_id', 'roll_no' ,'class_id', 
-                        'is_present', 'is_absent', 'year', 
-                        'date', 'college_id'
+                        array(
+                            array('stud_id', '=', (int)$studentId),
+                            array('year', '=', (int)$yearId),
                         )
-                )
-            );
-            echo json_encode(
-                array(
-                    "message" => "success",
-                    "data" => $data,
-                )
-            );
+                    ),
+                    array(
+                        'fields'=> array(
+                            'stud_id', 'roll_no' ,'class_id', 
+                            'is_present', 'is_absent', 'year', 
+                            'date', 'college_id'
+                            )
+                    )
+                );
+                echo json_encode(
+                    array(
+                        "message" => "success",
+                        "data" => $data,
+                    )
+                );
+            }
         }
+    }else{
+        echo json_encode(serverUnReachable());
     }
-
 }

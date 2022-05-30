@@ -2,6 +2,7 @@
 
 require_once '../ripcord/ripcord.php';
 require_once '../envRead.php';
+require_once '../helper.php';
 
 use sadja\DotEnv;
 
@@ -47,33 +48,37 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
         $dbname = 'college';
     }
 
-    if (isset($userName) && isset($userPassword)) {
-        $common = ripcord::client($url . '/xmlrpc/2/common');
-
-        // check if the credentials are valid
-        $uid = $common->authenticate($dbname, $userName, $userPassword, array());
-
-        if (isset($uid) && $uid != false && $uid != 'false') {
-            // if $uid is not set or it's value is false
-            echo json_encode(
-                array(
-                    "message" => "success",
-                    "data" => array(
-                        "userId"=> $uid,
-                        "userName"=> $userName,
-                        "userPassword"=> $userPassword,
-                        "dbname"=> $dbname,
-                        "loginStatus"=> '1'
+    if(isSiteAvailible($url)){
+        if (isset($userName) && isset($userPassword)) {
+            $common = ripcord::client($url . '/xmlrpc/2/common');
+    
+            // check if the credentials are valid
+            $uid = $common->authenticate($dbname, $userName, $userPassword, array());
+    
+            if (isset($uid) && $uid != false && $uid != 'false') {
+                // if $uid is not set or it's value is false
+                echo json_encode(
+                    array(
+                        "message" => "success",
+                        "data" => array(
+                            "userId"=> $uid,
+                            "userName"=> $userName,
+                            "userPassword"=> $userPassword,
+                            "dbname"=> $dbname,
+                            "loginStatus"=> '1'
+                        )
                     )
-                )
-            );
+                );
+            } else {
+                // if the login credentials were correct,
+                // echo for now
+                echo json_encode($failInvalidCredentials);
+            }
         } else {
-            // if the login credentials were correct,
-            // echo for now
-            echo json_encode($failInvalidCredentials);
+            echo json_encode($failNoData);
         }
-    } else {
-        echo json_encode($failNoData);
+    }else{
+        echo json_encode(serverUnReachable());
     }
 } else {
     // if request is not POST

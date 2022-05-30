@@ -2,6 +2,7 @@
 
 require_once '../ripcord/ripcord.php';
 require_once '../envRead.php';
+require_once '../helper.php';
 
 use sadja\DotEnv;
 
@@ -51,53 +52,57 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
         $dbname = 'college';
     }
 
-    if (isset($userName) && isset($userPassword)) {
-        $common = ripcord::client($url . '/xmlrpc/2/common');
-
-        // check if the credentials are valid
-        $uid = $common->authenticate($dbname, $userName, $userPassword, array());
-
-        if (isset($uid) && $uid != false && $uid != 'false') {
-
-            $models = ripcord::client("$url/xmlrpc/2/object");
-
-            $collAdmin = $models->execute_kw(
-                $dbname,
-                $uid,
-                $userPassword,
-                'college.college',
-                'search_read',
-                array(
+    if(isSiteAvailable($url)){
+        if (isset($userName) && isset($userPassword)) {
+            $common = ripcord::client($url . '/xmlrpc/2/common');
+    
+            // check if the credentials are valid
+            $uid = $common->authenticate($dbname, $userName, $userPassword, array());
+    
+            if (isset($uid) && $uid != false && $uid != 'false') {
+    
+                $models = ripcord::client("$url/xmlrpc/2/object");
+    
+                $collAdmin = $models->execute_kw(
+                    $dbname,
+                    $uid,
+                    $userPassword,
+                    'college.college',
+                    'search_read',
                     array(
-                        array('email', '=', $userName),
+                        array(
+                            array('email', '=', $userName),
+                        ),
                     ),
-                ),
-                array('fields' => array('email', 'head_name', 'display_name', 'com_name', 'code'))
-            );
-
-            if (!isset($collAdmin['faultString'])) {
-                $collAdmin[0]['userId'] = $uid;
-                $collAdmin[0]['userName'] = $userName;
-                $collAdmin[0]['userPassword'] = $userPassword;
-                $collAdmin[0]['dbname'] = $dbname;
-
-                echo json_encode(
-                    array(
-                        "message" => "success",
-                        "data" => $collAdmin,
-                    )
+                    array('fields' => array('email', 'head_name', 'display_name', 'com_name', 'code'))
                 );
+    
+                if (!isset($collAdmin['faultString'])) {
+                    $collAdmin[0]['userId'] = $uid;
+                    $collAdmin[0]['userName'] = $userName;
+                    $collAdmin[0]['userPassword'] = $userPassword;
+                    $collAdmin[0]['dbname'] = $dbname;
+    
+                    echo json_encode(
+                        array(
+                            "message" => "success",
+                            "data" => $collAdmin,
+                        )
+                    );
+                } else {
+                    echo json_encode($collAdmin);
+                }
+    
             } else {
-                echo json_encode($collAdmin);
+                // if the login credentials were incorrect,
+                // echo for now
+                echo json_encode($failInvalidCredentials);
             }
-
         } else {
-            // if the login credentials were incorrect,
-            // echo for now
-            echo json_encode($failInvalidCredentials);
+            echo json_encode($failNoData);
         }
-    } else {
-        echo json_encode($failNoData);
+    }else{
+        echo json_encode(serverUnReachable());
     }
 } else {
     // if request is not POST

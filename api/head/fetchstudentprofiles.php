@@ -52,98 +52,102 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
             $dbname = 'college';
         }
 
-        if (isset($userName) && isset($userPassword)) {
-            $common = ripcord::client($url . '/xmlrpc/2/common');
-
-            // check if the credentials are valid
-            $uid = $common->authenticate($dbname, $userName, $userPassword, array());
-
-            if (isset($uid) && $uid != false && $uid != 'false') {
-
-                $models = ripcord::client("$url/xmlrpc/2/object");
-
-                // $collegeId = $entityBody['collegeId'];
-
-                $session = $models->execute_kw(
-                    $dbname,
-                    $uid,
-                    $userPassword,
-                    'academic.year',
-                    'search_read',
-                    array(
+        if(isSiteAvailable($url)){
+            if (isset($userName) && isset($userPassword)) {
+                $common = ripcord::client($url . '/xmlrpc/2/common');
+    
+                // check if the credentials are valid
+                $uid = $common->authenticate($dbname, $userName, $userPassword, array());
+    
+                if (isset($uid) && $uid != false && $uid != 'false') {
+    
+                    $models = ripcord::client("$url/xmlrpc/2/object");
+    
+                    // $collegeId = $entityBody['collegeId'];
+    
+                    $session = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        'academic.year',
+                        'search_read',
                         array(
-                            array('current', '=', true),
+                            array(
+                                array('current', '=', true),
+                            ),
                         ),
-                    ),
-                    array('fields' => array('date_start', 'date_stop'),
-                    )
-                );
-                sleep(2);
-                // $zero = $session[0];
-                // $dateStart = $zero['date_start'];
-                // $dateEnd = $zero['date_stop'];
-
-                $studentProfilesCount= $models->execute_kw(
-                    $dbname,
-                    $uid,
-                    $userPassword,
-                    'student.student',
-                    'search_count',
-                    array(
+                        array('fields' => array('date_start', 'date_stop'),
+                        )
+                    );
+                    sleep(2);
+                    // $zero = $session[0];
+                    // $dateStart = $zero['date_start'];
+                    // $dateEnd = $zero['date_stop'];
+    
+                    $studentProfilesCount= $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        'student.student',
+                        'search_count',
                         array(
-                            // array("college_id", "=", (int) $collegeId),
-                            array('user_id', '!=',False),
-                            // array('app_date', '>=', $dateStart),
-                            // array('app_date', '<=', $dateEnd),
+                            array(
+                                // array("college_id", "=", (int) $collegeId),
+                                array('user_id', '!=',False),
+                                // array('app_date', '>=', $dateStart),
+                                // array('app_date', '<=', $dateEnd),
+                            ),
                         ),
-                    ),
-
-                );
-
-                $studentProfiles = $models->execute_kw(
-                    $dbname,
-                    $uid,
-                    $userPassword,
-                    'student.student',
-                    'search_read',
-                    array(
+    
+                    );
+    
+                    $studentProfiles = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        'student.student',
+                        'search_read',
                         array(
-                            // array("college_id", "=", (int) $collegeId),
-                            array('user_id', '!=',False),
-                            // array('app_date', '>=', $dateStart),
-                            // array('app_date', '<=', $dateEnd),
+                            array(
+                                // array("college_id", "=", (int) $collegeId),
+                                array('user_id', '!=',False),
+                                // array('app_date', '>=', $dateStart),
+                                // array('app_date', '<=', $dateEnd),
+                            ),
                         ),
-                    ),
-                    array(
-                        'fields' => array(
-                            "user_id", "pid", "photo",
-                            "student_name", "stu_name", "middle", "last",
-                            "student_code", "enrol_no", "roll_no",
-                            "year", "colyear", "semester",
-                            "course_id", "no_dept", "class_id",
-                            "dept_id", "parent_name",
-                            "college_id", 
-                            
+                        array(
+                            'fields' => array(
+                                "user_id", "pid", "photo",
+                                "student_name", "stu_name", "middle", "last",
+                                "student_code", "enrol_no", "roll_no",
+                                "year", "colyear", "semester",
+                                "course_id", "no_dept", "class_id",
+                                "dept_id", "parent_name",
+                                "college_id", 
+                                
+                            ),
+    
                         ),
-
-                    ),
-                );
-                $response = array(
-                    'no_of_records' => $studentProfilesCount,
-                    'data' => $studentProfiles,
-                    // 'session academic'=> $session,
-                    'message' => 'Success',
-
-                );
-
-                echo json_encode($response);
+                    );
+                    $response = array(
+                        'no_of_records' => $studentProfilesCount,
+                        'data' => $studentProfiles,
+                        // 'session academic'=> $session,
+                        'message' => 'Success',
+    
+                    );
+    
+                    echo json_encode($response);
+                } else {
+                    // if the login credentials were incorrect,
+                    // echo
+                    echo json_encode($failInvalidCredentials);
+                }
             } else {
-                // if the login credentials were incorrect,
-                // echo
-                echo json_encode($failInvalidCredentials);
+                echo json_encode($failNoData);
             }
-        } else {
-            echo json_encode($failNoData);
+        }else{
+            echo json_encode(serverUnReachable());
         }
     } else {
         echo json_encode(array('message' => 'Invalid request'));

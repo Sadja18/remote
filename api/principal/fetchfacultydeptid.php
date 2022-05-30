@@ -2,6 +2,7 @@
 
 require_once '../ripcord/ripcord.php';
 require_once '../envRead.php';
+require_once '../helper.php';
 
 use sadja\DotEnv;
 
@@ -51,134 +52,138 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
         $dbname = 'college';
     }
 
-    if (isset($userName) && isset($userPassword)) {
-        $common = ripcord::client($url . '/xmlrpc/2/common');
-
-        // check if the credentials are valid
-        $uid = $common->authenticate($dbname, $userName, $userPassword, array());
-
-        if (isset($uid) && $uid != false && $uid != 'false') {
-
-            $models = ripcord::client("$url/xmlrpc/2/object");
-
-            $deptId = $entityBody['deptId'];
-            $collegeId = $entityBody['collegeId'];
-
-            $collDeptLine = $models->execute_kw(
-                $dbname,
-                $uid,
-                $userPassword,
-                'college.department.line',
-                'search_read',
-                array(
-                    array(
-                        // array('email_id', '=', $userName),
-                        array('department_id', '=', (int) $deptId),
-                        array('college_id', '=', (int) $collegeId),
-                    ),
-                ),
-                array('fields' => array('email_id', 'hod', 'department_id', 'college_id')),
-            );
-
-            if (isset($collDeptLine) && !empty($collDeptLine)) {
-                $hodId = $collDeptLine[0]['hod'][0];
-                $hodName = $collDeptLine[0]['hod'][1];
-                $recordCount = $models->execute_kw(
+    if(isSiteAvailable($url)){
+        if (isset($userName) && isset($userPassword)) {
+            $common = ripcord::client($url . '/xmlrpc/2/common');
+    
+            // check if the credentials are valid
+            $uid = $common->authenticate($dbname, $userName, $userPassword, array());
+    
+            if (isset($uid) && $uid != false && $uid != 'false') {
+    
+                $models = ripcord::client("$url/xmlrpc/2/object");
+    
+                $deptId = $entityBody['deptId'];
+                $collegeId = $entityBody['collegeId'];
+    
+                $collDeptLine = $models->execute_kw(
                     $dbname,
                     $uid,
                     $userPassword,
-                    'college.teacher',
-                    'search_count',
-                    array(
-                        array(
-                            array("user_id", '!=', false),
-                            array('active', '=', true),
-                            array('dept_id', '=', (int) $deptId),
-                            array('college_id', '=', (int) $collegeId),
-                        ),
-                    ),
-                );
-
-                $records = $models->execute_kw(
-                    $dbname,
-                    $uid,
-                    $userPassword,
-                    'college.teacher',
+                    'college.department.line',
                     'search_read',
                     array(
                         array(
-                            array("user_id", '!=', false),
-                            array('active', '=', true),
-                            array('dept_id', '=', (int) $deptId),
+                            // array('email_id', '=', $userName),
+                            array('department_id', '=', (int) $deptId),
                             array('college_id', '=', (int) $collegeId),
                         ),
                     ),
-                    array(
-                        'fields' => array(
-                            'name', 'display_name', 'user_id', 'class_id', 'course_id',
-                            'college_id', 'is_parent', 'is_hod', 'is_mentor',
-                            'teacher_type', 'dept_id', 'image', 'employee_id','teacher_code'
+                    array('fields' => array('email_id', 'hod', 'department_id', 'college_id')),
+                );
+    
+                if (isset($collDeptLine) && !empty($collDeptLine)) {
+                    $hodId = $collDeptLine[0]['hod'][0];
+                    $hodName = $collDeptLine[0]['hod'][1];
+                    $recordCount = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        'college.teacher',
+                        'search_count',
+                        array(
+                            array(
+                                array("user_id", '!=', false),
+                                array('active', '=', true),
+                                array('dept_id', '=', (int) $deptId),
+                                array('college_id', '=', (int) $collegeId),
+                            ),
                         ),
-                    ),
-                );
-                $response = array(
-                    "message" => "success",
-                    'no_of_records' => $recordCount,
-                    "data" => $records,
-                );
-
-                echo json_encode($response);
+                    );
+    
+                    $records = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        'college.teacher',
+                        'search_read',
+                        array(
+                            array(
+                                array("user_id", '!=', false),
+                                array('active', '=', true),
+                                array('dept_id', '=', (int) $deptId),
+                                array('college_id', '=', (int) $collegeId),
+                            ),
+                        ),
+                        array(
+                            'fields' => array(
+                                'name', 'display_name', 'user_id', 'class_id', 'course_id',
+                                'college_id', 'is_parent', 'is_hod', 'is_mentor',
+                                'teacher_type', 'dept_id', 'image', 'employee_id','teacher_code'
+                            ),
+                        ),
+                    );
+                    $response = array(
+                        "message" => "success",
+                        'no_of_records' => $recordCount,
+                        "data" => $records,
+                    );
+    
+                    echo json_encode($response);
+                } else {
+                    $recordCount = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        'college.teacher',
+                        'search_count',
+                        array(
+                            array(
+                                array("user_id", '!=', false),
+                                array('active', '=', true),
+                                array('college_id', '=', (int) $collegeId),
+                            ),
+                        ),
+                    );
+    
+                    $records = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        'college.teacher',
+                        'search_read',
+                        array(
+                            array(
+                                array("user_id", '!=', false),
+                                array('active', '=', true),
+                                array('college_id', '=', (int) $collegeId),
+                            ),
+                        ),
+                        array(
+                            'fields' => array(
+                                'name', 'display_name', 'user_id', 'class_id', 'course_id',
+                                'college_id', 'is_parent', 'is_hod', 'is_mentor',
+                                'teacher_type', 'dept_id', 'image', 'employee_id', 'teacher_code',
+                            ),
+                        ),
+                    );
+                    $response = array(
+                        "message" => "success",
+                        'no_of_records' => $recordCount,
+                        "data" => $records,
+                    );
+                    echo json_encode($response);
+                }
             } else {
-                $recordCount = $models->execute_kw(
-                    $dbname,
-                    $uid,
-                    $userPassword,
-                    'college.teacher',
-                    'search_count',
-                    array(
-                        array(
-                            array("user_id", '!=', false),
-                            array('active', '=', true),
-                            array('college_id', '=', (int) $collegeId),
-                        ),
-                    ),
-                );
-
-                $records = $models->execute_kw(
-                    $dbname,
-                    $uid,
-                    $userPassword,
-                    'college.teacher',
-                    'search_read',
-                    array(
-                        array(
-                            array("user_id", '!=', false),
-                            array('active', '=', true),
-                            array('college_id', '=', (int) $collegeId),
-                        ),
-                    ),
-                    array(
-                        'fields' => array(
-                            'name', 'display_name', 'user_id', 'class_id', 'course_id',
-                            'college_id', 'is_parent', 'is_hod', 'is_mentor',
-                            'teacher_type', 'dept_id', 'image', 'employee_id', 'teacher_code',
-                        ),
-                    ),
-                );
-                $response = array(
-                    "message" => "success",
-                    'no_of_records' => $recordCount,
-                    "data" => $records,
-                );
-                echo json_encode($response);
+                // if the login credentials were incorrect,
+                // echo for now
+                echo json_encode($failInvalidCredentials);
             }
         } else {
-            // if the login credentials were incorrect,
-            // echo for now
-            echo json_encode($failInvalidCredentials);
+            echo json_encode($failNoData);
         }
-    } else {
-        echo json_encode($failNoData);
+    }else{
+        echo json_encode(serverUnReachable());
     }
 } else {
     // if request is not POST

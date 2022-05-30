@@ -2,6 +2,7 @@
 
 require_once '../ripcord/ripcord.php';
 require_once '../envRead.php';
+require_once '../helper.php';
 
 use sadja\DotEnv;
 
@@ -51,72 +52,76 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
         $dbname = 'college';
     }
 
-    if (isset($userName) && isset($userPassword)) {
-        $common = ripcord::client($url . '/xmlrpc/2/common');
-
-        // check if the credentials are valid
-        $uid = $common->authenticate($dbname, $userName, $userPassword, array());
-
-        if (isset($uid) && $uid != false && $uid != 'false') {
-
-            $models = ripcord::client("$url/xmlrpc/2/object");
-
-            $deptId = $entityBody['deptId'];
-            $collegeId = $entityBody['collegeId'];
-            $courseId = $entityBody['courseId'];
-            
-
-            $recordCount = $models->execute_kw(
-                $dbname,
-                $uid,
-                $userPassword,
-                'class.class',
-                'search_count',
-                array(
+    if(isSiteAvailable($url)){
+        if (isset($userName) && isset($userPassword)) {
+            $common = ripcord::client($url . '/xmlrpc/2/common');
+    
+            // check if the credentials are valid
+            $uid = $common->authenticate($dbname, $userName, $userPassword, array());
+    
+            if (isset($uid) && $uid != false && $uid != 'false') {
+    
+                $models = ripcord::client("$url/xmlrpc/2/object");
+    
+                $deptId = $entityBody['deptId'];
+                $collegeId = $entityBody['collegeId'];
+                $courseId = $entityBody['courseId'];
+                
+    
+                $recordCount = $models->execute_kw(
+                    $dbname,
+                    $uid,
+                    $userPassword,
+                    'class.class',
+                    'search_count',
                     array(
-                        array('college_id', '=', (int) $collegeId),
-                        array('department_id', '=', (int)$deptId),
-                        array("course_id", "=", (int)$courseId),
-                    )
-                ),
-            );
-
-            $records = $models->execute_kw(
-                $dbname,
-                $uid,
-                $userPassword,
-                'class.class',
-                'search_read',
-                array(
+                        array(
+                            array('college_id', '=', (int) $collegeId),
+                            array('department_id', '=', (int)$deptId),
+                            array("course_id", "=", (int)$courseId),
+                        )
+                    ),
+                );
+    
+                $records = $models->execute_kw(
+                    $dbname,
+                    $uid,
+                    $userPassword,
+                    'class.class',
+                    'search_read',
                     array(
-                        array('college_id', '=', (int) $collegeId),
-                        array('department_id', '=', (int)$deptId),
-                        array("course_id", "=", (int)$courseId),
-
-                    )
-                ),
-                array(
-                    'fields' => array('name', 'course_id', 'department_id', 'year_id', 'sem_id','college_id', 'display_name'),
-                ),
-            );
-
-
-            $response = array(
-                "message" => "success",
-                'no_of_records' => $recordCount,
-                "data" => $records
-            );
-
-            echo json_encode($response);
-
-            
+                        array(
+                            array('college_id', '=', (int) $collegeId),
+                            array('department_id', '=', (int)$deptId),
+                            array("course_id", "=", (int)$courseId),
+    
+                        )
+                    ),
+                    array(
+                        'fields' => array('name', 'course_id', 'department_id', 'year_id', 'sem_id','college_id', 'display_name'),
+                    ),
+                );
+    
+    
+                $response = array(
+                    "message" => "success",
+                    'no_of_records' => $recordCount,
+                    "data" => $records
+                );
+    
+                echo json_encode($response);
+    
+                
+            } else {
+                // if the login credentials were incorrect,
+                // echo for now
+                echo json_encode($failInvalidCredentials);
+            }
         } else {
-            // if the login credentials were incorrect,
-            // echo for now
-            echo json_encode($failInvalidCredentials);
+            echo json_encode($failNoData);
         }
-    } else {
-        echo json_encode($failNoData);
+    }else{
+        echo json_encode(serverUnReachable());
     }
 } else {
     // if request is not POST

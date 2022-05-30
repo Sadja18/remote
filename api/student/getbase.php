@@ -47,75 +47,79 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
         $dbname = 'college';
     }
 
-    if (isset($userName) && isset($userPassword)) {
-        $common = ripcord::client($url . '/xmlrpc/2/common');
-
-        // check if the credentials are valid
-        $uid = $common->authenticate($dbname, $userName, $userPassword, array());
-
-        if (isset($uid) && $uid != false && $uid != 'false') {
-            // if the login credentials were correct,
-            $models = ripcord::client("$url/xmlrpc/2/object");
-
-            $users = $models->execute_kw(
-                $dbname,
-                $uid,
-                $userPassword,
-                'student.student',
-                'search_read',
-                array(
+    if(isSiteAvailible($url)){
+        if (isset($userName) && isset($userPassword)) {
+            $common = ripcord::client($url . '/xmlrpc/2/common');
+    
+            // check if the credentials are valid
+            $uid = $common->authenticate($dbname, $userName, $userPassword, array());
+    
+            if (isset($uid) && $uid != false && $uid != 'false') {
+                // if the login credentials were correct,
+                $models = ripcord::client("$url/xmlrpc/2/object");
+    
+                $users = $models->execute_kw(
+                    $dbname,
+                    $uid,
+                    $userPassword,
+                    'student.student',
+                    'search_read',
                     array(
-                        array('user_id', '=', $uid),
+                        array(
+                            array('user_id', '=', $uid),
+                        ),
                     ),
-                ),
-                array(
-                    'fields' => array(
-                        'student_code',
-                        'student_name',
-                        'middle',
-                        'last',
-                        'pid',
-                        'roll_no',
-                        "enrol_no",
-                        'course_id',
-                        'class_id',
-                        'dept_id',
-                        'colyear',
-                        'semester',
-                        "college_id",
-                    ),
-                )
-            );
-            sleep(2);
-
-            $user = $users[0];
-
-            $course_id = $user['course_id'][0];
-            $college_id = $user['college_id'][0];
-
-            $isArtScience = $models->execute_kw(
-                $dbname,
-                $uid,
-                $userPassword,
-                'course.course',
-                'search_read',
-                array(
                     array(
-                        array('id', '=', (int) $course_id),
-                        array('college_id', '=', $college_id),
+                        'fields' => array(
+                            'student_code',
+                            'student_name',
+                            'middle',
+                            'last',
+                            'pid',
+                            'roll_no',
+                            "enrol_no",
+                            'course_id',
+                            'class_id',
+                            'dept_id',
+                            'colyear',
+                            'semester',
+                            "college_id",
+                        ),
+                    )
+                );
+                sleep(2);
+    
+                $user = $users[0];
+    
+                $course_id = $user['course_id'][0];
+                $college_id = $user['college_id'][0];
+    
+                $isArtScience = $models->execute_kw(
+                    $dbname,
+                    $uid,
+                    $userPassword,
+                    'course.course',
+                    'search_read',
+                    array(
+                        array(
+                            array('id', '=', (int) $course_id),
+                            array('college_id', '=', $college_id),
+                        ),
                     ),
-                ),
-                array("fields" => array("no_dept"))
-            );
-
-            $user['no_dept'] = $isArtScience[0]['no_dept'];
-            echo json_encode(
-                array(
-                    "message" => "success",
-                    "data" => $user,
-                )
-            );
+                    array("fields" => array("no_dept"))
+                );
+    
+                $user['no_dept'] = $isArtScience[0]['no_dept'];
+                echo json_encode(
+                    array(
+                        "message" => "success",
+                        "data" => $user,
+                    )
+                );
+            }
         }
+    }else{
+        echo json_encode(serverUnReachable());
     }
 
 }

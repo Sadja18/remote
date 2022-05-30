@@ -2,7 +2,7 @@
 
 require_once '../ripcord/ripcord.php';
 require_once '../envRead.php';
-
+require_once '../helper.php';
 use sadja\DotEnv;
 
 header('Access-Control-Allow-Origin: ' . $_SERVER['REMOTE_ADDR'], false);
@@ -52,94 +52,98 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
             $dbname = 'college';
         }
 
-        if (isset($userName) && isset($userPassword)) {
-            $common = ripcord::client($url . '/xmlrpc/2/common');
-
-            // check if the credentials are valid
-            $uid = $common->authenticate($dbname, $userName, $userPassword, array());
-
-            if (isset($uid) && $uid != false && $uid != 'false') {
-
-                $models = ripcord::client("$url/xmlrpc/2/object");
-
-                // $collegeId = $entityBody['collegeId'];
-
-                $session = $models->execute_kw(
-                    $dbname,
-                    $uid,
-                    $userPassword,
-                    'academic.year',
-                    'search_read',
-                    array(
+        if(isSiteAvailable($url)){
+            if (isset($userName) && isset($userPassword)) {
+                $common = ripcord::client($url . '/xmlrpc/2/common');
+    
+                // check if the credentials are valid
+                $uid = $common->authenticate($dbname, $userName, $userPassword, array());
+    
+                if (isset($uid) && $uid != false && $uid != 'false') {
+    
+                    $models = ripcord::client("$url/xmlrpc/2/object");
+    
+                    // $collegeId = $entityBody['collegeId'];
+    
+                    $session = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        'academic.year',
+                        'search_read',
                         array(
-                            array('current', '=', true),
+                            array(
+                                array('current', '=', true),
+                            ),
                         ),
-                    ),
-                    array('fields' => array('date_start', 'date_stop'),
-                    )
-                );
-                sleep(2);
-                // $zero = $session[0];
-                // $dateStart = $zero['date_start'];
-                // $dateEnd = $zero['date_stop'];
-
-                $leaveCount = $models->execute_kw(
-                    $dbname,
-                    $uid,
-                    $userPassword,
-                    'studentleave.request',
-                    'search_count',
-                    array(
+                        array('fields' => array('date_start', 'date_stop'),
+                        )
+                    );
+                    sleep(2);
+                    // $zero = $session[0];
+                    // $dateStart = $zero['date_start'];
+                    // $dateEnd = $zero['date_stop'];
+    
+                    $leaveCount = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        'studentleave.request',
+                        'search_count',
                         array(
-                            // array("college_id", "=", (int) $collegeId),
-                            array('state', '=', 'toapprove'),
-                            // array('app_date', '>=', $dateStart),
-                            // array('app_date', '<=', $dateEnd),
+                            array(
+                                // array("college_id", "=", (int) $collegeId),
+                                array('state', '=', 'toapprove'),
+                                // array('app_date', '>=', $dateStart),
+                                // array('app_date', '<=', $dateEnd),
+                            ),
                         ),
-                    ),
-
-                );
-
-                $leaveApps = $models->execute_kw(
-                    $dbname,
-                    $uid,
-                    $userPassword,
-                    'studentleave.request',
-                    'search_read',
-                    array(
+    
+                    );
+    
+                    $leaveApps = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        'studentleave.request',
+                        'search_read',
                         array(
-                            // array("college_id", "=", (int) $collegeId),
-                            array('state', '=', 'toapprove'),
-                            // array('app_date', '>=', $dateStart),
-                            // array('app_date', '<=', $dateEnd),
+                            array(
+                                // array("college_id", "=", (int) $collegeId),
+                                array('state', '=', 'toapprove'),
+                                // array('app_date', '>=', $dateStart),
+                                // array('app_date', '<=', $dateEnd),
+                            ),
                         ),
-                    ),
-                    array(
-                        'fields' => array(
-                            "name", "student_id", "roll_no", 
-                            "class_id", "college_id", "attachments", 
-                            "state", "start_date", "end_date",
-                            "teacher_id", "days", "reason", "display_name"
+                        array(
+                            'fields' => array(
+                                "name", "student_id", "roll_no", 
+                                "class_id", "college_id", "attachments", 
+                                "state", "start_date", "end_date",
+                                "teacher_id", "days", "reason", "display_name"
+                            ),
+    
                         ),
-
-                    ),
-                );
-                $response = array(
-                    'no_of_records' => $leaveCount,
-                    'data' => $leaveApps,
-                    // 'session academic'=> $session,
-                    'message' => 'Success',
-
-                );
-
-                echo json_encode($response);
+                    );
+                    $response = array(
+                        'no_of_records' => $leaveCount,
+                        'data' => $leaveApps,
+                        // 'session academic'=> $session,
+                        'message' => 'Success',
+    
+                    );
+    
+                    echo json_encode($response);
+                } else {
+                    // if the login credentials were incorrect,
+                    // echo
+                    echo json_encode($failInvalidCredentials);
+                }
             } else {
-                // if the login credentials were incorrect,
-                // echo
-                echo json_encode($failInvalidCredentials);
+                echo json_encode($failNoData);
             }
-        } else {
-            echo json_encode($failNoData);
+        }else{
+            echo json_encode(serverUnReachable());
         }
     } else {
         echo json_encode(array('message' => 'Invalid request'));

@@ -2,6 +2,7 @@
 
 require_once '../ripcord/ripcord.php';
 require_once '../envRead.php';
+require_once '../helper.php';
 
 use sadja\DotEnv;
 
@@ -50,73 +51,78 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
         $dbname = 'college';
     }
 
-    if (isset($userName) && isset($userPassword)) {
-        $common = ripcord::client($url . '/xmlrpc/2/common');
-        $uid = $common->authenticate($dbname, $userName, $userPassword, array());
-        if (isset($uid) && $uid != false && $uid != 'false') {
-            $models = ripcord::client("$url/xmlrpc/2/object");
-
-            $results = $models->execute_kw(
-                $dbname,
-                $uid,
-                $userPassword,
-                'college.parent',
-                'search_read',
-                array(
-                    array(
-                        array('id', '!=', False)
-                    )
-                ),
-                array(
-                    'fields' => array(
-                        'display_name', 'partner_id', 'relation_id', 'student_id'
-                    )
-                )
-            );
-
-            $studentDetails = array();
-
-            $studentIds = $results[0]['student_id'];
-
-            foreach ($studentIds as $studentId) {
-                $studentData = $models->execute_kw(
+    
+    if(isSiteAvailable($url)){
+        if (isset($userName) && isset($userPassword)) {
+            $common = ripcord::client($url . '/xmlrpc/2/common');
+            $uid = $common->authenticate($dbname, $userName, $userPassword, array());
+            if (isset($uid) && $uid != false && $uid != 'false') {
+                $models = ripcord::client("$url/xmlrpc/2/object");
+    
+                $results = $models->execute_kw(
                     $dbname,
                     $uid,
                     $userPassword,
-                    'student.student',
+                    'college.parent',
                     'search_read',
                     array(
                         array(
-                            array('id', '=', $studentId)
+                            array('id', '!=', False)
                         )
                     ),
                     array(
                         'fields' => array(
-                            'pid',
-                            'student_id',
-                            'student_code',
-                            'student_name',
-                            'last',
+                            'display_name', 'partner_id', 'relation_id', 'student_id'
                         )
                     )
                 );
-                array_push($studentDetails, $studentData[0]);
+    
+                $studentDetails = array();
+    
+                $studentIds = $results[0]['student_id'];
+    
+                foreach ($studentIds as $studentId) {
+                    $studentData = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $userPassword,
+                        'student.student',
+                        'search_read',
+                        array(
+                            array(
+                                array('id', '=', $studentId)
+                            )
+                        ),
+                        array(
+                            'fields' => array(
+                                'pid',
+                                'student_id',
+                                'student_code',
+                                'student_name',
+                                'last',
+                            )
+                        )
+                    );
+                    array_push($studentDetails, $studentData[0]);
+                }
+    
+                $response = array(
+                    "message" => "success",
+                    "data" => $results,
+                    'studentDetails'=> $studentDetails
+                );
+    
+                echo json_encode($response);
+            } else {
+                // if the login credentials were incorrect,
+                // echo for now
+                echo json_encode($failInvalidCredentials);
             }
-
-            $response = array(
-                "message" => "success",
-                "data" => $results,
-                'studentDetails'=> $studentDetails
-            );
-
-            echo json_encode($response);
         } else {
-            // if the login credentials were incorrect,
-            // echo for now
-            echo json_encode($failInvalidCredentials);
+            echo json_encode($failNoData);
         }
-    } else {
-        echo json_encode($failNoData);
+    }else{
+        echo json_encode(serverUnReachable());
     }
 } else {
     // if request is not POST
