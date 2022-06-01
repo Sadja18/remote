@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
         $dbname = 'college';
     }
 
-    if(isSiteAvailible($url)){
+    if(isSiteAvailable($url)){
         if (isset($userName) && isset($userPassword)) {
             $common = ripcord::client($url . '/xmlrpc/2/common');
     

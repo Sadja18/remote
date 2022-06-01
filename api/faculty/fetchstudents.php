@@ -80,8 +80,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     'search_count',
                     array(
                         array(
-                            // array('college_id', '=', (int) $collegeId),
-                            // array("course_id", "=", (int)$courseId),
+                            array('college_id', '=', (int) $collegeId),
+                            array("course_id", "=", (int)$courseId),
                             array('colyear', "=", (int)$yearId),
                             array("semester", "=", (int)$semId),
                         )
@@ -97,8 +97,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         'search_read',
                         array(
                             array(
-                                // array('college_id', '=', (int) $collegeId),
-                                // array("course_id", "=", (int)$courseId),
+                                array('college_id', '=', (int) $collegeId),
+                                array("course_id", "=", (int)$courseId),
                                 array('colyear', "=", (int)$yearId),
                                 array("semester", "=", (int)$semId),
                             )

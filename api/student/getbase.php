@@ -2,7 +2,7 @@
 
 require_once '../ripcord/ripcord.php';
 require_once '../envRead.php';
-
+require_once '../helper.php';
 use sadja\DotEnv;
 
 header('Access-Control-Allow-Origin: ' . $_SERVER['REMOTE_ADDR'], false);
@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
         $dbname = 'college';
     }
 
-    if(isSiteAvailible($url)){
+    if(isSiteAvailable($url)){
         if (isset($userName) && isset($userPassword)) {
             $common = ripcord::client($url . '/xmlrpc/2/common');
     

@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
 
     $entityBody = json_decode($entityBodyJSON, true);
 
-    if(isSiteAvailible($url)){
+    if(isSiteAvailable($url)){
         if (isset($entityBody['str'])) {
             $userName = $entityBody['userName'];
             $userPassword = $entityBody['userPassword'];

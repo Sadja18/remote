@@ -22,7 +22,7 @@ function isSiteAvailable($url){
 
     return $response?true:false;
 }
-function isSiteAvailble($url){
+function isSiteAvailible($url){
     // Check, if a valid url is provided
     if(!filter_var($url, FILTER_VALIDATE_URL)){
         return false;
