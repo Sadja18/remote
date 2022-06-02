@@ -65,6 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                     $models = ripcord::client("$url/xmlrpc/2/object");
     
                     $collegeId = $entityBody['collegeId'];
+                    $deptId = $entityBody['deptId'];
     
                     $session = $models->execute_kw(
                         $dbname,
@@ -94,6 +95,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         array(
                             array(
                                 array("college_id", "=", (int) $collegeId),
+                                array('dept_id','=', (int)$deptId),
                                 array('state', '=', 'toapprovep'),
                                 // array('app_date', '>=', $dateStart),
                                 // array('app_date', '<=', $dateEnd),
@@ -111,6 +113,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         array(
                             array(
                                 array("college_id", "=", (int) $collegeId),
+                                array('dept_id','=', (int)$deptId),
                                 array('state', '=', 'toapprovep'),
                                 // array('app_date', '>=', $dateStart),
                                 // array('app_date', '<=', $dateEnd),
