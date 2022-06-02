@@ -56,9 +56,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
         if(isSiteAvailable($url)){
             if (isset($userName) && isset($userPassword)) {
                 $common = ripcord::client($url . '/xmlrpc/2/common');
+                sleep(0.25);
+
     
                 // check if the credentials are valid
                 $uid = $common->authenticate($dbname, $userName, $userPassword, array());
+                sleep(0.25);
     
                 if (isset($uid) && $uid != false && $uid != 'false') {
     
@@ -80,7 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         array('fields' => array('date_start', 'date_stop'),
                         )
                     );
-                    sleep(2);
+                    sleep(1);
                     // $zero = $session[0];
                     // $dateStart = $zero['date_start'];
                     // $dateEnd = $zero['date_stop'];

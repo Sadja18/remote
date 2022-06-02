@@ -54,16 +54,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
 
         if(isSiteAvailable($url)){
             if (isset($userName) && isset($userPassword)) {
+                sleep(0.25);
                 $common = ripcord::client($url . '/xmlrpc/2/common');
     
                 // check if the credentials are valid
                 $uid = $common->authenticate($dbname, $userName, $userPassword, array());
+                sleep(0.25);
+
     
                 if (isset($uid) && $uid != false && $uid != 'false') {
     
                     $models = ripcord::client("$url/xmlrpc/2/object");
     
-                    // $collegeId = $entityBody['collegeId'];
+                    $collegeId = $entityBody['collegeId'];
     
                     $session = $models->execute_kw(
                         $dbname,
@@ -92,7 +95,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         'search_count',
                         array(
                             array(
-                                // array("college_id", "=", (int) $collegeId),
+                                array("college_id", "=", (int) $collegeId),
                                 array('state', '=', 'toapprove'),
                                 // array('app_date', '>=', $dateStart),
                                 // array('app_date', '<=', $dateEnd),
@@ -109,7 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         'search_read',
                         array(
                             array(
-                                // array("college_id", "=", (int) $collegeId),
+                                array("college_id", "=", (int) $collegeId),
                                 array('state', '=', 'toapprove'),
                                 // array('app_date', '>=', $dateStart),
                                 // array('app_date', '<=', $dateEnd),
@@ -119,15 +122,92 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                             'fields' => array(
                                 "name", "student_id", "roll_no", 
                                 "class_id", "college_id", "attachments", 
-                                "state", "start_date", "end_date",
-                                "teacher_id", "days", "reason", "display_name"
+                                "start_date", "end_date",
+                                "teacher_id", "days", "reason", "state"
                             ),
     
                         ),
                     );
+
+                    $echoRecords = array();
+
+                    foreach($leaveApps as $leaveRequest){
+                        $leaveId = $leaveRequest['id'];
+                        $studentId = $leaveRequest['student_id'][0];
+
+                        sleep(0.25);
+
+                        $studentRecord = $models->execute_kw(
+                            $dbname,
+                            $uid, 
+                            $userPassword,
+                            "student.student",
+                            "search_read",
+                            array(
+                                array(
+                                    array(
+                                        'id', '=', $studentId,
+                                    )
+                                )
+                            ),
+                            array(
+                                'fields'=> array("student_name","middle", "last",'dept_id', 'class_id', 'user_id')
+                            )
+                        );
+                        $lCollegeId = 0;
+                        $middle = "";
+                        $last = "";
+                        $deptId = 0;
+                        $deptName = "";
+                        $classId = 0;
+                        $className = "";
+                        $leaveAttachment="";
+                        if(isset($leaveRequest['attachments']) && $leaveRequest['attachments']!=false){
+                            $lCollegeId = $leaveRequest['attachments'];
+                        }
+                        if(isset($leaveRequest['college_id']) && $leaveRequest['college_id']!=false){
+                            $lCollegeId = $leaveRequest['college_id'][0];
+                        }
+                        if(isset($studentRecord[0]['middle']) && $studentRecord[0]['middle']!=false){
+                            $middle = $studentRecord[0]['middle'];
+                        }
+                        if(isset($studentRecord[0]['last']) && $studentRecord[0]['last']!=false){
+                            $last = $studentRecord[0]['last'];
+                        }
+                        if( isset($studentRecord[0]['class_id']) && $studentRecord[0]['class_id']!=false){
+                            $classId = $studentRecord[0]['class_id'][0];
+                            $className = $studentRecord[0]['class_id'][1];
+                        }
+                        if(isset($studentRecord[0]['dept_id']) && $studentRecord[0]['dept_id']!=false){
+                            $deptId = $studentRecord[0]['dept_id'][0];
+                            $deptName = $studentRecord[0]['dept_id'][1];
+                        }
+                        
+
+                        $newRecord = array(
+                            'leaveId'=> $leaveId,
+                            'leaveFromDate'=> $leaveRequest['start_date'],
+                            "leaveToDate"=> $leaveRequest['end_date'],
+                            "leaveDays"=> $leaveRequest['days'],
+                            "leaveReason"=> $leaveRequest['reason'],
+                            "leaveAttachment"=> $leaveAttachment,
+                            "leaveStatus"=> $leaveRequest['state'],
+                            "leaveStudentCollegeId"=>$lCollegeId,
+                            "leaveStudentUserId"=> $studentRecord[0]['user_id'][0],
+                            "leaveStudentFirstName"=> $studentRecord[0]['student_name'],
+                            "leaveStudentMiddleName"=> $middle,
+                            "leaveStudentLastName"=> $last,
+                            "leaveStudentClassId"=> $classId,
+                            "leaveStudentClassName"=> $className,
+                            "leaveStudentDeptId"=>  $deptId,
+                            "leaveStudentDeptName"=> $deptName,
+                        );
+
+                        array_push($echoRecords, $newRecord);
+                    }
                     $response = array(
                         'no_of_records' => $leaveCount,
-                        'data' => $leaveApps,
+                        'data' => $echoRecords,
                         // 'session academic'=> $session,
                         'message' => 'Success',
     
