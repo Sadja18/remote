@@ -74,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                             array('email', '=', $userName),
                         ),
                     ),
-                    array('fields' => array('email', 'head_name', 'display_name', 'com_name', 'code'))
+                    array('fields' => array('email', 'head_name', 'display_name', 'com_name', 'code', 's_image'))
                 );
     
                 if (!isset($collAdmin['faultString'])) {
