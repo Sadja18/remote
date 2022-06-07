@@ -153,7 +153,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                             array(
                                 'fields'=> array("student_name","middle", "last",'dept_id', 'class_id', 'user_id')
                             )
-                        );
+                        );$leaveStudentProfileId = $studentRecord[0]['id'];
                         $lCollegeId = 0;
                         $middle = "";
                         $last = "";
@@ -186,6 +186,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
 
                         $newRecord = array(
                             'leaveId'=> $leaveId,
+                            "leaveStudentProfileId"=> $studentId,
                             'leaveFromDate'=> $leaveRequest['start_date'],
                             "leaveToDate"=> $leaveRequest['end_date'],
                             "leaveDays"=> $leaveRequest['days'],
