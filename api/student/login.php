@@ -91,8 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                 );
     
                 $course_id = $users[0]['course_id'][0];
-                $college_id = $users[0]['college_id'][0];
-    
+                $college_id = $users[0]['college_id'][0];    
                 $isArtScience = $models->execute_kw(
                     $dbname,
                     $uid,
@@ -105,9 +104,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                             array('college_id', '=', $college_id),
                         ),
                     ),
-                    array("fields" => array("no_dept"))
+                    array("fields" => array('code','duration',"no_dept",'department_id'))
                 );
-                $users[0]['no_dept'] = $isArtScience[0]['no_dept'];
+                $users[0]['course_id']['no_dept'] = $isArtScience[0]['no_dept'];
+                $users[0]['course_id']['code']= $isArtScience[0]['code'];
+                $users[0]['course_id']['duration']= $isArtScience[0]['duration'];
+                $users[0]['course_id']['dept'] = $isArtScience[0]['department_id'];
                 echo json_encode(
                     array(
                         "message" => "success",
@@ -128,7 +130,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                             'year'=> $users[0]['colyear'],
                             'semester'=> $users[0]['semester'],
                             'department'=> $users[0]['dept_id'],
-                            'noDept'=> $users[0]['no_dept'],
                             'collegeId'=> $users[0]['college_id'][0],
                             'collegeName'=> $users[0]['college_id'][1],
                             'profilePic'=> $users[0]['photo'],

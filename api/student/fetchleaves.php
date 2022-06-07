@@ -2,6 +2,7 @@
 
 require_once '../ripcord/ripcord.php';
 require_once '../envRead.php';
+require_once '../helper.php';
 
 use sadja\DotEnv;
 
@@ -84,10 +85,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                         'search_count',
                         array(
                             array(
-                                array('start_date', '>=', $start),
-                                array('start_date', '<=', $end),
-                                array('end_date', '>=', $start),
-                                array('end_date', '<=', $end),
+                                array('state', '!=', 'draft')
+                                // array('start_date', '>=', $start),
+                                // array('start_date', '<=', $end),
+                                // array('end_date', '>=', $start),
+                                // array('end_date', '<=', $end),
                             ),
                         )
                     );
@@ -100,10 +102,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                             'search_read',
                             array(
                                 array(
-                                    array('start_date', '>=', $start),
-                                    array('start_date', '<=', $end),
-                                    array('end_date', '>=', $start),
-                                    array('end_date', '<=', $end),
+                                    array('state', '!=', 'draft')
+                                    // array('start_date', '>=', $start),
+                                    // array('start_date', '<=', $end),
+                                    // array('end_date', '>=', $start),
+                                    // array('end_date', '<=', $end),
                                 ),
                             ),
                             array(
@@ -117,6 +120,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'post'
                                 "message" => "success",
                                 "count" => $count,
                                 "data" => $data,
+                                // 'p'=> $sessionData
                             )
                         );
                     } else {
