@@ -80,7 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             if (gettype($absentees) == 'string') {
                 $absentees = json_decode($absentees);
             }
-            $total_absent = empty($absentees)?0:count($absentees);
+            $total_absent = count($absentees);
             $total_present = (int) $total_students - (int) $total_absent;
             if ((int) $total_present + (int) $total_absent != (int) $total_students) {
                 echo json_encode(array('problem' => 'mismach counts'));
@@ -109,7 +109,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     ));
                 } else {
 
-                    if(empty($absentees)){
+                    if(empty($absentees) || !isset($absentees)){
 
                         $models->execute_kw(
                             $dbname,
