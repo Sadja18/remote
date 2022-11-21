@@ -1,0 +1,1254 @@
+{
+    "message": "success",
+    "no_of_records": 39,
+    "data": [
+        {
+            "id": 50,
+            "name": "Dr. Amitkumar Babubhai Patel",
+            "display_name": "Dr. Amitkumar Babubhai Patel",
+            "user_id": [
+                98,
+                "Dr. Amitkumar Babubhai Patel"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                3,
+                "Assistant Professor"
+            ],
+            "dept_id": [
+                9,
+                "Department of Chemistry"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                59,
+                "Dr. Amitkumar Babubhai Patel"
+            ],
+            "teacher_code": "1"
+        },
+        {
+            "id": 142,
+            "name": "Dr. Satish Kumar Singh",
+            "display_name": "Dr. Satish Kumar Singh",
+            "user_id": [
+                142,
+                "Dr. Satish Kumar Singh"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": true,
+            "is_mentor": false,
+            "teacher_type": [
+                4,
+                "Assistant Professor & HOD"
+            ],
+            "dept_id": [
+                9,
+                "Department of Chemistry"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                151,
+                "Dr. Satish Kumar Singh"
+            ],
+            "teacher_code": "2"
+        },
+        {
+            "id": 144,
+            "name": "Dr. Yogita Kashinath Abhale",
+            "display_name": "Dr. Yogita Kashinath Abhale",
+            "user_id": [
+                143,
+                "Dr. Yogita Kashinath Abhale"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                3,
+                "Assistant Professor"
+            ],
+            "dept_id": [
+                9,
+                "Department of Chemistry"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                153,
+                "Dr. Yogita Kashinath Abhale"
+            ],
+            "teacher_code": "3"
+        },
+        {
+            "id": 145,
+            "name": "Dr. Arpan V. Parmar",
+            "display_name": "Dr. Arpan V. Parmar",
+            "user_id": [
+                144,
+                "Dr. Arpan V. Parmar"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                5,
+                "Assistant Professor (STC)"
+            ],
+            "dept_id": [
+                9,
+                "Department of Chemistry"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                154,
+                "Dr. Arpan V. Parmar"
+            ],
+            "teacher_code": "4"
+        },
+        {
+            "id": 146,
+            "name": "Dr. Riki Tailor",
+            "display_name": "Dr. Riki Tailor",
+            "user_id": [
+                145,
+                "Dr. Riki Tailor"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                5,
+                "Assistant Professor (STC)"
+            ],
+            "dept_id": [
+                9,
+                "Department of Chemistry"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                155,
+                "Dr. Riki Tailor"
+            ],
+            "teacher_code": "5"
+        },
+        {
+            "id": 147,
+            "name": "Dr. Prashant Pant",
+            "display_name": "Dr. Prashant Pant",
+            "user_id": [
+                146,
+                "Dr. Prashant Pant"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                4,
+                "Assistant Professor & HOD"
+            ],
+            "dept_id": [
+                8,
+                "Department of Botany"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                156,
+                "Dr. Prashant Pant"
+            ],
+            "teacher_code": "6"
+        },
+        {
+            "id": 148,
+            "name": "Mr. Rajesh Lomror",
+            "display_name": "Mr. Rajesh Lomror",
+            "user_id": [
+                147,
+                "Mr. Rajesh Lomror"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                3,
+                "Assistant Professor"
+            ],
+            "dept_id": [
+                8,
+                "Department of Botany"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                157,
+                "Mr. Rajesh Lomror"
+            ],
+            "teacher_code": "7"
+        },
+        {
+            "id": 150,
+            "name": "Dr. Sandip Patel",
+            "display_name": "Dr. Sandip Patel",
+            "user_id": [
+                148,
+                "Dr. Sandip Patel"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                3,
+                "Assistant Professor"
+            ],
+            "dept_id": [
+                8,
+                "Department of Botany"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                159,
+                "Dr. Sandip Patel"
+            ],
+            "teacher_code": "8"
+        },
+        {
+            "id": 151,
+            "name": "Dr. Usha Pandya",
+            "display_name": "Dr. Usha Pandya",
+            "user_id": [
+                149,
+                "Dr. Usha Pandya"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                5,
+                "Assistant Professor (STC)"
+            ],
+            "dept_id": [
+                8,
+                "Department of Botany"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                160,
+                "Dr. Usha Pandya"
+            ],
+            "teacher_code": "9"
+        },
+        {
+            "id": 220,
+            "name": "Dr. Bhatoa Joginder Singh",
+            "display_name": "Dr. Bhatoa Joginder Singh",
+            "user_id": [
+                193,
+                "Dr. Bhatoa Joginder Singh"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                9,
+                "Associate Professor & HOD"
+            ],
+            "dept_id": [
+                10,
+                "Department of Mathematics"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                229,
+                "Dr. Bhatoa Joginder Singh"
+            ],
+            "teacher_code": "10"
+        },
+        {
+            "id": 221,
+            "name": "Dr. Sathya A",
+            "display_name": "Dr. Sathya A",
+            "user_id": [
+                194,
+                "Dr. Sathya A"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                3,
+                "Assistant Professor"
+            ],
+            "dept_id": [
+                10,
+                "Department of Mathematics"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                230,
+                "Dr. Sathya A"
+            ],
+            "teacher_code": "11"
+        },
+        {
+            "id": 222,
+            "name": "Shri Amol Gaikwad",
+            "display_name": "Shri Amol Gaikwad",
+            "user_id": [
+                195,
+                "Shri Amol Gaikwad"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                5,
+                "Assistant Professor (STC)"
+            ],
+            "dept_id": [
+                10,
+                "Department of Mathematics"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                231,
+                "Shri Amol Gaikwad"
+            ],
+            "teacher_code": "12"
+        },
+        {
+            "id": 223,
+            "name": "Shri Sachin Kumar",
+            "display_name": "Shri Sachin Kumar",
+            "user_id": [
+                196,
+                "Shri Sachin Kumar"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                5,
+                "Assistant Professor (STC)"
+            ],
+            "dept_id": [
+                10,
+                "Department of Mathematics"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                232,
+                "Shri Sachin Kumar"
+            ],
+            "teacher_code": "13"
+        },
+        {
+            "id": 224,
+            "name": "Dr. Kaushal K. Thakkar",
+            "display_name": "Dr. Kaushal K. Thakkar",
+            "user_id": [
+                197,
+                "Dr. Kaushal K. Thakkar"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                4,
+                "Assistant Professor & HOD"
+            ],
+            "dept_id": [
+                11,
+                "Department of Physics"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                233,
+                "Dr. Kaushal K. Thakkar"
+            ],
+            "teacher_code": "14"
+        },
+        {
+            "id": 225,
+            "name": "Dr. B. J. Koppar",
+            "display_name": "Dr. B. J. Koppar",
+            "user_id": [
+                198,
+                "Dr. B. J. Koppar"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                9,
+                "Associate Professor & HOD"
+            ],
+            "dept_id": [
+                12,
+                "Department of Zoology"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                234,
+                "Dr. B. J. Koppar"
+            ],
+            "teacher_code": "15"
+        },
+        {
+            "id": 226,
+            "name": "Dr. Vineet Prakash Singh",
+            "display_name": "Dr. Vineet Prakash Singh",
+            "user_id": [
+                199,
+                "Dr. Vineet Prakash Singh"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                3,
+                "Assistant Professor"
+            ],
+            "dept_id": [
+                12,
+                "Department of Zoology"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                235,
+                "Dr. Vineet Prakash Singh"
+            ],
+            "teacher_code": "16"
+        },
+        {
+            "id": 227,
+            "name": "Dr. Manish Sharma",
+            "display_name": "Dr. Manish Sharma",
+            "user_id": [
+                200,
+                "Dr. Manish Sharma"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                3,
+                "Assistant Professor"
+            ],
+            "dept_id": [
+                12,
+                "Department of Zoology"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                236,
+                "Dr. Manish Sharma"
+            ],
+            "teacher_code": "17"
+        },
+        {
+            "id": 228,
+            "name": "Dr. Monika Dubey",
+            "display_name": "Dr. Monika Dubey",
+            "user_id": [
+                201,
+                "Dr. Monika Dubey"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                5,
+                "Assistant Professor (STC)"
+            ],
+            "dept_id": [
+                12,
+                "Department of Zoology"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                237,
+                "Dr. Monika Dubey"
+            ],
+            "teacher_code": "18"
+        },
+        {
+            "id": 229,
+            "name": "Dr. Pukhraj Jangid",
+            "display_name": "Dr. Pukhraj Jangid",
+            "user_id": [
+                202,
+                "Dr. Pukhraj Jangid"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                4,
+                "Assistant Professor & HOD"
+            ],
+            "dept_id": [
+                16,
+                "Department of Hindi"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                238,
+                "Dr. Pukhraj Jangid"
+            ],
+            "teacher_code": "19"
+        },
+        {
+            "id": 230,
+            "name": "Muhammed Sha",
+            "display_name": "Muhammed Sha",
+            "user_id": [
+                203,
+                "Muhammed Sha"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                4,
+                "Assistant Professor & HOD"
+            ],
+            "dept_id": [
+                17,
+                "Department of Psychology"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                239,
+                "Muhammed Sha"
+            ],
+            "teacher_code": "20"
+        },
+        {
+            "id": 231,
+            "name": "Dr. Bhavesh Vala",
+            "display_name": "Dr. Bhavesh Vala",
+            "user_id": [
+                204,
+                "Dr. Bhavesh Vala"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                4,
+                "Assistant Professor & HOD"
+            ],
+            "dept_id": [
+                15,
+                "Department of Gujarati"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                240,
+                "Dr. Bhavesh Vala"
+            ],
+            "teacher_code": "21"
+        },
+        {
+            "id": 232,
+            "name": "Dr. Pankaj Dhanraj Jaje",
+            "display_name": "Dr. Pankaj Dhanraj Jaje",
+            "user_id": [
+                205,
+                "Dr. Pankaj Dhanraj Jaje"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                4,
+                "Assistant Professor & HOD"
+            ],
+            "dept_id": [
+                18,
+                "Department of Sanskrit"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                241,
+                "Dr. Pankaj Dhanraj Jaje"
+            ],
+            "teacher_code": "22"
+        },
+        {
+            "id": 236,
+            "name": "Neha Mishra",
+            "display_name": "Neha Mishra",
+            "user_id": [
+                209,
+                "Neha Mishra"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                4,
+                "Assistant Professor & HOD"
+            ],
+            "dept_id": [
+                19,
+                "Department of Sociology"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                245,
+                "Neha Mishra"
+            ],
+            "teacher_code": "23"
+        },
+        {
+            "id": 237,
+            "name": "Mrs. Karthika V P",
+            "display_name": "Mrs. Karthika V P",
+            "user_id": [
+                210,
+                "Mrs. Karthika V P"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                4,
+                "Assistant Professor & HOD"
+            ],
+            "dept_id": [
+                14,
+                "Department of English"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                246,
+                "Mrs. Karthika V P"
+            ],
+            "teacher_code": "24"
+        },
+        {
+            "id": 239,
+            "name": "Dr. Smriti Srivastava",
+            "display_name": "Dr. Smriti Srivastava",
+            "user_id": [
+                211,
+                "Dr. Smriti Srivastava"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                3,
+                "Assistant Professor"
+            ],
+            "dept_id": [
+                14,
+                "Department of English"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                248,
+                "Dr. Smriti Srivastava"
+            ],
+            "teacher_code": "25"
+        },
+        {
+            "id": 240,
+            "name": "Dr. Narendra Saradhi",
+            "display_name": "Dr. Narendra Saradhi",
+            "user_id": [
+                212,
+                "Dr. Narendra Saradhi"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                3,
+                "Assistant Professor"
+            ],
+            "dept_id": [
+                14,
+                "Department of English"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                249,
+                "Dr. Narendra Saradhi"
+            ],
+            "teacher_code": "26"
+        },
+        {
+            "id": 241,
+            "name": "Dr. Vrinda R Chanth",
+            "display_name": "Dr. Vrinda R Chanth",
+            "user_id": [
+                213,
+                "Dr. Vrinda R Chanth"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                3,
+                "Assistant Professor"
+            ],
+            "dept_id": [
+                14,
+                "Department of English"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                250,
+                "Dr. Vrinda R Chanth"
+            ],
+            "teacher_code": "27"
+        },
+        {
+            "id": 242,
+            "name": "Mr. Kishor Shelke",
+            "display_name": "Mr. Kishor Shelke",
+            "user_id": [
+                214,
+                "Mr. Kishor Shelke"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                5,
+                "Assistant Professor (STC)"
+            ],
+            "dept_id": [
+                14,
+                "Department of English"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                251,
+                "Mr. Kishor Shelke"
+            ],
+            "teacher_code": "28"
+        },
+        {
+            "id": 243,
+            "name": "Mr. Niraj Chaudhari",
+            "display_name": "Mr. Niraj Chaudhari",
+            "user_id": [
+                215,
+                "Mr. Niraj Chaudhari"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                5,
+                "Assistant Professor (STC)"
+            ],
+            "dept_id": [
+                14,
+                "Department of English"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                252,
+                "Mr. Niraj Chaudhari"
+            ],
+            "teacher_code": "29"
+        },
+        {
+            "id": 829,
+            "name": "Dr. D. C. Agrawal",
+            "display_name": "Dr. D. C. Agrawal",
+            "user_id": [
+                521,
+                "Dr. D. C. Agrawal"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": true,
+            "is_mentor": false,
+            "teacher_type": [
+                9,
+                "Associate Professor & HOD"
+            ],
+            "dept_id": [
+                20,
+                "Department of Commerce"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                839,
+                "Dr. D. C. Agrawal"
+            ],
+            "teacher_code": "30"
+        },
+        {
+            "id": 830,
+            "name": "Dr. R. C. Agrawal",
+            "display_name": "Dr. R. C. Agrawal",
+            "user_id": [
+                522,
+                "Dr. R. C. Agrawal"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                7,
+                "Associate Professor"
+            ],
+            "dept_id": [
+                20,
+                "Department of Commerce"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                840,
+                "Dr. R. C. Agrawal"
+            ],
+            "teacher_code": "31"
+        },
+        {
+            "id": 831,
+            "name": "Dr. S. Balasubramanian",
+            "display_name": "Dr. S. Balasubramanian",
+            "user_id": [
+                523,
+                "Dr. S. Balasubramanian"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                7,
+                "Associate Professor"
+            ],
+            "dept_id": [
+                20,
+                "Department of Commerce"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                841,
+                "Dr. S. Balasubramanian"
+            ],
+            "teacher_code": "32"
+        },
+        {
+            "id": 832,
+            "name": "Mr. Paresh M. Solanki",
+            "display_name": "Mr. Paresh M. Solanki",
+            "user_id": [
+                524,
+                "Mr. Paresh M. Solanki"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                5,
+                "Assistant Professor (STC)"
+            ],
+            "dept_id": [
+                20,
+                "Department of Commerce"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                842,
+                "Mr. Paresh M. Solanki"
+            ],
+            "teacher_code": "33"
+        },
+        {
+            "id": 833,
+            "name": "Ms. Jaspreet B. Minhas",
+            "display_name": "Ms. Jaspreet B. Minhas",
+            "user_id": [
+                525,
+                "Ms. Jaspreet B. Minhas"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                5,
+                "Assistant Professor (STC)"
+            ],
+            "dept_id": [
+                20,
+                "Department of Commerce"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                843,
+                "Ms. Jaspreet B. Minhas"
+            ],
+            "teacher_code": "34"
+        },
+        {
+            "id": 834,
+            "name": "Smt. Daksha B. Patel",
+            "display_name": "Smt. Daksha B. Patel",
+            "user_id": [
+                526,
+                "Smt. Daksha B. Patel"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                7,
+                "Associate Professor"
+            ],
+            "dept_id": [
+                13,
+                "Department of Economics"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                844,
+                "Smt. Daksha B. Patel"
+            ],
+            "teacher_code": "35"
+        },
+        {
+            "id": 835,
+            "name": "Dr. Satyabhama Tripathy",
+            "display_name": "Dr. Satyabhama Tripathy",
+            "user_id": [
+                527,
+                "Dr. Satyabhama Tripathy"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                7,
+                "Associate Professor"
+            ],
+            "dept_id": [
+                13,
+                "Department of Economics"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                845,
+                "Dr. Satyabhama Tripathy"
+            ],
+            "teacher_code": "36"
+        },
+        {
+            "id": 846,
+            "name": "Mr. Rahul Kumar",
+            "display_name": "Mr. Rahul Kumar",
+            "user_id": [
+                543,
+                "Mr. Rahul Kumar"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                5,
+                "Assistant Professor (STC)"
+            ],
+            "dept_id": [
+                13,
+                "Department of Economics"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                856,
+                "Mr. Rahul Kumar"
+            ],
+            "teacher_code": "37"
+        },
+        {
+            "id": 848,
+            "name": "Mr. Gagan Shekhar",
+            "display_name": "Mr. Gagan Shekhar",
+            "user_id": [
+                544,
+                "Mr. Gagan Shekhar"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                5,
+                "Assistant Professor (STC)"
+            ],
+            "dept_id": [
+                13,
+                "Department of Economics"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                858,
+                "Mr. Gagan Shekhar"
+            ],
+            "teacher_code": "38"
+        },
+        {
+            "id": 915,
+            "name": "Dr. S. Kumar",
+            "display_name": "Dr. S. Kumar",
+            "user_id": [
+                609,
+                "Dr. S. Kumar"
+            ],
+            "class_id": false,
+            "course_id": false,
+            "college_id": [
+                13,
+                "Government College Daman"
+            ],
+            "is_parent": false,
+            "is_hod": false,
+            "is_mentor": false,
+            "teacher_type": [
+                9,
+                "Associate Professor & HOD"
+            ],
+            "dept_id": [
+                13,
+                "Department of Economics"
+            ],
+            "image": "iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAYAAADBavm7AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A\/wD\/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHHg05FllGIfAAAAojSURBVHja7Z1tV+M2EEafSZxAEkP7\/39lu3kBQhL1g0eNYUsJsWzL9r3ncJb9sksGX81oJEsWQhAA5MWMEAAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAiAmACAmAGICAGICAGICICYAICYAYgIAYgIgJgAgJgAgJgBiAgBiAoyFghAMEzMzH1hLSXP\/U5KWko7+\/U7SSdJB0iWEcCFyA\/n9hhCIwnBknH+Sce1\/\/26ArYsaJG0lhRDCmagiJtyXETcuXj0jNqUu6iX+SUZFTPh\/IdeSHlzGWzJiSlHfa6UvDwdiIqTLuKllyT6acyfPogf\/fqeq7j3xW0LMqUlZSHryMnUjyfwrJ2JW3fr3BzIqYo45S5aSHl3IeYZCfuZSy6QvIYQXfpOIOSYpY9laSloMQMg6QdJZ0l7Si6Q92TMtrGP2kyU3qho864Fkyd8+hq5rp+Yfa4eciDlUKeeSnlU1edaZziV\/ImdczolZdMdvGTGHWLqW\/iAvBizkV3IGMzsz50TMIZWujy5lXJe0MX1EXXcjXczsjY0KzWETezfzyaeRSvlfcj755wbEzFrK+DVWKetyLlzOP5GTUjZ3KdcTkLLOyp+rmZm9io0IiJkRU5Wy\/lw9q1pSCaq29wFi9potV7quUU5Rys9zzpmZLSRtaQr9IIBUGUmlfPBMUU5Yys8EVW+s7F3OIyH5Hpo\/6aSMGQIpf8+eCx+w\/jCzR0JCKdslz5pG97VpaSszu5A5yZhdZMv4YvMCKW+S88m3JwJitiblXNUSwQYpb5YzbroAxGyNJ6S8a8754JUGIGbybLmihL1bzo2kFTuEEDO1lPHQLLJlMznJmoiZFKRsLmbhJS0xRMxk2XJFCZvk+YuHVwNiNmal67EakEZOQMzG2fKR2CWjIJaImXKEJ3bpKNlwgJiNHyLixrNIMPIrYxdij3FqlmInEGI2IF59B4CYGbEhZq1OEQAxKWMBMccSK8rYdueZgJg\/Zk28ADHzgzIWEDNDaE4AYgIgJtwCzQlATADEBOgfjrNETADEBLgFrolHTMgQLtFBTCBjIibAdxwlcUUfYkJ2dWwIZ6KAmPeO6pCei6QtYUBMyE9MBj3EvBuaE+2wl\/RCGBDz7mkQIUjOSdIphEDjBzHvZkvJxfwSMcmYU+AglkkQs5GVVTufeWbaMvZIGYuYqUovSBfLPWFAzBSQMdNJuWOgQ0zmmfmJ+RZCIJ6IiZgZ8SrWLhEzBX4SOxffpMuYDHKImUTKUtXdJdAcNqwjZhIeVV3v\/kgokjBnfomYKViquiLBCEUSVmZG9YGYSTKmIWY6QgisYSJmkjjNCUMyFmb2TBgQsylvhCApxxDCL8KAmE05q9rbCYkwMyoQxGzMXmwfS8mOM34QMwUXVa8oQbp4AmI2w19NYoRPmDEJAWLyMGU41hECxORhyq8CofpAzGQPE11ZQEwAxAQAxBwwHF8JiJkhZ7EGx+CGmNmxE91ZQMzseFO1Awg574OT1xGzNTGPYhdQEzHfCQNiJsWPw9iq2tRO1vxh+HwqwJ5jxGxFzpNnzXfk\/HGmfOdKBMRsk62P\/mfkvEnKs8eM+eWNFITgrqx5MbNXH9hKVceOcB7Q75w9U24lvZItEbMLOQ\/VcbMKLueCqHwgdrC34nJaxOxBzjdVx448iXNn6+wl\/VWFiTNkmWN2L2ecP3Fg10d2SImYvfspiVPfPnJBSsTsO2sGsemgzpH3VxEzFzl5EAExIfv5JSAm5Da\/JASICfnBhUGImRW8BOxTbkKAmJDZ4EQjDDFzY8v8ChAzP94Rk44sYubHQTQ+qBgQMzuCqg3tU51jHcmYiJmfldejR6acNejIIma2pdxUz7XhQlrEzDZrxvNtWDIAxMyMKV4NfxRn+iAm5SzzS8SEe8rZqc21duz4QcxBPKhi7ywgZpbl7GUic03ml4g5mHI2HtI19nnXlAYgxBwJU7gdLEjasn6JmEMTc8y3gwUfeLjBCzEHVc7GLXpjXTo5+8Dzwm8bMYf48I41Y76pWiZh\/RIxB8lYMwrvnyLmYDFV95qMkZPY7YOYgzOyug5so+qavjFSSlr55wTEHIyUa\/8a6y1gS5dzjZxp4Rq+9qRcxYdW473UNg4+QVIwsxcaQYiZe6aMUs5GLubMy\/V4sRLXESJmdlLGh3Q9ASk\/y1lKupjZiV1AiJmTlHNV3deVf9kEpPyvzHkxs7+52h0xcyhdHz1DbiQtJiTkZzkXHotgZr+QEzH7zJKlP4ybiWXJr+Tc1MasX5S1dwaSJtpdGVK1knXKWfIrgqpdQXtVu55epH\/3DgNitiJlnEsuyZLfyhlczjdVJzqckRMxUws5cyEXuu7mQcjbBD27oPGkg4CgiNlEyFlNyAIhkwi68zJ3J+mCoIj5k+wYNwnELWcz0ShrI4OePINe6OAi5ndCbiQ91IRkP3F7xAuYYpPoTaJJhJgfhYzzx5JytfMMGg\/IjnPQyTeJJitmraFTImR2Je57rcQNiDkNIWnoDEPQSTeJJiEmDZ3BZ9CzpF8+\/Twj5jiyo0l6rmVHGjrDJF43sdN140IIIbwjZv4iFrq+5WCeGeVZEqYl778SD1HewYrpG8jrZ+ogIdwia9x5dELMtKVp7KQWur6MzFwRfirqVlVz6aAMtwhmL+anhf+4rIGM0JR4EVKW3d9sxWQnDnRElssz2YlZe98xHvvI+47QtaBHXRtHYfJi1t53LD1L8r4j9CFofMn71eegne\/fzUJMsiRkKGf9Je\/O7\/\/MRcx4KgBZEnLNngdJr11lzqJnIa0mI1kSciOe\/Pcsbzya2aELOYuepYyHWcWOK1JCjnLGtXPzR3fftpxFj1Kua5kSKWEIcm4+yXkZjZgTu9sDxifnuvYstyZngZQA+clZdCxlnFMiJYxFztDGnLPLjPnAnBJGKGeoZc4wGDFrZ+vQfYUxylm\/G\/RlaBnziUwJI5Yz3g36rkQn\/LX6pkat2fMgNg\/A+DNnmeofnbUs5Vwfr6gDGKucC09A69re7zwzpo8gSAlTkXPjiWjeVM5WxKSEhYnL2biknbX4A1LCwpRL2lWTrJlcTP9hKGFh6llz1eT5n7X0gy0pYQE5r1v3chAz1thICVMWs5C09CNX+xXTf4iFOMkOIG486F9MXQ\/SQkwAv1XuniZQMoFqTR+kBKgo\/GvWm5i6no7OCekAV+5qAqUUMx4VAgC\/J6zexCxEGQvw1Tyz6FxM\/0+fEBPga036yJisWQJ8zdITV+diluLCWICk9S8ZE6B9yj7ELIk7wDfZy2zRtZgA8P0807oWk\/klwPdsOhPTzJAS4EZdKGUB8qPsUky24QEkJoWYLJUA3MaySzFZKgHIMGMCQIZi0pUFIGMCICYA9MA\/jtExIp+lt3kAAAAASUVORK5CYII=",
+            "employee_id": [
+                926,
+                "Dr. S. Kumar"
+            ],
+            "teacher_code": "39"
+        }
+    ]
+}

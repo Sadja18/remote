@@ -1,0 +1,988 @@
+{
+    "teachers": [
+        {
+            "id": 350,
+            "employee_id": [
+                419,
+                "Kumar"
+            ],
+            "standard_id": [
+                2,
+                "I-B-ENG"
+            ],
+            "teacher_code": "REGULAR PART TIMEENGLISHI-V",
+            "name": "Kumar",
+            "school_id": [
+                2,
+                "GHSS Diu"
+            ],
+            "stand_id": [
+                1,
+                "I"
+            ],
+            "personal_fileno": false,
+            "block": [
+                5,
+                "DAMAN"
+            ],
+            "cluster": [
+                3,
+                "DAMANWADA"
+            ]
+        },
+        {
+            "id": 351,
+            "employee_id": [
+                420,
+                "Aradhana Shyam"
+            ],
+            "standard_id": false,
+            "teacher_code": "1298763",
+            "name": "Aradhana Shyam",
+            "school_id": [
+                2,
+                "GHSS Diu"
+            ],
+            "stand_id": [
+                10,
+                "VIII"
+            ],
+            "personal_fileno": "804",
+            "block": [
+                1,
+                "DNH"
+            ],
+            "cluster": [
+                9,
+                "SILVASSA"
+            ]
+        },
+        {
+            "id": 353,
+            "employee_id": [
+                422,
+                "Shyam Manohar Kumar"
+            ],
+            "standard_id": false,
+            "teacher_code": "38947299",
+            "name": "Shyam Manohar Kumar",
+            "school_id": [
+                2,
+                "GHSS Diu"
+            ],
+            "stand_id": [
+                12,
+                "X"
+            ],
+            "personal_fileno": false,
+            "block": [
+                5,
+                "DAMAN"
+            ],
+            "cluster": [
+                3,
+                "DAMANWADA"
+            ]
+        },
+        {
+            "id": 1440,
+            "employee_id": [
+                1510,
+                "Anindita Sah"
+            ],
+            "standard_id": [
+                67,
+                "I-A-GUJ"
+            ],
+            "teacher_code": "CONTRACT FULL TIME/GUJARATI/Primary + Upper Primary",
+            "name": "Anindita Sah",
+            "school_id": [
+                153,
+                "CPS NAROLI GM"
+            ],
+            "stand_id": [
+                1,
+                "I"
+            ],
+            "personal_fileno": false,
+            "block": [
+                1,
+                "DNH"
+            ],
+            "cluster": [
+                9,
+                "SILVASSA"
+            ]
+        },
+        {
+            "id": 1442,
+            "employee_id": [
+                1512,
+                "SAKSHAM SINGH"
+            ],
+            "standard_id": false,
+            "teacher_code": "REGULAR FULL TIME/GUJARATI/Upper Primary",
+            "name": "SAKSHAM SINGH",
+            "school_id": [
+                153,
+                "CPS NAROLI GM"
+            ],
+            "stand_id": false,
+            "personal_fileno": false,
+            "block": [
+                1,
+                "DNH"
+            ],
+            "cluster": [
+                9,
+                "SILVASSA"
+            ]
+        },
+        {
+            "id": 1506,
+            "employee_id": [
+                1576,
+                "Smt. Dimpalkumari Baldevsinh Solanki"
+            ],
+            "standard_id": [
+                105,
+                "II-A-GUJ"
+            ],
+            "teacher_code": false,
+            "name": "Smt. Dimpalkumari Baldevsinh Solanki",
+            "school_id": [
+                153,
+                "CPS NAROLI GM"
+            ],
+            "stand_id": [
+                2,
+                "II"
+            ],
+            "personal_fileno": "882",
+            "block": [
+                1,
+                "DNH"
+            ],
+            "cluster": [
+                150,
+                "DADRA"
+            ]
+        },
+        {
+            "id": 1507,
+            "employee_id": [
+                1577,
+                "Shri Nareshkumar Ganpatbhai Makwana"
+            ],
+            "standard_id": [
+                106,
+                "III-A-GUJ"
+            ],
+            "teacher_code": false,
+            "name": "Shri Nareshkumar Ganpatbhai Makwana",
+            "school_id": [
+                153,
+                "CPS NAROLI GM"
+            ],
+            "stand_id": [
+                5,
+                "III"
+            ],
+            "personal_fileno": "891",
+            "block": [
+                1,
+                "DNH"
+            ],
+            "cluster": [
+                150,
+                "DADRA"
+            ]
+        },
+        {
+            "id": 1508,
+            "employee_id": [
+                1578,
+                "Shri Jakhariya Devji Kankva"
+            ],
+            "standard_id": [
+                107,
+                "IV-A-GUJ"
+            ],
+            "teacher_code": false,
+            "name": "Shri Jakhariya Devji Kankva",
+            "school_id": [
+                153,
+                "CPS NAROLI GM"
+            ],
+            "stand_id": [
+                6,
+                "IV"
+            ],
+            "personal_fileno": "959",
+            "block": [
+                1,
+                "DNH"
+            ],
+            "cluster": [
+                150,
+                "DADRA"
+            ]
+        },
+        {
+            "id": 1509,
+            "employee_id": [
+                1579,
+                "Amisha Natvarlal Patel"
+            ],
+            "standard_id": [
+                109,
+                "V-A-GUJ"
+            ],
+            "teacher_code": false,
+            "name": "Amisha Natvarlal Patel",
+            "school_id": [
+                153,
+                "CPS NAROLI GM"
+            ],
+            "stand_id": [
+                7,
+                "V"
+            ],
+            "personal_fileno": "1077",
+            "block": [
+                1,
+                "DNH"
+            ],
+            "cluster": [
+                150,
+                "DADRA"
+            ]
+        },
+        {
+            "id": 1510,
+            "employee_id": [
+                1580,
+                "Smt.Chandanben Navalabhai Patel"
+            ],
+            "standard_id": [
+                129,
+                "VI-A-GUJ"
+            ],
+            "teacher_code": false,
+            "name": "Smt.Chandanben Navalabhai Patel",
+            "school_id": [
+                153,
+                "CPS NAROLI GM"
+            ],
+            "stand_id": [
+                8,
+                "VI"
+            ],
+            "personal_fileno": "1135",
+            "block": [
+                1,
+                "DNH"
+            ],
+            "cluster": [
+                150,
+                "DADRA"
+            ]
+        },
+        {
+            "id": 1511,
+            "employee_id": [
+                1581,
+                "Shri Mineshkumar Jogibhai Patel"
+            ],
+            "standard_id": [
+                132,
+                "VII-A-GUJ"
+            ],
+            "teacher_code": false,
+            "name": "Shri Mineshkumar Jogibhai Patel",
+            "school_id": [
+                153,
+                "CPS NAROLI GM"
+            ],
+            "stand_id": [
+                9,
+                "VII"
+            ],
+            "personal_fileno": false,
+            "block": [
+                1,
+                "DNH"
+            ],
+            "cluster": [
+                150,
+                "DADRA"
+            ]
+        },
+        {
+            "id": 1512,
+            "employee_id": [
+                1582,
+                "Shri Pinakinkumar Manubhai Patel"
+            ],
+            "standard_id": [
+                133,
+                "VII-B-GUJ"
+            ],
+            "teacher_code": false,
+            "name": "Shri Pinakinkumar Manubhai Patel",
+            "school_id": [
+                153,
+                "CPS NAROLI GM"
+            ],
+            "stand_id": [
+                9,
+                "VII"
+            ],
+            "personal_fileno": false,
+            "block": [
+                1,
+                "DNH"
+            ],
+            "cluster": [
+                150,
+                "DADRA"
+            ]
+        },
+        {
+            "id": 1513,
+            "employee_id": [
+                1583,
+                "Smt. Chaitaliben Ramanlal Ahir"
+            ],
+            "standard_id": [
+                134,
+                "VIII-A-GUJ"
+            ],
+            "teacher_code": false,
+            "name": "Smt. Chaitaliben Ramanlal Ahir",
+            "school_id": [
+                153,
+                "CPS NAROLI GM"
+            ],
+            "stand_id": [
+                10,
+                "VIII"
+            ],
+            "personal_fileno": false,
+            "block": [
+                1,
+                "DNH"
+            ],
+            "cluster": [
+                150,
+                "DADRA"
+            ]
+        },
+        {
+            "id": 1514,
+            "employee_id": [
+                1584,
+                "Smt.Khyatiben Hasmukhlal Bhandari"
+            ],
+            "standard_id": [
+                135,
+                "VIII-B-GUJ"
+            ],
+            "teacher_code": false,
+            "name": "Smt.Khyatiben Hasmukhlal Bhandari",
+            "school_id": [
+                153,
+                "CPS NAROLI GM"
+            ],
+            "stand_id": [
+                10,
+                "VIII"
+            ],
+            "personal_fileno": false,
+            "block": [
+                1,
+                "DNH"
+            ],
+            "cluster": [
+                150,
+                "DADRA"
+            ]
+        },
+        {
+            "id": 1515,
+            "employee_id": [
+                1585,
+                "Smt.Parmar Priya Chhatrasinh"
+            ],
+            "standard_id": false,
+            "teacher_code": false,
+            "name": "Smt.Parmar Priya Chhatrasinh",
+            "school_id": [
+                153,
+                "CPS NAROLI GM"
+            ],
+            "stand_id": false,
+            "personal_fileno": false,
+            "block": [
+                1,
+                "DNH"
+            ],
+            "cluster": [
+                150,
+                "DADRA"
+            ]
+        },
+        {
+            "id": 1516,
+            "employee_id": [
+                1586,
+                "Shubha Ishwarchandra Pandey"
+            ],
+            "standard_id": false,
+            "teacher_code": false,
+            "name": "Shubha Ishwarchandra Pandey",
+            "school_id": [
+                153,
+                "CPS NAROLI GM"
+            ],
+            "stand_id": false,
+            "personal_fileno": false,
+            "block": [
+                1,
+                "DNH"
+            ],
+            "cluster": [
+                150,
+                "DADRA"
+            ]
+        },
+        {
+            "id": 1781,
+            "employee_id": [
+                1851,
+                "SMT. ALKA R. PANCHAL"
+            ],
+            "standard_id": false,
+            "teacher_code": false,
+            "name": "SMT. ALKA R. PANCHAL",
+            "school_id": [
+                181,
+                "GHSS T HM"
+            ],
+            "stand_id": false,
+            "personal_fileno": false,
+            "block": [
+                9,
+                "SILVASSA"
+            ],
+            "cluster": [
+                9,
+                "SILVASSA"
+            ]
+        },
+        {
+            "id": 1782,
+            "employee_id": [
+                1852,
+                "SMT. NUSHRAT M. NERLI"
+            ],
+            "standard_id": false,
+            "teacher_code": false,
+            "name": "SMT. NUSHRAT M. NERLI",
+            "school_id": [
+                181,
+                "GHSS T HM"
+            ],
+            "stand_id": false,
+            "personal_fileno": false,
+            "block": [
+                9,
+                "SILVASSA"
+            ],
+            "cluster": [
+                9,
+                "SILVASSA"
+            ]
+        },
+        {
+            "id": 1783,
+            "employee_id": [
+                1853,
+                "SHRI. ANURAG TIWARI"
+            ],
+            "standard_id": false,
+            "teacher_code": false,
+            "name": "SHRI. ANURAG TIWARI",
+            "school_id": [
+                181,
+                "GHSS T HM"
+            ],
+            "stand_id": false,
+            "personal_fileno": false,
+            "block": [
+                9,
+                "SILVASSA"
+            ],
+            "cluster": [
+                9,
+                "SILVASSA"
+            ]
+        },
+        {
+            "id": 1784,
+            "employee_id": [
+                1854,
+                "SMT. RASHMI MISHRA"
+            ],
+            "standard_id": false,
+            "teacher_code": false,
+            "name": "SMT. RASHMI MISHRA",
+            "school_id": [
+                181,
+                "GHSS T HM"
+            ],
+            "stand_id": false,
+            "personal_fileno": false,
+            "block": [
+                9,
+                "SILVASSA"
+            ],
+            "cluster": [
+                9,
+                "SILVASSA"
+            ]
+        },
+        {
+            "id": 1785,
+            "employee_id": [
+                1855,
+                "SMT. SAROJ NARWARIA"
+            ],
+            "standard_id": false,
+            "teacher_code": false,
+            "name": "SMT. SAROJ NARWARIA",
+            "school_id": [
+                181,
+                "GHSS T HM"
+            ],
+            "stand_id": false,
+            "personal_fileno": false,
+            "block": [
+                9,
+                "SILVASSA"
+            ],
+            "cluster": [
+                9,
+                "SILVASSA"
+            ]
+        },
+        {
+            "id": 1786,
+            "employee_id": [
+                1856,
+                "SHRI. B. B. SHARMA"
+            ],
+            "standard_id": false,
+            "teacher_code": false,
+            "name": "SHRI. B. B. SHARMA",
+            "school_id": [
+                181,
+                "GHSS T HM"
+            ],
+            "stand_id": false,
+            "personal_fileno": false,
+            "block": [
+                9,
+                "SILVASSA"
+            ],
+            "cluster": [
+                9,
+                "SILVASSA"
+            ]
+        },
+        {
+            "id": 1787,
+            "employee_id": [
+                1857,
+                "SHRI. DINESH BHARTI"
+            ],
+            "standard_id": false,
+            "teacher_code": false,
+            "name": "SHRI. DINESH BHARTI",
+            "school_id": [
+                181,
+                "GHSS T HM"
+            ],
+            "stand_id": false,
+            "personal_fileno": false,
+            "block": [
+                9,
+                "SILVASSA"
+            ],
+            "cluster": [
+                9,
+                "SILVASSA"
+            ]
+        },
+        {
+            "id": 1788,
+            "employee_id": [
+                1858,
+                "SMT. ARCHANA SHARMA"
+            ],
+            "standard_id": false,
+            "teacher_code": false,
+            "name": "SMT. ARCHANA SHARMA",
+            "school_id": [
+                181,
+                "GHSS T HM"
+            ],
+            "stand_id": false,
+            "personal_fileno": false,
+            "block": [
+                9,
+                "SILVASSA"
+            ],
+            "cluster": [
+                9,
+                "SILVASSA"
+            ]
+        },
+        {
+            "id": 1789,
+            "employee_id": [
+                1859,
+                "SHRI BABULAL DEORA"
+            ],
+            "standard_id": false,
+            "teacher_code": false,
+            "name": "SHRI BABULAL DEORA",
+            "school_id": [
+                181,
+                "GHSS T HM"
+            ],
+            "stand_id": false,
+            "personal_fileno": false,
+            "block": [
+                9,
+                "SILVASSA"
+            ],
+            "cluster": [
+                9,
+                "SILVASSA"
+            ]
+        },
+        {
+            "id": 1790,
+            "employee_id": [
+                1860,
+                "SHRI KAILASH PRAJAPAT"
+            ],
+            "standard_id": false,
+            "teacher_code": false,
+            "name": "SHRI KAILASH PRAJAPAT",
+            "school_id": [
+                181,
+                "GHSS T HM"
+            ],
+            "stand_id": false,
+            "personal_fileno": false,
+            "block": [
+                9,
+                "SILVASSA"
+            ],
+            "cluster": [
+                9,
+                "SILVASSA"
+            ]
+        },
+        {
+            "id": 1791,
+            "employee_id": [
+                1861,
+                "SHRI RANVEER"
+            ],
+            "standard_id": false,
+            "teacher_code": false,
+            "name": "SHRI RANVEER",
+            "school_id": [
+                181,
+                "GHSS T HM"
+            ],
+            "stand_id": false,
+            "personal_fileno": false,
+            "block": [
+                9,
+                "SILVASSA"
+            ],
+            "cluster": [
+                9,
+                "SILVASSA"
+            ]
+        },
+        {
+            "id": 1792,
+            "employee_id": [
+                1862,
+                "SHRI. YOGESH H. SHARMA"
+            ],
+            "standard_id": false,
+            "teacher_code": false,
+            "name": "SHRI. YOGESH H. SHARMA",
+            "school_id": [
+                181,
+                "GHSS T HM"
+            ],
+            "stand_id": false,
+            "personal_fileno": false,
+            "block": [
+                9,
+                "SILVASSA"
+            ],
+            "cluster": [
+                9,
+                "SILVASSA"
+            ]
+        },
+        {
+            "id": 1793,
+            "employee_id": [
+                1863,
+                "SMT. SHEFALI J. PRAJAPATI"
+            ],
+            "standard_id": false,
+            "teacher_code": false,
+            "name": "SMT. SHEFALI J. PRAJAPATI",
+            "school_id": [
+                181,
+                "GHSS T HM"
+            ],
+            "stand_id": false,
+            "personal_fileno": false,
+            "block": [
+                9,
+                "SILVASSA"
+            ],
+            "cluster": [
+                9,
+                "SILVASSA"
+            ]
+        },
+        {
+            "id": 1794,
+            "employee_id": [
+                1864,
+                "SHRI. JAYESH DESAI"
+            ],
+            "standard_id": false,
+            "teacher_code": false,
+            "name": "SHRI. JAYESH DESAI",
+            "school_id": [
+                181,
+                "GHSS T HM"
+            ],
+            "stand_id": false,
+            "personal_fileno": false,
+            "block": [
+                9,
+                "SILVASSA"
+            ],
+            "cluster": [
+                9,
+                "SILVASSA"
+            ]
+        },
+        {
+            "id": 1795,
+            "employee_id": [
+                1865,
+                "SMT. RASHMI BURHANPURKAR"
+            ],
+            "standard_id": false,
+            "teacher_code": false,
+            "name": "SMT. RASHMI BURHANPURKAR",
+            "school_id": [
+                181,
+                "GHSS T HM"
+            ],
+            "stand_id": false,
+            "personal_fileno": false,
+            "block": [
+                9,
+                "SILVASSA"
+            ],
+            "cluster": [
+                9,
+                "SILVASSA"
+            ]
+        },
+        {
+            "id": 1796,
+            "employee_id": [
+                1866,
+                "SMT. HEENA B. RATHOD"
+            ],
+            "standard_id": false,
+            "teacher_code": false,
+            "name": "SMT. HEENA B. RATHOD",
+            "school_id": [
+                181,
+                "GHSS T HM"
+            ],
+            "stand_id": false,
+            "personal_fileno": false,
+            "block": [
+                9,
+                "SILVASSA"
+            ],
+            "cluster": [
+                9,
+                "SILVASSA"
+            ]
+        },
+        {
+            "id": 1797,
+            "employee_id": [
+                1867,
+                "SHRI. SHASHIKANT P. BARDE "
+            ],
+            "standard_id": false,
+            "teacher_code": false,
+            "name": "SHRI. SHASHIKANT P. BARDE ",
+            "school_id": [
+                181,
+                "GHSS T HM"
+            ],
+            "stand_id": false,
+            "personal_fileno": false,
+            "block": [
+                9,
+                "SILVASSA"
+            ],
+            "cluster": [
+                9,
+                "SILVASSA"
+            ]
+        },
+        {
+            "id": 1798,
+            "employee_id": [
+                1868,
+                "SMT. RINKI SINGH"
+            ],
+            "standard_id": false,
+            "teacher_code": false,
+            "name": "SMT. RINKI SINGH",
+            "school_id": [
+                181,
+                "GHSS T HM"
+            ],
+            "stand_id": false,
+            "personal_fileno": false,
+            "block": [
+                9,
+                "SILVASSA"
+            ],
+            "cluster": [
+                9,
+                "SILVASSA"
+            ]
+        },
+        {
+            "id": 1799,
+            "employee_id": [
+                1869,
+                "SHRI. JITENDRA GUPTA"
+            ],
+            "standard_id": false,
+            "teacher_code": false,
+            "name": "SHRI. JITENDRA GUPTA",
+            "school_id": [
+                181,
+                "GHSS T HM"
+            ],
+            "stand_id": false,
+            "personal_fileno": false,
+            "block": [
+                9,
+                "SILVASSA"
+            ],
+            "cluster": [
+                9,
+                "SILVASSA"
+            ]
+        },
+        {
+            "id": 1800,
+            "employee_id": [
+                1870,
+                "SHRI. PAWAN PRASAD"
+            ],
+            "standard_id": false,
+            "teacher_code": false,
+            "name": "SHRI. PAWAN PRASAD",
+            "school_id": [
+                181,
+                "GHSS T HM"
+            ],
+            "stand_id": false,
+            "personal_fileno": false,
+            "block": [
+                9,
+                "SILVASSA"
+            ],
+            "cluster": [
+                9,
+                "SILVASSA"
+            ]
+        },
+        {
+            "id": 1801,
+            "employee_id": [
+                1871,
+                "SMT. DIVYA RATHOD"
+            ],
+            "standard_id": false,
+            "teacher_code": false,
+            "name": "SMT. DIVYA RATHOD",
+            "school_id": [
+                181,
+                "GHSS T HM"
+            ],
+            "stand_id": false,
+            "personal_fileno": false,
+            "block": [
+                9,
+                "SILVASSA"
+            ],
+            "cluster": [
+                9,
+                "SILVASSA"
+            ]
+        },
+        {
+            "id": 1802,
+            "employee_id": [
+                1872,
+                "SMT. MADHULATA"
+            ],
+            "standard_id": false,
+            "teacher_code": false,
+            "name": "SMT. MADHULATA",
+            "school_id": [
+                181,
+                "GHSS T HM"
+            ],
+            "stand_id": false,
+            "personal_fileno": false,
+            "block": [
+                9,
+                "SILVASSA"
+            ],
+            "cluster": [
+                9,
+                "SILVASSA"
+            ]
+        }
+    ]
+}

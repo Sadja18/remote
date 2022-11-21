@@ -1,0 +1,15 @@
+{
+    "message": "success",
+    "leaveTypes": [
+        {
+            "id": 1,
+            "name": "CL",
+            "display_name": "CL"
+        },
+        {
+            "id": 2,
+            "name": "EL",
+            "display_name": "EL"
+        }
+    ]
+}

@@ -1,0 +1,254 @@
+{
+    "no_of_records": {
+        "no_of_artsScience": 2,
+        "no_of_others": 14
+    },
+    "data": {
+        "coursesArts": [
+            {
+                "id": 85,
+                "name": "Bachelor of Science",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "duration": "3",
+                "no_dept": true
+            },
+            {
+                "id": 86,
+                "name": "Bachelor of Arts",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "duration": "3",
+                "no_dept": true
+            }
+        ],
+        "coursesAlt": [
+            {
+                "id": 81,
+                "name": "Bachelor of Arts in Hindi",
+                "code": "B.A. Hindi",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    16,
+                    "Department of Hindi"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 83,
+                "name": "Bachelor of Science in Zoology",
+                "code": "B.Sc. Zoology",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    12,
+                    "Department of Zoology"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 84,
+                "name": "Bachelor of Science in Botany",
+                "code": "B.Sc. Botany",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    8,
+                    "Department of Botany"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 78,
+                "name": "Master of Arts in Economics",
+                "code": "M.A.  Economics",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "pg",
+                "duration": "2",
+                "department_id": [
+                    13,
+                    "Department of Economics"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 38,
+                "name": "Bachelor of Commerce",
+                "code": "B.Com.",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    20,
+                    "Department of Commerce"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 80,
+                "name": "Bachelor of Arts in Gujarati",
+                "code": "B.A. Gujarati",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    15,
+                    "Department of Gujarati"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 37,
+                "name": "Bachelor of Arts in  Economics",
+                "code": "B.A. Economics",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    13,
+                    "Department of Economics"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 79,
+                "name": "Bachelor of Arts in English",
+                "code": "B.A. English",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    14,
+                    "Department of English"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 87,
+                "name": "Bachelor of Science(Chemistry)",
+                "code": "B.Sc.(Chem)",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    9,
+                    "Department of Chemistry"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 43,
+                "name": "Master of Science in Organic Chemistry",
+                "code": "M.Sc. Chemistry",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "pg",
+                "duration": "2",
+                "department_id": [
+                    9,
+                    "Department of Chemistry"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 36,
+                "name": "Bachelor of Science in Mathematics",
+                "code": "B.Sc. Maths",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    10,
+                    "Department of Mathematics"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 44,
+                "name": "Master of Arts in English",
+                "code": "M.A. English",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "pg",
+                "duration": "2",
+                "department_id": [
+                    14,
+                    "Department of English"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 77,
+                "name": "Bachelor of Science in Chemistry",
+                "code": "B.Sc. Chemistry",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "ug",
+                "duration": "3",
+                "department_id": [
+                    9,
+                    "Department of Chemistry"
+                ],
+                "no_dept": false
+            },
+            {
+                "id": 45,
+                "name": "Master of Commerce",
+                "code": "M.Com.",
+                "college_id": [
+                    13,
+                    "Government College Daman"
+                ],
+                "graduate": "pg",
+                "duration": "2",
+                "department_id": false,
+                "no_dept": false
+            }
+        ]
+    },
+    "message": "Success"
+}

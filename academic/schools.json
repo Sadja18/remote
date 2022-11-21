@@ -1,0 +1,95 @@
+{
+    "schools": [
+        {
+            "id": 2,
+            "com_name": "GHSS Diu",
+            "cluster": [
+                51,
+                "VANAKBARA"
+            ],
+            "block": [
+                6,
+                "DIU"
+            ],
+            "location": "rural"
+        },
+        {
+            "id": 153,
+            "com_name": "CPS NAROLI GM",
+            "cluster": [
+                16,
+                "NAROLI"
+            ],
+            "block": [
+                1,
+                "DNH"
+            ],
+            "location": false
+        },
+        {
+            "id": 155,
+            "com_name": "GHSS BHIMPORE",
+            "cluster": [
+                22,
+                "BHIMPORE"
+            ],
+            "block": [
+                5,
+                "DAMAN"
+            ],
+            "location": false
+        },
+        {
+            "id": 161,
+            "com_name": "GHS NANIDAMAN (E/M)",
+            "cluster": [
+                27,
+                "NANI DAMAN"
+            ],
+            "block": [
+                5,
+                "DAMAN"
+            ],
+            "location": false
+        },
+        {
+            "id": 162,
+            "com_name": "GPS KACHIGAM",
+            "cluster": [
+                27,
+                "NANI DAMAN"
+            ],
+            "block": [
+                5,
+                "DAMAN"
+            ],
+            "location": false
+        },
+        {
+            "id": 168,
+            "com_name": "Govt. Hr. Secondary School Randha (GM)",
+            "cluster": [
+                9,
+                "SILVASSA"
+            ],
+            "block": [
+                1,
+                "DNH"
+            ],
+            "location": false
+        },
+        {
+            "id": 181,
+            "com_name": "GHSS T HM",
+            "cluster": [
+                9,
+                "SILVASSA"
+            ],
+            "block": [
+                1,
+                "DNH"
+            ],
+            "location": "urban"
+        }
+    ]
+}
