@@ -62,133 +62,163 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $uid = $common->authenticate($dbname, $user, $password, array());
 
             $models = ripcord::client("$url/xmlrpc/2/object");
-            // get total number of students
-            $total_students = $models->execute_kw(
+            
+            // check if attendance for given date, school and class already exists
+            // if yes send 200 response
+            // else perform function
+
+            $is_attendance_sheet = $models->execute_kw(
                 $dbname,
                 $uid,
                 $password,
-                'student.student',
-                'search_count',
+                'daily.attendance',
+                'search',
                 array(
                     array(
-                        array('standard_id.name', '=', $className),
-                        array('school_id.name', '=', $schoolName),
-                        array('state', '=', 'done'),
-                    ),
+                        array('date', '=', $date),
+                        array('standard_id.name', '=',$className)
+                    )
                 )
             );
-            if (gettype($absentees) == 'string') {
-                $absentees = json_decode($absentees);
-            }
-            $total_absent = count($absentees);
-            $total_present = (int) $total_students - (int) $total_absent;
-            if ((int) $total_present + (int) $total_absent != (int) $total_students) {
-                echo json_encode(array('problem' => 'mismach counts'));
-            } else {
-                $state = 'draft';
 
-                $record_create_id = $models->execute_kw(
+            if (isset($entityBody)){
+                echo json_encode(
+                    array(
+                        "record_create_id"=> $is_attendance_sheet[0],
+                    )
+                );
+                
+
+            }else{
+                // get total number of students
+                $total_students = $models->execute_kw(
                     $dbname,
                     $uid,
                     $password,
-                    'daily.attendance',
-                    'create',
-                    array(array(
-                        'date' => $date,
-                        'standard_id' => (int) $classId,
-                        'user_id' => (int) $teacherId,
-                        'state' => $state,
-                        'school_id' => (int) $schoolId,
-                        'sub_date' => $submissionDate,
-                    ))
+                    'student.student',
+                    'search_count',
+                    array(
+                        array(
+                            array('standard_id.name', '=', $className),
+                            array('school_id.name', '=', $schoolName),
+                            array('state', '=', 'done'),
+                        ),
+                    )
                 );
-
-                if (isset($record_create_id['faultString'])) {
-                    echo json_encode(array(
-                        "faultString" => $record_create_id['faultString'],
-                    ));
+                if (gettype($absentees) == 'string') {
+                    $absentees = json_decode($absentees);
+                }
+                $total_absent = count($absentees);
+                $total_present = (int) $total_students - (int) $total_absent;
+                if ((int) $total_present + (int) $total_absent != (int) $total_students) {
+                    echo json_encode(array('problem' => 'mismach counts'));
                 } else {
+                    $state = 'draft';
 
-                    if(empty($absentees) || !isset($absentees)){
+                    $record_create_id = $models->execute_kw(
+                        $dbname,
+                        $uid,
+                        $password,
+                        'daily.attendance',
+                        'create',
+                        array(array(
+                            'date' => $date,
+                            'standard_id' => (int) $classId,
+                            'user_id' => (int) $teacherId,
+                            'state' => $state,
+                            'school_id' => (int) $schoolId,
+                            'sub_date' => $submissionDate,
+                        ))
+                    );
 
-                        $models->execute_kw(
-                            $dbname,
-                            $uid,
-                            $password,
-                            'daily.attendance',
-                            'write',
-                            array(array($record_create_id), array(
-                                'total_student' => $total_students,
-                                'total_presence' => $total_present,
-                                'total_absent' => $total_absent,
-                                'state' => 'validate',
+                    if (isset($record_create_id['faultString'])) {
+                        echo json_encode(array(
+                            "faultString" => $record_create_id['faultString'],
+                        ));
+                    } else {
 
-                            ))
-                        );
-                        array_push($response, array($entry => 'write done'));
+                        if(empty($absentees) || !isset($absentees)){
 
-                    }else{
-                        foreach ($absentees as $entry) {
-                            $entryA = (int) $entry;
-    
-                            $lineid = $models->execute_kw(
+                            $models->execute_kw(
                                 $dbname,
                                 $uid,
                                 $password,
-                                'daily.attendance.line',
-                                'search',
-                                array(
-                                    array(
-                                        array('standard_id', '=', $record_create_id),
-                                        array('stud_id', '=', $entryA),
-                                    ),
-                                )
+                                'daily.attendance',
+                                'write',
+                                array(array($record_create_id), array(
+                                    'total_student' => $total_students,
+                                    'total_presence' => $total_present,
+                                    'total_absent' => $total_absent,
+                                    'state' => 'validate',
+
+                                ))
                             );
-                            if (!isset($lineid['faultString'])) {
-                                $models->execute_kw(
+                            array_push($response, array($entry => 'write done'));
+
+                        }else{
+                            foreach ($absentees as $entry) {
+                                $entryA = (int) $entry;
+        
+                                $lineid = $models->execute_kw(
                                     $dbname,
                                     $uid,
                                     $password,
                                     'daily.attendance.line',
-                                    'write',
+                                    'search',
                                     array(
-                                        array($lineid[0]),
                                         array(
-                                            'is_absent' => true,
-                                            'is_present' => false,
-                                            'att' => 'absent',
-    
+                                            array('standard_id', '=', $record_create_id),
+                                            array('stud_id', '=', $entryA),
                                         ),
                                     )
                                 );
-    
-                                $models->execute_kw(
-                                    $dbname,
-                                    $uid,
-                                    $password,
-                                    'daily.attendance',
-                                    'write',
-                                    array(array($record_create_id), array(
-                                        'total_student' => $total_students,
-                                        'total_presence' => $total_present,
-                                        'total_absent' => $total_absent,
-                                        'state' => 'validate',
-    
-                                    ))
-                                );
-                                array_push($response, array($entry => 'write done'));
-                            } else {
-                                array_push($response, array($entry => $lineid['faultString']));
+                                if (!isset($lineid['faultString'])) {
+                                    $models->execute_kw(
+                                        $dbname,
+                                        $uid,
+                                        $password,
+                                        'daily.attendance.line',
+                                        'write',
+                                        array(
+                                            array($lineid[0]),
+                                            array(
+                                                'is_absent' => true,
+                                                'is_present' => false,
+                                                'att' => 'absent',
+        
+                                            ),
+                                        )
+                                    );
+        
+                                    $models->execute_kw(
+                                        $dbname,
+                                        $uid,
+                                        $password,
+                                        'daily.attendance',
+                                        'write',
+                                        array(array($record_create_id), array(
+                                            'total_student' => $total_students,
+                                            'total_presence' => $total_present,
+                                            'total_absent' => $total_absent,
+                                            'state' => 'validate',
+        
+                                        ))
+                                    );
+                                    array_push($response, array($entry => 'write done'));
+                                } else {
+                                    array_push($response, array($entry => $lineid['faultString']));
+                                }
                             }
                         }
-                    }
 
-                    $response = array(
-                        'record_create_id' => $record_create_id,
-                    );
-                    echo json_encode($response);
+                        $response = array(
+                            'record_create_id' => $record_create_id,
+                        );
+                        echo json_encode($response);
+                    }
                 }
             }
+
         } else {
             echo json_encode(
                 array(
