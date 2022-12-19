@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 )
             );
 
-            if (isset($entityBody)){
+            if (isset($is_attendance_sheet)){
                 echo json_encode(
                     array(
                         "record_create_id"=> $is_attendance_sheet[0],
