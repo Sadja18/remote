@@ -63,11 +63,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
             $models = ripcord::client("$url/xmlrpc/2/object");
             
-            // check if attendance for given date, school and class already exists
-            // if yes send 200 response
-            // else perform function
+            // check if attendance for given date and class exists
 
-            $is_attendance_sheet = $models->execute_kw(
+            $attendance_exists = $models->execute_kw(
                 $dbname,
                 $uid,
                 $password,
@@ -81,16 +79,16 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 )
             );
 
-            if (isset($entityBody)){
+
+            if (isset($attendance_exists)){
                 echo json_encode(
                     array(
-                        "record_create_id"=> $is_attendance_sheet[0],
+                        "record_create_id"=> $attendance_exists[0]
                     )
                 );
-                
-
             }else{
                 // get total number of students
+
                 $total_students = $models->execute_kw(
                     $dbname,
                     $uid,
@@ -114,7 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     echo json_encode(array('problem' => 'mismach counts'));
                 } else {
                     $state = 'draft';
-
+    
                     $record_create_id = $models->execute_kw(
                         $dbname,
                         $uid,
@@ -130,15 +128,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                             'sub_date' => $submissionDate,
                         ))
                     );
-
+    
                     if (isset($record_create_id['faultString'])) {
                         echo json_encode(array(
                             "faultString" => $record_create_id['faultString'],
                         ));
                     } else {
-
+    
                         if(empty($absentees) || !isset($absentees)){
-
+    
                             $models->execute_kw(
                                 $dbname,
                                 $uid,
@@ -150,11 +148,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                     'total_presence' => $total_present,
                                     'total_absent' => $total_absent,
                                     'state' => 'validate',
-
+    
                                 ))
                             );
                             array_push($response, array($entry => 'write done'));
-
+    
                         }else{
                             foreach ($absentees as $entry) {
                                 $entryA = (int) $entry;
@@ -210,7 +208,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                 }
                             }
                         }
-
+    
                         $response = array(
                             'record_create_id' => $record_create_id,
                         );
@@ -218,7 +216,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     }
                 }
             }
-
         } else {
             echo json_encode(
                 array(
