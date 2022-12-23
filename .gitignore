@@ -4,3 +4,4 @@ favicon.ico
 add_vhost.php
 test_sockets.php
 testmysql.php
+/dashboard/*
