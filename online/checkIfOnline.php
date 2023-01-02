@@ -1,7 +1,7 @@
 <?php
 // header('Content-Type:text/plain');
-$privateURL = "http://10.184.49.222:8069";
-$publicURL = "http://10.184.49.222:8069";
+$publicURL = "http://14.139.180.56:8069;
+$publicURL = "http://14.139.180.56:8069";
 
 // $url = $privateURL;
 $url = $publicURL;
