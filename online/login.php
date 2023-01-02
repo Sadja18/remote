@@ -7,6 +7,7 @@ header('Access-Control-Allow-Methods: GET, POST');
 header("Access-Control-Allow-Headers: X-Requested-With");
 header('Content-Type: application/json');
 
+ini_set('display_errors', 1); ini_set('display_startup_errors', 1);
 // require_once './extra.php';
 $login_status = null;
 $userID = null;
@@ -15,8 +16,8 @@ $userName = null;
 $userPassword = null;
 
 
-$privateURL = "http://10.184.4.238:8069";
-$publicURL = "http://10.184.49.222:8069";
+$privateURL = "http://14.139.180.56:8069";
+$publicURL = "http://14.139.180.56:8069";
 
 // mention local or public url
 // $url = $privateURL;
@@ -32,12 +33,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" || $_SERVER['REQUEST_METHOD'] == 'GET')
     $entityBodyJSON = file_get_contents('php://input');
     // decode the afore mentoned json like object
     $entityBody = json_decode($entityBodyJSON);
-    // echo json_encode(
-    //     array(
-    //         "p"=> $entityBody,
-    //         'g'=> gettype($entityBody),
-    //     )
-    // );
 
     $userName = $entityBody-> user;
     $userPassword = $entityBody->password;
@@ -49,10 +44,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" || $_SERVER['REQUEST_METHOD'] == 'GET')
     }
 
     $common = ripcord::client($url . '/xmlrpc/2/common');
-
     // echo "13";
 
     $userID = $common->authenticate($dbname, $userName, $userPassword, array());
+
+    // echo $userID;
 
 
     if (empty($userID) || !isset($userID) || $userID == 0 || $userID == false) {

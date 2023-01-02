@@ -3,8 +3,8 @@
 $dbname = 'school';
 $password = 'teacher@1234';
 $user = 'krishakanth1@gmail.com';
-$privateURL = "http://10.184.4.238:8069";
-$publicURL = "http://10.184.49.222:8069";
+$privateURL = "http://14.139.180.56:8069";
+$publicURL = "http://14.139.180.56:8069";
 
 // mention local or public url
 // $url = $privateURL;
