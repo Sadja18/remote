@@ -1,7 +1,7 @@
 <?php
 
-$privateURL = "http://10.184.49.222:8069";
-$publicURL = "http://10.184.49.222:8069";
+$privateURL = "http://14.139.180.56:8069";
+$publicURL = "http://14.139.180.56:8069";
 
 // $url = $privateURL;
 $url = $publicURL;
@@ -22,8 +22,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $entityBodyJSON = file_get_contents("php://input");
 
     $entityBody = get_object_vars(json_decode($entityBodyJSON));
-
-    // echo json_encode($entityBody);
 
     $user = $entityBody['userName'];
     $password = $entityBody['userPassword'];
@@ -80,7 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             );
 
 
-            if (isset($attendance_exists)){
+            if (isset($attendance_exists) && count($attendance_exists)>0){
                 echo json_encode(
                     array(
                         "record_create_id"=> $attendance_exists[0]
@@ -130,10 +128,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     );
     
                     if (isset($record_create_id['faultString'])) {
-                        echo json_encode(array(
-                            "faultString" => $record_create_id['faultString'],
-                        ));
-                    } else {
+                        echo json_encode(
+                            array(
+                                "faultCode" => $record_create_id['faultCode'],
+                                "faultString" => $record_create_id['faultString'],
+                            )
+                        );
+                    } 
+                    else {
     
                         if(empty($absentees) || !isset($absentees)){
     

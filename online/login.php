@@ -32,7 +32,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" || $_SERVER['REQUEST_METHOD'] == 'GET')
     // to get a json like data object
     $entityBodyJSON = file_get_contents('php://input');
     // decode the afore mentoned json like object
-    $entityBody = json_decode($entityBodyJSON);
+    $entityBodyUnknown = json_decode($entityBodyJSON);
+
+    $entityBody = (object) $entityBodyUnknown;
 
     $userName = $entityBody-> user;
     $userPassword = $entityBody->password;
@@ -81,12 +83,16 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" || $_SERVER['REQUEST_METHOD'] == 'GET')
                 'fields' => array('email', 'com_name'),
             ),
         );
+
+        // echo json_encode(
+
+        // );
         
         if (isset($record) && !isset($record['faultString']) && isset($record[0]['id'])) {
             /// is headmaster
             $arr = array(
-                'user' => $entityBody['user'],
-                'password' => $entityBody['password'],
+                'user' => $entityBody->user,
+                'password' => $entityBody->password,
                 'dbname' => $dbname,
                 'login_status' => 1,
                 'userID' => $userID,
