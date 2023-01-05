@@ -48,13 +48,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
             'search_read',
             array(
                 array(
-                    array('active', '=', TRUE),
+                    array('name', '!=', FALSE),
                 ),
             ),
             array(
                 'fields' => array(
                     'name', 'school_id', 'employee_id',
-                    'teacher_code', 'user_id', "photo"
+                    'teacher_code', 'user_id', "ehrms_id"
+                    // "photo"
                 ),
             )
         );
