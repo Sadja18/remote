@@ -87,8 +87,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                     array('state', '=', 'done'),
                 ),
             ),
-            array("fields" => array('student_name','name', 'middle', 'last','roll_no', 'standard_id', 'photo')),
-            // array()
+            array("fields" => array(
+                    'student_name','name', 'middle', 
+                    'last','roll_no', 'standard_id', 
+                    //'photo'
+                )
+            ),
         );
 
         if (!isset($students['faultString'])) {
